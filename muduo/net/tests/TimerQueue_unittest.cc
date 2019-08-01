@@ -43,41 +43,26 @@ int main()
     g_loop = &loop;
 
     print("main");
-    printf("now %s\n", Timestamp::now().toString().c_str());
-
     loop.runAfter(1, std::bind(print, "once1"));
-
-    printf("now %s\n", Timestamp::now().toString().c_str());
     loop.runAfter(2, std::bind(print, "once1.5"));
-
-    printf("now %s\n", Timestamp::now().toString().c_str());
     loop.runAfter(3, std::bind(print, "once2.5"));
-
-    printf("now %s\n", Timestamp::now().toString().c_str());
     loop.runAfter(4, std::bind(print, "once3.5"));
-    // TimerId t45 = loop.runAfter(4.5, std::bind(print, "once4.5"));
-    // loop.runAfter(4.2, std::bind(cancel, t45));
-    // loop.runAfter(4.8, std::bind(cancel, t45));
-    // loop.runEvery(2, std::bind(print, "every2"));
-    // TimerId t3 = loop.runEvery(3, std::bind(print, "every3"));
-    // loop.runAfter(9.001, std::bind(cancel, t3));
-    // printf("now %s\n", Timestamp::now().toString().c_str());
-
-    // sleep(10);
-    // printf("now %s\n", Timestamp::now().toString().c_str());
-
-    printf("loop start!\n");
-    printf("now %s\n", Timestamp::now().toString().c_str());
+    TimerId t45 = loop.runAfter(4.5, std::bind(print, "once4.5"));
+    loop.runAfter(4.2, std::bind(cancel, t45));
+    loop.runAfter(4.8, std::bind(cancel, t45));
+    loop.runEvery(2, std::bind(print, "every2"));
+    TimerId t3 = loop.runEvery(3, std::bind(print, "every3"));
+    loop.runAfter(9.001, std::bind(cancel, t3));
 
     loop.loop();
     print("main loop exits");
   }
   sleep(1);
   {
-    // EventLoopThread loopThread;
-    // EventLoop* loop = loopThread.startLoop();
-    // loop->runAfter(2, printTid);
-    // sleep(3);
-    // print("thread loop exits");
+    EventLoopThread loopThread;
+    EventLoop *loop = loopThread.startLoop();
+    loop->runAfter(2, printTid);
+    sleep(3);
+    print("thread loop exits");
   }
 }
