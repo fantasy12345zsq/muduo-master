@@ -186,17 +186,15 @@ size_t EventLoop::queueSize() const
   return pendingFunctors_.size();
 }
 
+//runAt和runAfter函数 interval为0.0
 TimerId EventLoop::runAt(Timestamp time, TimerCallback cb)
 {
-  // printf("EventLoop::runAt()!\n");
   //添加定时器
   return timerQueue_->addTimer(std::move(cb), time, 0.0);
 }
 
 TimerId EventLoop::runAfter(double delay, TimerCallback cb)
 {
-  // printf("EventLoop::runAfter!\n");
-
   //创建时间戳为当前时间+延时
   //cb为时间到要回调的函数
   Timestamp time(addTime(Timestamp::now(), delay));
@@ -205,6 +203,8 @@ TimerId EventLoop::runAfter(double delay, TimerCallback cb)
   return runAt(time, std::move(cb));
 }
 
+//runEvery时interval是大于0的，此时repeat（Timer类的成员变量）为真
+//为了将定时器再次插入
 TimerId EventLoop::runEvery(double interval, TimerCallback cb)
 {
   Timestamp time(addTime(Timestamp::now(), interval));

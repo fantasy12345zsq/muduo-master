@@ -111,9 +111,11 @@ TimerQueue::TimerQueue(EventLoop *loop)
       timers_(),
       callingExpiredTimers_(false)
 {
+  //设置回调函数
   timerfdChannel_.setReadCallback(
       std::bind(&TimerQueue::handleRead, this));
   // we are always reading the timerfd, we disarm it with timerfd_settime.
+  //注册读事件
   timerfdChannel_.enableReading();
 }
 
@@ -133,7 +135,6 @@ TimerId TimerQueue::addTimer(TimerCallback cb,
                              Timestamp when,
                              double interval)
 {
-  // printf("TimerQueue::addTimer()!\n");
   //timer保存时间戳、回调函数、
   Timer *timer = new Timer(std::move(cb), when, interval);
   loop_->runInLoop(
@@ -142,6 +143,7 @@ TimerId TimerQueue::addTimer(TimerCallback cb,
   return TimerId(timer, timer->sequence());
 }
 
+//取消定时器
 void TimerQueue::cancel(TimerId timerId)
 {
   loop_->runInLoop(
@@ -150,7 +152,6 @@ void TimerQueue::cancel(TimerId timerId)
 
 void TimerQueue::addTimerInLoop(Timer *timer)
 {
-  // printf("TimerQueue::addTimerInLoop!\n");
   loop_->assertInLoopThread();
   //插入定时器
   bool earliestChanged = insert(timer);
@@ -183,6 +184,7 @@ void TimerQueue::cancelInLoop(TimerId timerId)
   assert(timers_.size() == activeTimers_.size());
 }
 
+//定时到了之后回调的函数
 void TimerQueue::handleRead()
 {
   printf("now %s\n", Timestamp::now().toString().c_str());
@@ -190,28 +192,36 @@ void TimerQueue::handleRead()
   printf("TimerQueue::handleRead()\n");
   loop_->assertInLoopThread();
   Timestamp now(Timestamp::now());
+  //由于muduo设置为默认水平触发，
+  //如果不读套接字，会一直触发读事件
   readTimerfd(timerfd_, now);
 
+  //定时到了之后要删除相应的定时器
   std::vector<Entry> expired = getExpired(now);
 
   callingExpiredTimers_ = true;
   cancelingTimers_.clear();
   // safe to callback outside critical section
+  //回调用户设置的回调函数
+  //表明时间到了之后该做什么
   for (const Entry &it : expired)
   {
     it.second->run();
   }
   callingExpiredTimers_ = false;
 
+  //重置的主要目的在于，Eventloop存在runEvery函数，意思为每过多长时间要执行一次用户的函数
+  //所以定时器到时之后要添加新的定时器
   reset(expired, now);
 }
 
+//删除定时器
 std::vector<TimerQueue::Entry> TimerQueue::getExpired(Timestamp now)
 {
   assert(timers_.size() == activeTimers_.size());
   std::vector<Entry> expired;
   Entry sentry(now, reinterpret_cast<Timer *>(UINTPTR_MAX));
-  //
+  //end在于找到一个比要删除的定时器时间戳大的一个下界
   TimerList::iterator end = timers_.lower_bound(sentry);
   assert(end == timers_.end() || now < end->first);
   printf("end->seond = %p\n", end->second);
@@ -227,6 +237,14 @@ std::vector<TimerQueue::Entry> TimerQueue::getExpired(Timestamp now)
   }
 
   assert(timers_.size() == activeTimers_.size());
+
+  std::vector<TimerQueue::Entry>::iterator iter = expired.begin();
+  printf("expired!\n");
+  while (iter != expired.end())
+  {
+    printf("timestamp = %s,time * = %p\n", iter->first.toString().data(), iter->second);
+    iter++;
+  }
   return expired;
 }
 
@@ -237,8 +255,11 @@ void TimerQueue::reset(const std::vector<Entry> &expired, Timestamp now)
   for (const Entry &it : expired)
   {
     ActiveTimer timer(it.second, it.second->sequence());
+
+    //Eventloop中runEvery设置的定时器会进入这个if，再次插入Timer
     if (it.second->repeat() && cancelingTimers_.find(timer) == cancelingTimers_.end())
     {
+      printf("it.second = %p\n", it.second);
       it.second->restart(now);
       insert(it.second);
     }
@@ -253,52 +274,43 @@ void TimerQueue::reset(const std::vector<Entry> &expired, Timestamp now)
   {
     nextExpire = timers_.begin()->second->expiration();
   }
-
+  printf("nextExpire = %s\n", nextExpire.toString());
   if (nextExpire.valid())
   {
     resetTimerfd(timerfd_, nextExpire);
   }
 }
 
+//插入定时器操作
 bool TimerQueue::insert(Timer *timer)
 {
   loop_->assertInLoopThread();
   assert(timers_.size() == activeTimers_.size());
   bool earliestChanged = false;
+  //获取定时器的时间戳
   Timestamp when = timer->expiration();
   TimerList::iterator it = timers_.begin();
 
+  //当要插入的定时器为第一个，或者要插入的定时器的时间戳小于set集合中的第一个定时器的时间戳
+  //需要重置一下定时器
   if (it == timers_.end() || when < it->first)
   {
     earliestChanged = true;
   }
+  //插入timers_集合中
   {
     std::pair<TimerList::iterator, bool> result = timers_.insert(Entry(when, timer));
     assert(result.second);
     (void)result;
   }
+  //插入activeTimers_集合中
   {
     std::pair<ActiveTimerSet::iterator, bool> result = activeTimers_.insert(ActiveTimer(timer, timer->sequence()));
     assert(result.second);
     (void)result;
   }
 
-  TimerList::iterator iter = timers_.begin();
-
-  while (iter != timers_.end())
-  {
-    printf("time = %s timer = %p\n", iter->first.toString().data(), iter->second);
-    ++iter;
-  }
-
-  ActiveTimerSet::iterator iter1 = activeTimers_.begin();
-
-  while (iter1 != activeTimers_.end())
-  {
-    printf("timer = %p,sequence = %ld\n", iter1->first, iter1->second);
-    ++iter1;
-  }
-
+  //保证两个集合的大小一样，因为存的都是定时器
   assert(timers_.size() == activeTimers_.size());
   return earliestChanged;
 }
