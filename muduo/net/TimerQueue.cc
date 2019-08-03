@@ -61,7 +61,7 @@ struct timespec howMuchTimeFromNow(Timestamp when)
       microseconds / Timestamp::kMicroSecondsPerSecond);
   ts.tv_nsec = static_cast<long>(
       (microseconds % Timestamp::kMicroSecondsPerSecond) * 1000);
-  printf("seconds = %ld\n", ts.tv_sec);
+  // printf("seconds = %ld\n", ts.tv_sec);
   return ts;
 }
 
@@ -139,7 +139,7 @@ TimerId TimerQueue::addTimer(TimerCallback cb,
   Timer *timer = new Timer(std::move(cb), when, interval);
   loop_->runInLoop(
       std::bind(&TimerQueue::addTimerInLoop, this, timer));
-  printf("timer->sequence() = %ld\n", timer->sequence());
+  // printf("timer->sequence() = %ld\n", timer->sequence());
   return TimerId(timer, timer->sequence());
 }
 
@@ -158,7 +158,7 @@ void TimerQueue::addTimerInLoop(Timer *timer)
 
   if (earliestChanged)
   {
-    printf("earliestChanged!\n");
+    // printf("earliestChanged!\n");
     resetTimerfd(timerfd_, timer->expiration());
   }
 }
@@ -187,9 +187,9 @@ void TimerQueue::cancelInLoop(TimerId timerId)
 //定时到了之后回调的函数
 void TimerQueue::handleRead()
 {
-  printf("now %s\n", Timestamp::now().toString().c_str());
+  // printf("now %s\n", Timestamp::now().toString().c_str());
 
-  printf("TimerQueue::handleRead()\n");
+  // printf("TimerQueue::handleRead()\n");
   loop_->assertInLoopThread();
   Timestamp now(Timestamp::now());
   //由于muduo设置为默认水平触发，
@@ -224,7 +224,7 @@ std::vector<TimerQueue::Entry> TimerQueue::getExpired(Timestamp now)
   //end在于找到一个比要删除的定时器时间戳大的一个下界
   TimerList::iterator end = timers_.lower_bound(sentry);
   assert(end == timers_.end() || now < end->first);
-  printf("end->seond = %p\n", end->second);
+  // printf("end->seond = %p\n", end->second);
   std::copy(timers_.begin(), end, back_inserter(expired));
   timers_.erase(timers_.begin(), end);
 
@@ -238,13 +238,13 @@ std::vector<TimerQueue::Entry> TimerQueue::getExpired(Timestamp now)
 
   assert(timers_.size() == activeTimers_.size());
 
-  std::vector<TimerQueue::Entry>::iterator iter = expired.begin();
-  printf("expired!\n");
-  while (iter != expired.end())
-  {
-    printf("timestamp = %s,time * = %p\n", iter->first.toString().data(), iter->second);
-    iter++;
-  }
+  // std::vector<TimerQueue::Entry>::iterator iter = expired.begin();
+  // printf("expired!\n");
+  // while (iter != expired.end())
+  // {
+  //   printf("timestamp = %s,time * = %p\n", iter->first.toString().data(), iter->second);
+  //   iter++;
+  // }
   return expired;
 }
 
@@ -259,7 +259,6 @@ void TimerQueue::reset(const std::vector<Entry> &expired, Timestamp now)
     //Eventloop中runEvery设置的定时器会进入这个if，再次插入Timer
     if (it.second->repeat() && cancelingTimers_.find(timer) == cancelingTimers_.end())
     {
-      printf("it.second = %p\n", it.second);
       it.second->restart(now);
       insert(it.second);
     }
@@ -274,7 +273,6 @@ void TimerQueue::reset(const std::vector<Entry> &expired, Timestamp now)
   {
     nextExpire = timers_.begin()->second->expiration();
   }
-  printf("nextExpire = %s\n", nextExpire.toString());
   if (nextExpire.valid())
   {
     resetTimerfd(timerfd_, nextExpire);
