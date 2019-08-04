@@ -8,13 +8,13 @@
 using namespace muduo;
 using namespace muduo::net;
 
-void print(EventLoop* p = NULL)
+void print(EventLoop *p = NULL)
 {
   printf("main(): pid = %d, tid = %d, loop = %p\n",
          getpid(), CurrentThread::tid(), p);
 }
 
-void init(EventLoop* p)
+void init(EventLoop *p)
 {
   printf("init(): pid = %d, tid = %d, loop = %p\n",
          getpid(), CurrentThread::tid(), p);
@@ -42,7 +42,7 @@ int main()
     EventLoopThreadPool model(&loop, "another");
     model.setThreadNum(1);
     model.start(init);
-    EventLoop* nextLoop = model.getNextLoop();
+    EventLoop *nextLoop = model.getNextLoop();
     nextLoop->runAfter(2, std::bind(print, nextLoop));
     assert(nextLoop != &loop);
     assert(nextLoop == model.getNextLoop());
@@ -55,7 +55,7 @@ int main()
     EventLoopThreadPool model(&loop, "three");
     model.setThreadNum(3);
     model.start(init);
-    EventLoop* nextLoop = model.getNextLoop();
+    EventLoop *nextLoop = model.getNextLoop();
     nextLoop->runInLoop(std::bind(print, nextLoop));
     assert(nextLoop != &loop);
     assert(nextLoop != model.getNextLoop());
@@ -65,4 +65,3 @@ int main()
 
   loop.loop();
 }
-

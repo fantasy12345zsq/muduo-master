@@ -376,4 +376,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "examples/procmon/CMakeFiles/procmon.dir/DependInfo.cmake"
   "examples/procmon/CMakeFiles/dummyload.dir/DependInfo.cmake"
   "test/CMakeFiles/CountDownLatch_test1.dir/DependInfo.cmake"
+  "test/CMakeFiles/EventLoopThreadTest.dir/DependInfo.cmake"
   )

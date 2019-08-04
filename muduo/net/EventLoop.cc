@@ -152,15 +152,14 @@ void EventLoop::quit()
 
 void EventLoop::runInLoop(Functor cb)
 {
-  // printf("EventLoop::runInLoop!\n");
-  //如果为当前线程，直接调用
+  //如果为当前线程(指的是IO线程和调用runInLoop的线程为一个线程)，直接调用
   if (isInLoopThread())
   {
     cb();
   }
   else
   {
-    //其他线程调用时，cb会加入队列
+    //其他线程（调用runInloop的线程和IO线程不是一个，需要唤醒一下）调用时，cb会加入队列
     queueInLoop(std::move(cb));
   }
 }
@@ -168,12 +167,23 @@ void EventLoop::runInLoop(Functor cb)
 void EventLoop::queueInLoop(Functor cb)
 {
   //pendingFunctors_为func的向量
+  //cb为用户设置的回调函数
   {
     MutexLockGuard lock(mutex_);
     pendingFunctors_.push_back(std::move(cb));
   }
 
   //构造时，callingPendingFunctors_默认为false
+  //什么情况会进行wakeup
+  //（1）运行loop的线程和调用queueInLoop函数的线程不是一个
+  //（2）当执行wakeup时，相当于对wakeupFd套接字进行写操作
+  //对于IO线程来说就会产生读事件，loop()内会回调EventLoop::handleRead()函数
+  //handleRead()在wakeupFd上进行read操作
+  //接着IO线程会调用doPendingFunctors函数，该函数主要是运行用户的回调，
+  //会首先将callingPendingFunctors_置为true，这是因为用户的回调可能会调queueInLoop函数，
+  //首先将cb（这个cb应该用户回调中调用queueInLoop函数再次设置的回调）存起来，
+  //然后wakeup，相当于是通知IO线程
+  //FIXME:这块还得再理解一下！！！！！！！！
   if (!isInLoopThread() || callingPendingFunctors_)
   {
     wakeup();
@@ -198,7 +208,6 @@ TimerId EventLoop::runAfter(double delay, TimerCallback cb)
   //创建时间戳为当前时间+延时
   //cb为时间到要回调的函数
   Timestamp time(addTime(Timestamp::now(), delay));
-  printf("time %s\n", time.toString().c_str());
 
   return runAt(time, std::move(cb));
 }
@@ -261,7 +270,6 @@ void EventLoop::wakeup()
 
 void EventLoop::handleRead()
 {
-  printf("EventLoop::handleRead!\n");
   uint64_t one = 1;
   ssize_t n = sockets::read(wakeupFd_, &one, sizeof one);
   if (n != sizeof one)

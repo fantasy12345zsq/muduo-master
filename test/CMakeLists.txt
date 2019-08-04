@@ -1,2 +1,5 @@
 add_executable(CountDownLatch_test1 CountDownLatch_test1.cc)
 target_link_libraries(CountDownLatch_test1 muduo_net pthread)
+
+add_executable(EventLoopThreadTest EventLoopThreadTest.cc)
+target_link_libraries(EventLoopThreadTest muduo_net pthread)

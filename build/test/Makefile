@@ -100,6 +100,17 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -121,17 +132,6 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -180,6 +180,21 @@ CountDownLatch_test1/fast:
 	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/CountDownLatch_test1.dir/build.make test/CMakeFiles/CountDownLatch_test1.dir/build
 .PHONY : CountDownLatch_test1/fast
 
+# Convenience name for target.
+test/CMakeFiles/EventLoopThreadTest.dir/rule:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/EventLoopThreadTest.dir/rule
+.PHONY : test/CMakeFiles/EventLoopThreadTest.dir/rule
+
+# Convenience name for target.
+EventLoopThreadTest: test/CMakeFiles/EventLoopThreadTest.dir/rule
+
+.PHONY : EventLoopThreadTest
+
+# fast build rule for target.
+EventLoopThreadTest/fast:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/EventLoopThreadTest.dir/build.make test/CMakeFiles/EventLoopThreadTest.dir/build
+.PHONY : EventLoopThreadTest/fast
+
 CountDownLatch_test1.o: CountDownLatch_test1.cc.o
 
 .PHONY : CountDownLatch_test1.o
@@ -207,6 +222,33 @@ CountDownLatch_test1.cc.s:
 	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/CountDownLatch_test1.dir/build.make test/CMakeFiles/CountDownLatch_test1.dir/CountDownLatch_test1.cc.s
 .PHONY : CountDownLatch_test1.cc.s
 
+EventLoopThreadTest.o: EventLoopThreadTest.cc.o
+
+.PHONY : EventLoopThreadTest.o
+
+# target to build an object file
+EventLoopThreadTest.cc.o:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/EventLoopThreadTest.dir/build.make test/CMakeFiles/EventLoopThreadTest.dir/EventLoopThreadTest.cc.o
+.PHONY : EventLoopThreadTest.cc.o
+
+EventLoopThreadTest.i: EventLoopThreadTest.cc.i
+
+.PHONY : EventLoopThreadTest.i
+
+# target to preprocess a source file
+EventLoopThreadTest.cc.i:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/EventLoopThreadTest.dir/build.make test/CMakeFiles/EventLoopThreadTest.dir/EventLoopThreadTest.cc.i
+.PHONY : EventLoopThreadTest.cc.i
+
+EventLoopThreadTest.s: EventLoopThreadTest.cc.s
+
+.PHONY : EventLoopThreadTest.s
+
+# target to generate assembly for a file
+EventLoopThreadTest.cc.s:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/EventLoopThreadTest.dir/build.make test/CMakeFiles/EventLoopThreadTest.dir/EventLoopThreadTest.cc.s
+.PHONY : EventLoopThreadTest.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -217,13 +259,17 @@ help:
 	@echo "... install"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... test"
+	@echo "... CountDownLatch_test1"
+	@echo "... EventLoopThreadTest"
 	@echo "... install/strip"
 	@echo "... install/local"
-	@echo "... CountDownLatch_test1"
-	@echo "... test"
 	@echo "... CountDownLatch_test1.o"
 	@echo "... CountDownLatch_test1.i"
 	@echo "... CountDownLatch_test1.s"
+	@echo "... EventLoopThreadTest.o"
+	@echo "... EventLoopThreadTest.i"
+	@echo "... EventLoopThreadTest.s"
 .PHONY : help
 
 

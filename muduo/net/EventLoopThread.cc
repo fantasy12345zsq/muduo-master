@@ -13,7 +13,8 @@
 using namespace muduo;
 using namespace muduo::net;
 
-//构造函数，指定子线程执行的函数
+//构造函数，指定子线程(IO线程)执行的函数
+//IO线程指的是运行loop()的线程
 //初始化mutex--->pthread_mutex_init()
 //初始化cond---->pthread_cond_init()
 EventLoopThread::EventLoopThread(const ThreadInitCallback &cb,
@@ -43,12 +44,14 @@ EventLoopThread::~EventLoopThread()
   }
 }
 
+//创建一个IO线程
 EventLoop *EventLoopThread::startLoop()
 {
   assert(!thread_.started());
   //在start函数内部才创建线程
   //该函数返回代表着子线程一定创建成功
   //子线程开始执行EventLoopThread::threadFunc()函数
+  //这里的子线程就代表IO线程
   thread_.start();
 
   EventLoop *loop = NULL;
@@ -64,12 +67,17 @@ EventLoop *EventLoopThread::startLoop()
     loop = loop_;
   }
 
+  //至此，IO线程已经有了，loop_也有了，IO线程就可以循环
+  //返回loop的指针
   return loop;
 }
 
+//IO线程运行的函数，在这里定义EventLoop
+//启动loop()函数
 void EventLoopThread::threadFunc()
 {
-  //执行EventLoop构造函数，创建wakeupFd套接字，并注册读事件，设置回调为EventLoop::handleRead()
+  //执行EventLoop构造函数，创建wakeupFd套接字，并注册读事件，
+  //设置回调为EventLoop::handleRead()
   EventLoop loop;
 
   if (callback_)

@@ -83,7 +83,7 @@ struct ThreadData
     ::prctl(PR_SET_NAME, muduo::CurrentThread::t_threadName);
     try
     {
-      //调用AsyncLogging类的threadFunc()函数
+      //调用设置的回调函数
       func_();
       muduo::CurrentThread::t_threadName = "finished";
     }
@@ -196,7 +196,7 @@ void Thread::start()
   }
   else
   {
-    //为什么要等到latch_为0呢？
+    //为什么要等到latch_为0呢？(看了代码感觉是保证IO线程能够创建成功)
     //线程如果创建成功，子线程执行startThread---->runInThread
     //在runInThread函数内进行latch_减操作
     latch_.wait();

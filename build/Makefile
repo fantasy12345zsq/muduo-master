@@ -2219,6 +2219,19 @@ CountDownLatch_test1/fast:
 	$(MAKE) -f test/CMakeFiles/CountDownLatch_test1.dir/build.make test/CMakeFiles/CountDownLatch_test1.dir/build
 .PHONY : CountDownLatch_test1/fast
 
+#=============================================================================
+# Target rules for targets named EventLoopThreadTest
+
+# Build rule for target.
+EventLoopThreadTest: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 EventLoopThreadTest
+.PHONY : EventLoopThreadTest
+
+# fast build rule for target.
+EventLoopThreadTest/fast:
+	$(MAKE) -f test/CMakeFiles/EventLoopThreadTest.dir/build.make test/CMakeFiles/EventLoopThreadTest.dir/build
+.PHONY : EventLoopThreadTest/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -2390,6 +2403,7 @@ help:
 	@echo "... procmon"
 	@echo "... dummyload"
 	@echo "... CountDownLatch_test1"
+	@echo "... EventLoopThreadTest"
 .PHONY : help
 
 

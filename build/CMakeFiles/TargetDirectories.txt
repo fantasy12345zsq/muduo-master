@@ -481,7 +481,8 @@
 /home/zsq/muduo-master/build/test/CMakeFiles/install.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/rebuild_cache.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/edit_cache.dir
+/home/zsq/muduo-master/build/test/CMakeFiles/test.dir
+/home/zsq/muduo-master/build/test/CMakeFiles/CountDownLatch_test1.dir
+/home/zsq/muduo-master/build/test/CMakeFiles/EventLoopThreadTest.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/install/strip.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/install/local.dir
-/home/zsq/muduo-master/build/test/CMakeFiles/CountDownLatch_test1.dir
-/home/zsq/muduo-master/build/test/CMakeFiles/test.dir

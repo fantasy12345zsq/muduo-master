@@ -189,7 +189,7 @@ muduo/base/tests/preinstall:
 muduo/base/tests/CMakeFiles/timezone_unittest.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/timezone_unittest.dir/build.make muduo/base/tests/CMakeFiles/timezone_unittest.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/timezone_unittest.dir/build.make muduo/base/tests/CMakeFiles/timezone_unittest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target timezone_unittest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=90 "Built target timezone_unittest"
 .PHONY : muduo/base/tests/CMakeFiles/timezone_unittest.dir/all
 
 # Include target in all.
@@ -199,7 +199,7 @@ all: muduo/base/tests/CMakeFiles/timezone_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/timezone_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/timezone_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/timezone_unittest.dir/rule
@@ -226,7 +226,7 @@ clean: muduo/base/tests/CMakeFiles/timezone_unittest.dir/clean
 muduo/base/tests/CMakeFiles/threadpool_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/threadpool_test.dir/build.make muduo/base/tests/CMakeFiles/threadpool_test.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/threadpool_test.dir/build.make muduo/base/tests/CMakeFiles/threadpool_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=88 "Built target threadpool_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target threadpool_test"
 .PHONY : muduo/base/tests/CMakeFiles/threadpool_test.dir/all
 
 # Include target in all.
@@ -236,7 +236,7 @@ all: muduo/base/tests/CMakeFiles/threadpool_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/threadpool_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/threadpool_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/threadpool_test.dir/rule
@@ -263,7 +263,7 @@ clean: muduo/base/tests/CMakeFiles/threadpool_test.dir/clean
 muduo/base/tests/CMakeFiles/processinfo_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/processinfo_test.dir/build.make muduo/base/tests/CMakeFiles/processinfo_test.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/processinfo_test.dir/build.make muduo/base/tests/CMakeFiles/processinfo_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=56 "Built target processinfo_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target processinfo_test"
 .PHONY : muduo/base/tests/CMakeFiles/processinfo_test.dir/all
 
 # Include target in all.
@@ -273,7 +273,7 @@ all: muduo/base/tests/CMakeFiles/processinfo_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/processinfo_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/processinfo_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/processinfo_test.dir/rule
@@ -300,7 +300,7 @@ clean: muduo/base/tests/CMakeFiles/processinfo_test.dir/clean
 muduo/base/tests/CMakeFiles/date_unittest.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/date_unittest.dir/build.make muduo/base/tests/CMakeFiles/date_unittest.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/date_unittest.dir/build.make muduo/base/tests/CMakeFiles/date_unittest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=13 "Built target date_unittest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target date_unittest"
 .PHONY : muduo/base/tests/CMakeFiles/date_unittest.dir/all
 
 # Include target in all.
@@ -310,7 +310,7 @@ all: muduo/base/tests/CMakeFiles/date_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/date_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/date_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/date_unittest.dir/rule
@@ -337,7 +337,7 @@ clean: muduo/base/tests/CMakeFiles/date_unittest.dir/clean
 muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/build.make muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/build.make muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target boundedblockingqueue_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=11 "Built target boundedblockingqueue_test"
 .PHONY : muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/all
 
 # Include target in all.
@@ -347,7 +347,7 @@ all: muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/rule
@@ -374,7 +374,7 @@ clean: muduo/base/tests/CMakeFiles/boundedblockingqueue_test.dir/clean
 muduo/base/tests/CMakeFiles/timestamp_unittest.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/tests/CMakeFiles/timestamp_unittest.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/timestamp_unittest.dir/build.make muduo/base/tests/CMakeFiles/timestamp_unittest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=89 "Built target timestamp_unittest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target timestamp_unittest"
 .PHONY : muduo/base/tests/CMakeFiles/timestamp_unittest.dir/all
 
 # Include target in all.
@@ -384,7 +384,7 @@ all: muduo/base/tests/CMakeFiles/timestamp_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/timestamp_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/timestamp_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/timestamp_unittest.dir/rule
@@ -448,7 +448,7 @@ clean: muduo/base/tests/CMakeFiles/fileutil_test.dir/clean
 muduo/base/tests/CMakeFiles/threadlocal_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/threadlocal_test.dir/build.make muduo/base/tests/CMakeFiles/threadlocal_test.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/threadlocal_test.dir/build.make muduo/base/tests/CMakeFiles/threadlocal_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=87 "Built target threadlocal_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target threadlocal_test"
 .PHONY : muduo/base/tests/CMakeFiles/threadlocal_test.dir/all
 
 # Include target in all.
@@ -458,7 +458,7 @@ all: muduo/base/tests/CMakeFiles/threadlocal_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/threadlocal_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/threadlocal_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/threadlocal_test.dir/rule
@@ -485,7 +485,7 @@ clean: muduo/base/tests/CMakeFiles/threadlocal_test.dir/clean
 muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/build.make muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/build.make muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target threadlocalsingleton_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=88 "Built target threadlocalsingleton_test"
 .PHONY : muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/all
 
 # Include target in all.
@@ -495,7 +495,7 @@ all: muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/threadlocalsingleton_test.dir/rule
@@ -559,7 +559,7 @@ clean: muduo/base/tests/CMakeFiles/exception_test.dir/clean
 muduo/base/tests/CMakeFiles/asynclogging_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/asynclogging_test.dir/build.make muduo/base/tests/CMakeFiles/asynclogging_test.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/asynclogging_test.dir/build.make muduo/base/tests/CMakeFiles/asynclogging_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=8 "Built target asynclogging_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asynclogging_test"
 .PHONY : muduo/base/tests/CMakeFiles/asynclogging_test.dir/all
 
 # Include target in all.
@@ -569,7 +569,7 @@ all: muduo/base/tests/CMakeFiles/asynclogging_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/asynclogging_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/asynclogging_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/asynclogging_test.dir/rule
@@ -596,7 +596,7 @@ clean: muduo/base/tests/CMakeFiles/asynclogging_test.dir/clean
 muduo/base/tests/CMakeFiles/blockingqueue_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/blockingqueue_test.dir/build.make muduo/base/tests/CMakeFiles/blockingqueue_test.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/blockingqueue_test.dir/build.make muduo/base/tests/CMakeFiles/blockingqueue_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=10 "Built target blockingqueue_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target blockingqueue_test"
 .PHONY : muduo/base/tests/CMakeFiles/blockingqueue_test.dir/all
 
 # Include target in all.
@@ -606,7 +606,7 @@ all: muduo/base/tests/CMakeFiles/blockingqueue_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/blockingqueue_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/blockingqueue_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/blockingqueue_test.dir/rule
@@ -633,7 +633,7 @@ clean: muduo/base/tests/CMakeFiles/blockingqueue_test.dir/clean
 muduo/base/tests/CMakeFiles/thread_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/thread_test.dir/build.make muduo/base/tests/CMakeFiles/thread_test.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/thread_test.dir/build.make muduo/base/tests/CMakeFiles/thread_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target thread_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=87 "Built target thread_test"
 .PHONY : muduo/base/tests/CMakeFiles/thread_test.dir/all
 
 # Include target in all.
@@ -643,7 +643,7 @@ all: muduo/base/tests/CMakeFiles/thread_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/thread_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/thread_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/thread_test.dir/rule
@@ -670,7 +670,7 @@ clean: muduo/base/tests/CMakeFiles/thread_test.dir/clean
 muduo/base/tests/CMakeFiles/atomic_unittest.dir/all:
 	$(MAKE) -f muduo/base/tests/CMakeFiles/atomic_unittest.dir/build.make muduo/base/tests/CMakeFiles/atomic_unittest.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/atomic_unittest.dir/build.make muduo/base/tests/CMakeFiles/atomic_unittest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target atomic_unittest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=9 "Built target atomic_unittest"
 .PHONY : muduo/base/tests/CMakeFiles/atomic_unittest.dir/all
 
 # Include target in all.
@@ -680,7 +680,7 @@ all: muduo/base/tests/CMakeFiles/atomic_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/atomic_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/atomic_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/atomic_unittest.dir/rule
@@ -744,7 +744,7 @@ clean: muduo/base/tests/CMakeFiles/mutex_test.dir/clean
 muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/build.make muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/build.make muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target blockingqueue_bench"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=10 "Built target blockingqueue_bench"
 .PHONY : muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/all
 
 # Include target in all.
@@ -754,7 +754,7 @@ all: muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/blockingqueue_bench.dir/rule
@@ -1077,7 +1077,7 @@ clean: muduo/base/tests/CMakeFiles/singleton_threadlocal_test.dir/clean
 muduo/base/tests/CMakeFiles/thread_bench.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/base/tests/CMakeFiles/thread_bench.dir/build.make muduo/base/tests/CMakeFiles/thread_bench.dir/depend
 	$(MAKE) -f muduo/base/tests/CMakeFiles/thread_bench.dir/build.make muduo/base/tests/CMakeFiles/thread_bench.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=86 "Built target thread_bench"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target thread_bench"
 .PHONY : muduo/base/tests/CMakeFiles/thread_bench.dir/all
 
 # Include target in all.
@@ -1087,7 +1087,7 @@ all: muduo/base/tests/CMakeFiles/thread_bench.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/base/tests/CMakeFiles/thread_bench.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/base/tests/CMakeFiles/thread_bench.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/base/tests/CMakeFiles/thread_bench.dir/rule
@@ -1146,7 +1146,7 @@ muduo/net/preinstall: muduo/net/protorpc/preinstall
 muduo/net/CMakeFiles/muduo_net.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f muduo/net/CMakeFiles/muduo_net.dir/build.make muduo/net/CMakeFiles/muduo_net.dir/depend
 	$(MAKE) -f muduo/net/CMakeFiles/muduo_net.dir/build.make muduo/net/CMakeFiles/muduo_net.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=40,41,42,43,44 "Built target muduo_net"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=41,42,43,44,45 "Built target muduo_net"
 .PHONY : muduo/net/CMakeFiles/muduo_net.dir/all
 
 # Include target in all.
@@ -1343,7 +1343,7 @@ muduo/net/inspect/CMakeFiles/muduo_inspect.dir/all: muduo/net/CMakeFiles/muduo_n
 muduo/net/inspect/CMakeFiles/muduo_inspect.dir/all: muduo/net/http/CMakeFiles/muduo_http.dir/all
 	$(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/depend
 	$(MAKE) -f muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build.make muduo/net/inspect/CMakeFiles/muduo_inspect.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=39 "Built target muduo_inspect"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=39,40 "Built target muduo_inspect"
 .PHONY : muduo/net/inspect/CMakeFiles/muduo_inspect.dir/all
 
 # Include target in all.
@@ -1353,7 +1353,7 @@ all: muduo/net/inspect/CMakeFiles/muduo_inspect.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/CMakeFiles/muduo_inspect.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/inspect/CMakeFiles/muduo_inspect.dir/rule
@@ -1393,7 +1393,7 @@ all: muduo/net/inspect/CMakeFiles/inspector_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/inspect/CMakeFiles/inspector_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/inspect/CMakeFiles/inspector_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/inspect/CMakeFiles/inspector_test.dir/rule
@@ -1463,7 +1463,7 @@ muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/all: muduo/base/CMakeFiles/mu
 muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/depend
 	$(MAKE) -f muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build.make muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target timerqueue_unittest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=89 "Built target timerqueue_unittest"
 .PHONY : muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/all
 
 # Include target in all.
@@ -1473,7 +1473,7 @@ all: muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/tests/CMakeFiles/timerqueue_unittest.dir/rule
@@ -1501,7 +1501,7 @@ muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/all: muduo/base/CMakeFiles/muduo_b
 muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/depend
 	$(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=85 "Built target tcpclient_reg3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target tcpclient_reg3"
 .PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/all
 
 # Include target in all.
@@ -1511,7 +1511,7 @@ all: muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg3.dir/rule
@@ -1577,7 +1577,7 @@ muduo/net/tests/CMakeFiles/buffer_unittest.dir/all: muduo/base/CMakeFiles/muduo_
 muduo/net/tests/CMakeFiles/buffer_unittest.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/depend
 	$(MAKE) -f muduo/net/tests/CMakeFiles/buffer_unittest.dir/build.make muduo/net/tests/CMakeFiles/buffer_unittest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=11 "Built target buffer_unittest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target buffer_unittest"
 .PHONY : muduo/net/tests/CMakeFiles/buffer_unittest.dir/all
 
 # Include target in all.
@@ -1587,7 +1587,7 @@ all: muduo/net/tests/CMakeFiles/buffer_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/buffer_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/tests/CMakeFiles/buffer_unittest.dir/rule
@@ -1653,7 +1653,7 @@ muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/all: muduo/base/CMakeFiles/muduo_b
 muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/depend
 	$(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=84 "Built target tcpclient_reg1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target tcpclient_reg1"
 .PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/all
 
 # Include target in all.
@@ -1663,7 +1663,7 @@ all: muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg1.dir/rule
@@ -1691,7 +1691,7 @@ muduo/net/tests/CMakeFiles/channel_test.dir/all: muduo/base/CMakeFiles/muduo_bas
 muduo/net/tests/CMakeFiles/channel_test.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f muduo/net/tests/CMakeFiles/channel_test.dir/build.make muduo/net/tests/CMakeFiles/channel_test.dir/depend
 	$(MAKE) -f muduo/net/tests/CMakeFiles/channel_test.dir/build.make muduo/net/tests/CMakeFiles/channel_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=12 "Built target channel_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target channel_test"
 .PHONY : muduo/net/tests/CMakeFiles/channel_test.dir/all
 
 # Include target in all.
@@ -1701,7 +1701,7 @@ all: muduo/net/tests/CMakeFiles/channel_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/tests/CMakeFiles/channel_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/channel_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/tests/CMakeFiles/channel_test.dir/rule
@@ -1767,7 +1767,7 @@ muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/all: muduo/base/CMakeFiles/muduo_b
 muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/depend
 	$(MAKE) -f muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/build.make muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target tcpclient_reg2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=85 "Built target tcpclient_reg2"
 .PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/all
 
 # Include target in all.
@@ -1777,7 +1777,7 @@ all: muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/tests/CMakeFiles/tcpclient_reg2.dir/rule
@@ -1975,7 +1975,7 @@ muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/all: muduo/base/CMakeFile
 muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/build.make muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/depend
 	$(MAKE) -f muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/build.make muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=45 "Built target muduo_protobuf_codec"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target muduo_protobuf_codec"
 .PHONY : muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/all
 
 # Include target in all.
@@ -1985,7 +1985,7 @@ all: muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/protobuf/CMakeFiles/muduo_protobuf_codec.dir/rule
@@ -2084,7 +2084,7 @@ all: muduo/net/protorpc/CMakeFiles/protobuf_rpc_wire_test.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/protorpc/CMakeFiles/protobuf_rpc_wire_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/protorpc/CMakeFiles/protobuf_rpc_wire_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/protorpc/CMakeFiles/protobuf_rpc_wire_test.dir/rule
@@ -2124,7 +2124,7 @@ all: muduo/net/protorpc/CMakeFiles/muduo_protorpc.dir/all
 
 # Build rule for subdir invocation for target.
 muduo/net/protorpc/CMakeFiles/muduo_protorpc.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 muduo/net/protorpc/CMakeFiles/muduo_protorpc.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : muduo/net/protorpc/CMakeFiles/muduo_protorpc.dir/rule
@@ -2191,12 +2191,12 @@ contrib/hiredis/CMakeFiles/mrediscli.dir/all: muduo/base/CMakeFiles/muduo_base.d
 contrib/hiredis/CMakeFiles/mrediscli.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f contrib/hiredis/CMakeFiles/mrediscli.dir/build.make contrib/hiredis/CMakeFiles/mrediscli.dir/depend
 	$(MAKE) -f contrib/hiredis/CMakeFiles/mrediscli.dir/build.make contrib/hiredis/CMakeFiles/mrediscli.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=32 "Built target mrediscli"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target mrediscli"
 .PHONY : contrib/hiredis/CMakeFiles/mrediscli.dir/all
 
 # Build rule for subdir invocation for target.
 contrib/hiredis/CMakeFiles/mrediscli.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 contrib/hiredis/CMakeFiles/mrediscli.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : contrib/hiredis/CMakeFiles/mrediscli.dir/rule
@@ -2242,12 +2242,12 @@ contrib/thrift/CMakeFiles/muduo_thrift.dir/all: muduo/base/CMakeFiles/muduo_base
 contrib/thrift/CMakeFiles/muduo_thrift.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f contrib/thrift/CMakeFiles/muduo_thrift.dir/build.make contrib/thrift/CMakeFiles/muduo_thrift.dir/depend
 	$(MAKE) -f contrib/thrift/CMakeFiles/muduo_thrift.dir/build.make contrib/thrift/CMakeFiles/muduo_thrift.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=48 "Built target muduo_thrift"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target muduo_thrift"
 .PHONY : contrib/thrift/CMakeFiles/muduo_thrift.dir/all
 
 # Build rule for subdir invocation for target.
 contrib/thrift/CMakeFiles/muduo_thrift.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 contrib/thrift/CMakeFiles/muduo_thrift.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : contrib/thrift/CMakeFiles/muduo_thrift.dir/rule
@@ -2398,7 +2398,7 @@ examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/all: muduo/base/CMakeFiles/muduo_bas
 examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/build.make examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/depend
 	$(MAKE) -f examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/build.make examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=93 "Built target ttcp_muduo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=94 "Built target ttcp_muduo"
 .PHONY : examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/all
 
 # Include target in all.
@@ -2435,7 +2435,7 @@ clean: examples/ace/ttcp/CMakeFiles/ttcp_muduo.dir/clean
 examples/ace/ttcp/CMakeFiles/ttcp_blocking.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f examples/ace/ttcp/CMakeFiles/ttcp_blocking.dir/build.make examples/ace/ttcp/CMakeFiles/ttcp_blocking.dir/depend
 	$(MAKE) -f examples/ace/ttcp/CMakeFiles/ttcp_blocking.dir/build.make examples/ace/ttcp/CMakeFiles/ttcp_blocking.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=92 "Built target ttcp_blocking"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=93 "Built target ttcp_blocking"
 .PHONY : examples/ace/ttcp/CMakeFiles/ttcp_blocking.dir/all
 
 # Include target in all.
@@ -2472,7 +2472,7 @@ clean: examples/ace/ttcp/CMakeFiles/ttcp_blocking.dir/clean
 examples/ace/ttcp/CMakeFiles/ttcp_asio_async.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f examples/ace/ttcp/CMakeFiles/ttcp_asio_async.dir/build.make examples/ace/ttcp/CMakeFiles/ttcp_asio_async.dir/depend
 	$(MAKE) -f examples/ace/ttcp/CMakeFiles/ttcp_asio_async.dir/build.make examples/ace/ttcp/CMakeFiles/ttcp_asio_async.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=90 "Built target ttcp_asio_async"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=91 "Built target ttcp_asio_async"
 .PHONY : examples/ace/ttcp/CMakeFiles/ttcp_asio_async.dir/all
 
 # Include target in all.
@@ -2509,7 +2509,7 @@ clean: examples/ace/ttcp/CMakeFiles/ttcp_asio_async.dir/clean
 examples/ace/ttcp/CMakeFiles/ttcp_asio_sync.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f examples/ace/ttcp/CMakeFiles/ttcp_asio_sync.dir/build.make examples/ace/ttcp/CMakeFiles/ttcp_asio_sync.dir/depend
 	$(MAKE) -f examples/ace/ttcp/CMakeFiles/ttcp_asio_sync.dir/build.make examples/ace/ttcp/CMakeFiles/ttcp_asio_sync.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=91 "Built target ttcp_asio_sync"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=92 "Built target ttcp_asio_sync"
 .PHONY : examples/ace/ttcp/CMakeFiles/ttcp_asio_sync.dir/all
 
 # Include target in all.
@@ -2575,7 +2575,7 @@ examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/all: muduo/base/CMak
 examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/depend
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=4 "Built target asio_chat_server_threaded"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_chat_server_threaded"
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/all
 
 # Include target in all.
@@ -2585,7 +2585,7 @@ all: examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/all
 
 # Build rule for subdir invocation for target.
 examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_server_threaded.dir/rule
@@ -2613,7 +2613,7 @@ examples/asio/chat/CMakeFiles/asio_chat_server.dir/all: muduo/base/CMakeFiles/mu
 examples/asio/chat/CMakeFiles/asio_chat_server.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_server.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_server.dir/depend
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_server.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_chat_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=4 "Built target asio_chat_server"
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_server.dir/all
 
 # Include target in all.
@@ -2623,7 +2623,7 @@ all: examples/asio/chat/CMakeFiles/asio_chat_server.dir/all
 
 # Build rule for subdir invocation for target.
 examples/asio/chat/CMakeFiles/asio_chat_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/chat/CMakeFiles/asio_chat_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_server.dir/rule
@@ -2651,7 +2651,7 @@ examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/all: muduo/base/CMakeFiles/
 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/depend
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=3 "Built target asio_chat_loadtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_chat_loadtest"
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/all
 
 # Include target in all.
@@ -2661,7 +2661,7 @@ all: examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/all
 
 # Build rule for subdir invocation for target.
 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_loadtest.dir/rule
@@ -2689,7 +2689,7 @@ examples/asio/chat/CMakeFiles/asio_chat_client.dir/all: muduo/base/CMakeFiles/mu
 examples/asio/chat/CMakeFiles/asio_chat_client.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_client.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_client.dir/depend
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_client.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_client.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_chat_client"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=3 "Built target asio_chat_client"
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_client.dir/all
 
 # Include target in all.
@@ -2699,7 +2699,7 @@ all: examples/asio/chat/CMakeFiles/asio_chat_client.dir/all
 
 # Build rule for subdir invocation for target.
 examples/asio/chat/CMakeFiles/asio_chat_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/chat/CMakeFiles/asio_chat_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_client.dir/rule
@@ -2727,7 +2727,7 @@ examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/all: muduo
 examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/depend
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_chat_server_threaded_efficient"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=5 "Built target asio_chat_server_threaded_efficient"
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/all
 
 # Include target in all.
@@ -2737,7 +2737,7 @@ all: examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/all
 
 # Build rule for subdir invocation for target.
 examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_server_threaded_efficient.dir/rule
@@ -2765,7 +2765,7 @@ examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir/all:
 examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir/depend
 	$(MAKE) -f examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir/build.make examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=5 "Built target asio_chat_server_threaded_highperformance"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_chat_server_threaded_highperformance"
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir/all
 
 # Include target in all.
@@ -2775,7 +2775,7 @@ all: examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir
 
 # Build rule for subdir invocation for target.
 examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/chat/CMakeFiles/asio_chat_server_threaded_highperformance.dir/rule
@@ -2829,7 +2829,7 @@ examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/all: muduo/base/CMake
 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/build.make examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/depend
 	$(MAKE) -f examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/build.make examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=7 "Built target asio_tutorial_timer5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_tutorial_timer5"
 .PHONY : examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/all
 
 # Include target in all.
@@ -2839,7 +2839,7 @@ all: examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/all
 
 # Build rule for subdir invocation for target.
 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/tutorial/CMakeFiles/asio_tutorial_timer5.dir/rule
@@ -2867,7 +2867,7 @@ examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/all: muduo/base/CMake
 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/build.make examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/depend
 	$(MAKE) -f examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/build.make examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=6 "Built target asio_tutorial_timer3"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_tutorial_timer3"
 .PHONY : examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/all
 
 # Include target in all.
@@ -2877,7 +2877,7 @@ all: examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/all
 
 # Build rule for subdir invocation for target.
 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/tutorial/CMakeFiles/asio_tutorial_timer3.dir/rule
@@ -2905,7 +2905,7 @@ examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/all: muduo/base/CMake
 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/build.make examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/depend
 	$(MAKE) -f examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/build.make examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_tutorial_timer2"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=6 "Built target asio_tutorial_timer2"
 .PHONY : examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/all
 
 # Include target in all.
@@ -2915,7 +2915,7 @@ all: examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/all
 
 # Build rule for subdir invocation for target.
 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/tutorial/CMakeFiles/asio_tutorial_timer2.dir/rule
@@ -2943,7 +2943,7 @@ examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/all: muduo/base/CMake
 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/build.make examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/depend
 	$(MAKE) -f examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/build.make examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_tutorial_timer6"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=8 "Built target asio_tutorial_timer6"
 .PHONY : examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/all
 
 # Include target in all.
@@ -2953,7 +2953,7 @@ all: examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/all
 
 # Build rule for subdir invocation for target.
 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/tutorial/CMakeFiles/asio_tutorial_timer6.dir/rule
@@ -2981,7 +2981,7 @@ examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/all: muduo/base/CMake
 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/build.make examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/depend
 	$(MAKE) -f examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/build.make examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target asio_tutorial_timer4"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=7 "Built target asio_tutorial_timer4"
 .PHONY : examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/all
 
 # Include target in all.
@@ -2991,7 +2991,7 @@ all: examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/all
 
 # Build rule for subdir invocation for target.
 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/asio/tutorial/CMakeFiles/asio_tutorial_timer4.dir/rule
@@ -3246,7 +3246,7 @@ all: examples/hub/CMakeFiles/sub.dir/all
 
 # Build rule for subdir invocation for target.
 examples/hub/CMakeFiles/sub.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/sub.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/hub/CMakeFiles/sub.dir/rule
@@ -3274,7 +3274,7 @@ examples/hub/CMakeFiles/muduo_pubsub.dir/all: muduo/base/CMakeFiles/muduo_base.d
 examples/hub/CMakeFiles/muduo_pubsub.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/depend
 	$(MAKE) -f examples/hub/CMakeFiles/muduo_pubsub.dir/build.make examples/hub/CMakeFiles/muduo_pubsub.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target muduo_pubsub"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=48 "Built target muduo_pubsub"
 .PHONY : examples/hub/CMakeFiles/muduo_pubsub.dir/all
 
 # Include target in all.
@@ -3284,7 +3284,7 @@ all: examples/hub/CMakeFiles/muduo_pubsub.dir/all
 
 # Build rule for subdir invocation for target.
 examples/hub/CMakeFiles/muduo_pubsub.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/muduo_pubsub.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/hub/CMakeFiles/muduo_pubsub.dir/rule
@@ -3323,7 +3323,7 @@ all: examples/hub/CMakeFiles/pub.dir/all
 
 # Build rule for subdir invocation for target.
 examples/hub/CMakeFiles/pub.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/pub.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/hub/CMakeFiles/pub.dir/rule
@@ -3363,7 +3363,7 @@ all: examples/hub/CMakeFiles/hub.dir/all
 
 # Build rule for subdir invocation for target.
 examples/hub/CMakeFiles/hub.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 examples/hub/CMakeFiles/hub.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/hub/CMakeFiles/hub.dir/rule
@@ -3561,7 +3561,7 @@ examples/memcached/client/CMakeFiles/memcached_bench.dir/all: muduo/base/CMakeFi
 examples/memcached/client/CMakeFiles/memcached_bench.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/memcached/client/CMakeFiles/memcached_bench.dir/build.make examples/memcached/client/CMakeFiles/memcached_bench.dir/depend
 	$(MAKE) -f examples/memcached/client/CMakeFiles/memcached_bench.dir/build.make examples/memcached/client/CMakeFiles/memcached_bench.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=29 "Built target memcached_bench"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target memcached_bench"
 .PHONY : examples/memcached/client/CMakeFiles/memcached_bench.dir/all
 
 # Include target in all.
@@ -3571,7 +3571,7 @@ all: examples/memcached/client/CMakeFiles/memcached_bench.dir/all
 
 # Build rule for subdir invocation for target.
 examples/memcached/client/CMakeFiles/memcached_bench.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/memcached/client/CMakeFiles/memcached_bench.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/memcached/client/CMakeFiles/memcached_bench.dir/rule
@@ -3631,7 +3631,7 @@ all: examples/memcached/server/CMakeFiles/memcached_debug.dir/all
 
 # Build rule for subdir invocation for target.
 examples/memcached/server/CMakeFiles/memcached_debug.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/CMakeFiles/memcached_debug.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/memcached/server/CMakeFiles/memcached_debug.dir/rule
@@ -3661,7 +3661,7 @@ examples/memcached/server/CMakeFiles/memcached_footprint.dir/all: muduo/net/http
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/all: muduo/net/inspect/CMakeFiles/muduo_inspect.dir/all
 	$(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/depend
 	$(MAKE) -f examples/memcached/server/CMakeFiles/memcached_footprint.dir/build.make examples/memcached/server/CMakeFiles/memcached_footprint.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=31 "Built target memcached_footprint"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=31,32 "Built target memcached_footprint"
 .PHONY : examples/memcached/server/CMakeFiles/memcached_footprint.dir/all
 
 # Include target in all.
@@ -3671,7 +3671,7 @@ all: examples/memcached/server/CMakeFiles/memcached_footprint.dir/all
 
 # Build rule for subdir invocation for target.
 examples/memcached/server/CMakeFiles/memcached_footprint.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 examples/memcached/server/CMakeFiles/memcached_footprint.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/memcached/server/CMakeFiles/memcached_footprint.dir/rule
@@ -4444,7 +4444,7 @@ examples/simple/CMakeFiles/simple_daytime.dir/all: muduo/base/CMakeFiles/muduo_b
 examples/simple/CMakeFiles/simple_daytime.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/simple/CMakeFiles/simple_daytime.dir/build.make examples/simple/CMakeFiles/simple_daytime.dir/depend
 	$(MAKE) -f examples/simple/CMakeFiles/simple_daytime.dir/build.make examples/simple/CMakeFiles/simple_daytime.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target simple_daytime"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=72 "Built target simple_daytime"
 .PHONY : examples/simple/CMakeFiles/simple_daytime.dir/all
 
 # Include target in all.
@@ -4454,7 +4454,7 @@ all: examples/simple/CMakeFiles/simple_daytime.dir/all
 
 # Build rule for subdir invocation for target.
 examples/simple/CMakeFiles/simple_daytime.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_daytime.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/simple/CMakeFiles/simple_daytime.dir/rule
@@ -4482,7 +4482,7 @@ examples/simple/CMakeFiles/simple_allinone.dir/all: muduo/base/CMakeFiles/muduo_
 examples/simple/CMakeFiles/simple_allinone.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/depend
 	$(MAKE) -f examples/simple/CMakeFiles/simple_allinone.dir/build.make examples/simple/CMakeFiles/simple_allinone.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=69 "Built target simple_allinone"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=69,70 "Built target simple_allinone"
 .PHONY : examples/simple/CMakeFiles/simple_allinone.dir/all
 
 # Include target in all.
@@ -4492,7 +4492,7 @@ all: examples/simple/CMakeFiles/simple_allinone.dir/all
 
 # Build rule for subdir invocation for target.
 examples/simple/CMakeFiles/simple_allinone.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_allinone.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/simple/CMakeFiles/simple_allinone.dir/rule
@@ -4558,7 +4558,7 @@ examples/simple/CMakeFiles/simple_discard.dir/all: muduo/base/CMakeFiles/muduo_b
 examples/simple/CMakeFiles/simple_discard.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/simple/CMakeFiles/simple_discard.dir/build.make examples/simple/CMakeFiles/simple_discard.dir/depend
 	$(MAKE) -f examples/simple/CMakeFiles/simple_discard.dir/build.make examples/simple/CMakeFiles/simple_discard.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=72 "Built target simple_discard"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target simple_discard"
 .PHONY : examples/simple/CMakeFiles/simple_discard.dir/all
 
 # Include target in all.
@@ -4568,7 +4568,7 @@ all: examples/simple/CMakeFiles/simple_discard.dir/all
 
 # Build rule for subdir invocation for target.
 examples/simple/CMakeFiles/simple_discard.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_discard.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/simple/CMakeFiles/simple_discard.dir/rule
@@ -4596,7 +4596,7 @@ examples/simple/CMakeFiles/simple_chargen.dir/all: muduo/base/CMakeFiles/muduo_b
 examples/simple/CMakeFiles/simple_chargen.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/simple/CMakeFiles/simple_chargen.dir/build.make examples/simple/CMakeFiles/simple_chargen.dir/depend
 	$(MAKE) -f examples/simple/CMakeFiles/simple_chargen.dir/build.make examples/simple/CMakeFiles/simple_chargen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=70 "Built target simple_chargen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target simple_chargen"
 .PHONY : examples/simple/CMakeFiles/simple_chargen.dir/all
 
 # Include target in all.
@@ -4606,7 +4606,7 @@ all: examples/simple/CMakeFiles/simple_chargen.dir/all
 
 # Build rule for subdir invocation for target.
 examples/simple/CMakeFiles/simple_chargen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/simple/CMakeFiles/simple_chargen.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/simple/CMakeFiles/simple_chargen.dir/rule
@@ -4770,7 +4770,7 @@ examples/socks4a/CMakeFiles/balancer.dir/all: muduo/base/CMakeFiles/muduo_base.d
 examples/socks4a/CMakeFiles/balancer.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/socks4a/CMakeFiles/balancer.dir/build.make examples/socks4a/CMakeFiles/balancer.dir/depend
 	$(MAKE) -f examples/socks4a/CMakeFiles/balancer.dir/build.make examples/socks4a/CMakeFiles/balancer.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=9 "Built target balancer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target balancer"
 .PHONY : examples/socks4a/CMakeFiles/balancer.dir/all
 
 # Include target in all.
@@ -4780,7 +4780,7 @@ all: examples/socks4a/CMakeFiles/balancer.dir/all
 
 # Build rule for subdir invocation for target.
 examples/socks4a/CMakeFiles/balancer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/socks4a/CMakeFiles/balancer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/socks4a/CMakeFiles/balancer.dir/rule
@@ -4808,7 +4808,7 @@ examples/socks4a/CMakeFiles/tcprelay.dir/all: muduo/base/CMakeFiles/muduo_base.d
 examples/socks4a/CMakeFiles/tcprelay.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/socks4a/CMakeFiles/tcprelay.dir/build.make examples/socks4a/CMakeFiles/tcprelay.dir/depend
 	$(MAKE) -f examples/socks4a/CMakeFiles/tcprelay.dir/build.make examples/socks4a/CMakeFiles/tcprelay.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target tcprelay"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=86 "Built target tcprelay"
 .PHONY : examples/socks4a/CMakeFiles/tcprelay.dir/all
 
 # Include target in all.
@@ -4818,7 +4818,7 @@ all: examples/socks4a/CMakeFiles/tcprelay.dir/all
 
 # Build rule for subdir invocation for target.
 examples/socks4a/CMakeFiles/tcprelay.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/socks4a/CMakeFiles/tcprelay.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/socks4a/CMakeFiles/tcprelay.dir/rule
@@ -4956,7 +4956,7 @@ examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/all: muduo/base/CMakeFile
 examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/depend
 	$(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target sudoku_solver_multiloop"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=82 "Built target sudoku_solver_multiloop"
 .PHONY : examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/all
 
 # Include target in all.
@@ -4966,7 +4966,7 @@ all: examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/all
 
 # Build rule for subdir invocation for target.
 examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/sudoku/CMakeFiles/sudoku_solver_multiloop.dir/rule
@@ -5032,7 +5032,7 @@ examples/sudoku/CMakeFiles/sudoku_loadtest.dir/all: muduo/base/CMakeFiles/muduo_
 examples/sudoku/CMakeFiles/sudoku_loadtest.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/sudoku/CMakeFiles/sudoku_loadtest.dir/build.make examples/sudoku/CMakeFiles/sudoku_loadtest.dir/depend
 	$(MAKE) -f examples/sudoku/CMakeFiles/sudoku_loadtest.dir/build.make examples/sudoku/CMakeFiles/sudoku_loadtest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target sudoku_loadtest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=79 "Built target sudoku_loadtest"
 .PHONY : examples/sudoku/CMakeFiles/sudoku_loadtest.dir/all
 
 # Include target in all.
@@ -5042,7 +5042,7 @@ all: examples/sudoku/CMakeFiles/sudoku_loadtest.dir/all
 
 # Build rule for subdir invocation for target.
 examples/sudoku/CMakeFiles/sudoku_loadtest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_loadtest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/sudoku/CMakeFiles/sudoku_loadtest.dir/rule
@@ -5082,7 +5082,7 @@ all: examples/sudoku/CMakeFiles/sudoku_solver_hybrid.dir/all
 
 # Build rule for subdir invocation for target.
 examples/sudoku/CMakeFiles/sudoku_solver_hybrid.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 13
 	$(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_solver_hybrid.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/sudoku/CMakeFiles/sudoku_solver_hybrid.dir/rule
@@ -5112,7 +5112,7 @@ examples/sudoku/CMakeFiles/sudoku_solver_prod.dir/all: muduo/net/http/CMakeFiles
 examples/sudoku/CMakeFiles/sudoku_solver_prod.dir/all: muduo/net/inspect/CMakeFiles/muduo_inspect.dir/all
 	$(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_prod.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_prod.dir/depend
 	$(MAKE) -f examples/sudoku/CMakeFiles/sudoku_solver_prod.dir/build.make examples/sudoku/CMakeFiles/sudoku_solver_prod.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=82 "Built target sudoku_solver_prod"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target sudoku_solver_prod"
 .PHONY : examples/sudoku/CMakeFiles/sudoku_solver_prod.dir/all
 
 # Include target in all.
@@ -5187,7 +5187,7 @@ clean: examples/sudoku/CMakeFiles/sudoku_client_batch.dir/clean
 examples/sudoku/CMakeFiles/sudoku_stat_unittest.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f examples/sudoku/CMakeFiles/sudoku_stat_unittest.dir/build.make examples/sudoku/CMakeFiles/sudoku_stat_unittest.dir/depend
 	$(MAKE) -f examples/sudoku/CMakeFiles/sudoku_stat_unittest.dir/build.make examples/sudoku/CMakeFiles/sudoku_stat_unittest.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target sudoku_stat_unittest"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=84 "Built target sudoku_stat_unittest"
 .PHONY : examples/sudoku/CMakeFiles/sudoku_stat_unittest.dir/all
 
 # Include target in all.
@@ -5197,7 +5197,7 @@ all: examples/sudoku/CMakeFiles/sudoku_stat_unittest.dir/all
 
 # Build rule for subdir invocation for target.
 examples/sudoku/CMakeFiles/sudoku_stat_unittest.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 examples/sudoku/CMakeFiles/sudoku_stat_unittest.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/sudoku/CMakeFiles/sudoku_stat_unittest.dir/rule
@@ -5293,7 +5293,7 @@ examples/twisted/finger/CMakeFiles/twisted_finger03.dir/all: muduo/base/CMakeFil
 examples/twisted/finger/CMakeFiles/twisted_finger03.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger03.dir/depend
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger03.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=95 "Built target twisted_finger03"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target twisted_finger03"
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger03.dir/all
 
 # Include target in all.
@@ -5303,7 +5303,7 @@ all: examples/twisted/finger/CMakeFiles/twisted_finger03.dir/all
 
 # Build rule for subdir invocation for target.
 examples/twisted/finger/CMakeFiles/twisted_finger03.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger03.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger03.dir/rule
@@ -5331,7 +5331,7 @@ examples/twisted/finger/CMakeFiles/twisted_finger01.dir/all: muduo/base/CMakeFil
 examples/twisted/finger/CMakeFiles/twisted_finger01.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger01.dir/depend
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger01.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=94 "Built target twisted_finger01"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target twisted_finger01"
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger01.dir/all
 
 # Include target in all.
@@ -5341,7 +5341,7 @@ all: examples/twisted/finger/CMakeFiles/twisted_finger01.dir/all
 
 # Build rule for subdir invocation for target.
 examples/twisted/finger/CMakeFiles/twisted_finger01.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger01.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger01.dir/rule
@@ -5369,7 +5369,7 @@ examples/twisted/finger/CMakeFiles/twisted_finger02.dir/all: muduo/base/CMakeFil
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger02.dir/depend
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger02.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target twisted_finger02"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=95 "Built target twisted_finger02"
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger02.dir/all
 
 # Include target in all.
@@ -5379,7 +5379,7 @@ all: examples/twisted/finger/CMakeFiles/twisted_finger02.dir/all
 
 # Build rule for subdir invocation for target.
 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger02.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger02.dir/rule
@@ -5407,7 +5407,7 @@ examples/twisted/finger/CMakeFiles/twisted_finger04.dir/all: muduo/base/CMakeFil
 examples/twisted/finger/CMakeFiles/twisted_finger04.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger04.dir/depend
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger04.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target twisted_finger04"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=96 "Built target twisted_finger04"
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger04.dir/all
 
 # Include target in all.
@@ -5417,7 +5417,7 @@ all: examples/twisted/finger/CMakeFiles/twisted_finger04.dir/all
 
 # Build rule for subdir invocation for target.
 examples/twisted/finger/CMakeFiles/twisted_finger04.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger04.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger04.dir/rule
@@ -5445,7 +5445,7 @@ examples/twisted/finger/CMakeFiles/twisted_finger07.dir/all: muduo/base/CMakeFil
 examples/twisted/finger/CMakeFiles/twisted_finger07.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger07.dir/depend
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger07.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=97 "Built target twisted_finger07"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target twisted_finger07"
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger07.dir/all
 
 # Include target in all.
@@ -5455,7 +5455,7 @@ all: examples/twisted/finger/CMakeFiles/twisted_finger07.dir/all
 
 # Build rule for subdir invocation for target.
 examples/twisted/finger/CMakeFiles/twisted_finger07.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger07.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger07.dir/rule
@@ -5483,7 +5483,7 @@ examples/twisted/finger/CMakeFiles/twisted_finger05.dir/all: muduo/base/CMakeFil
 examples/twisted/finger/CMakeFiles/twisted_finger05.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger05.dir/depend
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger05.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=96 "Built target twisted_finger05"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target twisted_finger05"
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger05.dir/all
 
 # Include target in all.
@@ -5493,7 +5493,7 @@ all: examples/twisted/finger/CMakeFiles/twisted_finger05.dir/all
 
 # Build rule for subdir invocation for target.
 examples/twisted/finger/CMakeFiles/twisted_finger05.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger05.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger05.dir/rule
@@ -5521,7 +5521,7 @@ examples/twisted/finger/CMakeFiles/twisted_finger06.dir/all: muduo/base/CMakeFil
 examples/twisted/finger/CMakeFiles/twisted_finger06.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger06.dir/depend
 	$(MAKE) -f examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build.make examples/twisted/finger/CMakeFiles/twisted_finger06.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target twisted_finger06"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=97 "Built target twisted_finger06"
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger06.dir/all
 
 # Include target in all.
@@ -5531,7 +5531,7 @@ all: examples/twisted/finger/CMakeFiles/twisted_finger06.dir/all
 
 # Build rule for subdir invocation for target.
 examples/twisted/finger/CMakeFiles/twisted_finger06.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/twisted/finger/CMakeFiles/twisted_finger06.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/twisted/finger/CMakeFiles/twisted_finger06.dir/rule
@@ -5579,7 +5579,7 @@ examples/wordcount/CMakeFiles/wordcount_hasher.dir/all: muduo/base/CMakeFiles/mu
 examples/wordcount/CMakeFiles/wordcount_hasher.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/wordcount/CMakeFiles/wordcount_hasher.dir/build.make examples/wordcount/CMakeFiles/wordcount_hasher.dir/depend
 	$(MAKE) -f examples/wordcount/CMakeFiles/wordcount_hasher.dir/build.make examples/wordcount/CMakeFiles/wordcount_hasher.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target wordcount_hasher"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=98 "Built target wordcount_hasher"
 .PHONY : examples/wordcount/CMakeFiles/wordcount_hasher.dir/all
 
 # Include target in all.
@@ -5589,7 +5589,7 @@ all: examples/wordcount/CMakeFiles/wordcount_hasher.dir/all
 
 # Build rule for subdir invocation for target.
 examples/wordcount/CMakeFiles/wordcount_hasher.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/wordcount/CMakeFiles/wordcount_hasher.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/wordcount/CMakeFiles/wordcount_hasher.dir/rule
@@ -5617,7 +5617,7 @@ examples/wordcount/CMakeFiles/wordcount_receiver.dir/all: muduo/base/CMakeFiles/
 examples/wordcount/CMakeFiles/wordcount_receiver.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/wordcount/CMakeFiles/wordcount_receiver.dir/build.make examples/wordcount/CMakeFiles/wordcount_receiver.dir/depend
 	$(MAKE) -f examples/wordcount/CMakeFiles/wordcount_receiver.dir/build.make examples/wordcount/CMakeFiles/wordcount_receiver.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=98 "Built target wordcount_receiver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target wordcount_receiver"
 .PHONY : examples/wordcount/CMakeFiles/wordcount_receiver.dir/all
 
 # Include target in all.
@@ -5627,7 +5627,7 @@ all: examples/wordcount/CMakeFiles/wordcount_receiver.dir/all
 
 # Build rule for subdir invocation for target.
 examples/wordcount/CMakeFiles/wordcount_receiver.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/wordcount/CMakeFiles/wordcount_receiver.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/wordcount/CMakeFiles/wordcount_receiver.dir/rule
@@ -5675,7 +5675,7 @@ examples/zeromq/CMakeFiles/zeromq_local_lat.dir/all: muduo/base/CMakeFiles/muduo
 examples/zeromq/CMakeFiles/zeromq_local_lat.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/zeromq/CMakeFiles/zeromq_local_lat.dir/build.make examples/zeromq/CMakeFiles/zeromq_local_lat.dir/depend
 	$(MAKE) -f examples/zeromq/CMakeFiles/zeromq_local_lat.dir/build.make examples/zeromq/CMakeFiles/zeromq_local_lat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target zeromq_local_lat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=99 "Built target zeromq_local_lat"
 .PHONY : examples/zeromq/CMakeFiles/zeromq_local_lat.dir/all
 
 # Include target in all.
@@ -5685,7 +5685,7 @@ all: examples/zeromq/CMakeFiles/zeromq_local_lat.dir/all
 
 # Build rule for subdir invocation for target.
 examples/zeromq/CMakeFiles/zeromq_local_lat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/zeromq/CMakeFiles/zeromq_local_lat.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/zeromq/CMakeFiles/zeromq_local_lat.dir/rule
@@ -5713,7 +5713,7 @@ examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/all: muduo/base/CMakeFiles/mudu
 examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/build.make examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/depend
 	$(MAKE) -f examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/build.make examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=99 "Built target zeromq_remote_lat"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target zeromq_remote_lat"
 .PHONY : examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/all
 
 # Include target in all.
@@ -5723,7 +5723,7 @@ all: examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/all
 
 # Build rule for subdir invocation for target.
 examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
 	$(MAKE) -f CMakeFiles/Makefile2 examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/zeromq/CMakeFiles/zeromq_remote_lat.dir/rule
@@ -5810,7 +5810,7 @@ examples/cdns/CMakeFiles/cdns.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 examples/cdns/CMakeFiles/cdns.dir/all: examples/cdns/CMakeFiles/muduo_cdns.dir/all
 	$(MAKE) -f examples/cdns/CMakeFiles/cdns.dir/build.make examples/cdns/CMakeFiles/cdns.dir/depend
 	$(MAKE) -f examples/cdns/CMakeFiles/cdns.dir/build.make examples/cdns/CMakeFiles/cdns.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target cdns"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=12 "Built target cdns"
 .PHONY : examples/cdns/CMakeFiles/cdns.dir/all
 
 # Include target in all.
@@ -5820,7 +5820,7 @@ all: examples/cdns/CMakeFiles/cdns.dir/all
 
 # Build rule for subdir invocation for target.
 examples/cdns/CMakeFiles/cdns.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 examples/cdns/CMakeFiles/cdns.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/cdns/CMakeFiles/cdns.dir/rule
@@ -5871,7 +5871,7 @@ examples/curl/CMakeFiles/mcurl.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 examples/curl/CMakeFiles/mcurl.dir/all: examples/curl/CMakeFiles/muduo_curl.dir/all
 	$(MAKE) -f examples/curl/CMakeFiles/mcurl.dir/build.make examples/curl/CMakeFiles/mcurl.dir/depend
 	$(MAKE) -f examples/curl/CMakeFiles/mcurl.dir/build.make examples/curl/CMakeFiles/mcurl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target mcurl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=29 "Built target mcurl"
 .PHONY : examples/curl/CMakeFiles/mcurl.dir/all
 
 # Include target in all.
@@ -5881,7 +5881,7 @@ all: examples/curl/CMakeFiles/mcurl.dir/all
 
 # Build rule for subdir invocation for target.
 examples/curl/CMakeFiles/mcurl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/curl/CMakeFiles/mcurl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/curl/CMakeFiles/mcurl.dir/rule
@@ -5910,7 +5910,7 @@ examples/curl/CMakeFiles/curl_download.dir/all: muduo/net/CMakeFiles/muduo_net.d
 examples/curl/CMakeFiles/curl_download.dir/all: examples/curl/CMakeFiles/muduo_curl.dir/all
 	$(MAKE) -f examples/curl/CMakeFiles/curl_download.dir/build.make examples/curl/CMakeFiles/curl_download.dir/depend
 	$(MAKE) -f examples/curl/CMakeFiles/curl_download.dir/build.make examples/curl/CMakeFiles/curl_download.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target curl_download"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=13 "Built target curl_download"
 .PHONY : examples/curl/CMakeFiles/curl_download.dir/all
 
 # Include target in all.
@@ -5920,7 +5920,7 @@ all: examples/curl/CMakeFiles/curl_download.dir/all
 
 # Build rule for subdir invocation for target.
 examples/curl/CMakeFiles/curl_download.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/curl/CMakeFiles/curl_download.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/curl/CMakeFiles/curl_download.dir/rule
@@ -6007,7 +6007,7 @@ examples/ace/logging/preinstall:
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/all:
 	$(MAKE) -f examples/ace/logging/CMakeFiles/ace_logging_proto.dir/build.make examples/ace/logging/CMakeFiles/ace_logging_proto.dir/depend
 	$(MAKE) -f examples/ace/logging/CMakeFiles/ace_logging_proto.dir/build.make examples/ace/logging/CMakeFiles/ace_logging_proto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target ace_logging_proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=2 "Built target ace_logging_proto"
 .PHONY : examples/ace/logging/CMakeFiles/ace_logging_proto.dir/all
 
 # Include target in all.
@@ -6017,7 +6017,7 @@ all: examples/ace/logging/CMakeFiles/ace_logging_proto.dir/all
 
 # Build rule for subdir invocation for target.
 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 examples/ace/logging/CMakeFiles/ace_logging_proto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/ace/logging/CMakeFiles/ace_logging_proto.dir/rule
@@ -6087,7 +6087,7 @@ examples/ace/logging/CMakeFiles/ace_logging_server.dir/all: muduo/net/protobuf/C
 examples/ace/logging/CMakeFiles/ace_logging_server.dir/all: examples/ace/logging/CMakeFiles/ace_logging_proto.dir/all
 	$(MAKE) -f examples/ace/logging/CMakeFiles/ace_logging_server.dir/build.make examples/ace/logging/CMakeFiles/ace_logging_server.dir/depend
 	$(MAKE) -f examples/ace/logging/CMakeFiles/ace_logging_server.dir/build.make examples/ace/logging/CMakeFiles/ace_logging_server.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=2 "Built target ace_logging_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target ace_logging_server"
 .PHONY : examples/ace/logging/CMakeFiles/ace_logging_server.dir/all
 
 # Include target in all.
@@ -6097,7 +6097,7 @@ all: examples/ace/logging/CMakeFiles/ace_logging_server.dir/all
 
 # Build rule for subdir invocation for target.
 examples/ace/logging/CMakeFiles/ace_logging_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/ace/logging/CMakeFiles/ace_logging_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/ace/logging/CMakeFiles/ace_logging_server.dir/rule
@@ -6195,7 +6195,7 @@ all: examples/protobuf/codec/CMakeFiles/protobuf_dispatcher_lite_test.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/codec/CMakeFiles/protobuf_dispatcher_lite_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/codec/CMakeFiles/protobuf_dispatcher_lite_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/codec/CMakeFiles/protobuf_dispatcher_lite_test.dir/rule
@@ -6273,7 +6273,7 @@ all: examples/protobuf/codec/CMakeFiles/protobuf_client.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/codec/CMakeFiles/protobuf_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/codec/CMakeFiles/protobuf_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/codec/CMakeFiles/protobuf_client.dir/rule
@@ -6313,7 +6313,7 @@ all: examples/protobuf/codec/CMakeFiles/protobuf_codec_test.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/codec/CMakeFiles/protobuf_codec_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/codec/CMakeFiles/protobuf_codec_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/codec/CMakeFiles/protobuf_codec_test.dir/rule
@@ -6340,7 +6340,7 @@ clean: examples/protobuf/codec/CMakeFiles/protobuf_codec_test.dir/clean
 examples/protobuf/codec/CMakeFiles/query_proto.dir/all:
 	$(MAKE) -f examples/protobuf/codec/CMakeFiles/query_proto.dir/build.make examples/protobuf/codec/CMakeFiles/query_proto.dir/depend
 	$(MAKE) -f examples/protobuf/codec/CMakeFiles/query_proto.dir/build.make examples/protobuf/codec/CMakeFiles/query_proto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target query_proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=66 "Built target query_proto"
 .PHONY : examples/protobuf/codec/CMakeFiles/query_proto.dir/all
 
 # Include target in all.
@@ -6350,7 +6350,7 @@ all: examples/protobuf/codec/CMakeFiles/query_proto.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/codec/CMakeFiles/query_proto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/codec/CMakeFiles/query_proto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/codec/CMakeFiles/query_proto.dir/rule
@@ -6387,7 +6387,7 @@ all: examples/protobuf/codec/CMakeFiles/protobuf_dispatcher_test.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/codec/CMakeFiles/protobuf_dispatcher_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/codec/CMakeFiles/protobuf_dispatcher_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/codec/CMakeFiles/protobuf_dispatcher_test.dir/rule
@@ -6423,7 +6423,7 @@ examples/protobuf/codec/CMakeFiles/protobuf_codec_all.dir/all: examples/protobuf
 
 # Build rule for subdir invocation for target.
 examples/protobuf/codec/CMakeFiles/protobuf_codec_all.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/codec/CMakeFiles/protobuf_codec_all.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/codec/CMakeFiles/protobuf_codec_all.dir/rule
@@ -6463,7 +6463,7 @@ all: examples/protobuf/codec/CMakeFiles/protobuf_server.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/codec/CMakeFiles/protobuf_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/codec/CMakeFiles/protobuf_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/codec/CMakeFiles/protobuf_server.dir/rule
@@ -6526,7 +6526,7 @@ examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/all: examples/protobuf/res
 
 # Build rule for subdir invocation for target.
 examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 20
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 16
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/rpc/CMakeFiles/protobuf_rpc_all.dir/rule
@@ -6568,7 +6568,7 @@ all: examples/protobuf/rpc/CMakeFiles/protobuf_rpc_sudoku_server.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/rpc/CMakeFiles/protobuf_rpc_sudoku_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpc/CMakeFiles/protobuf_rpc_sudoku_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/rpc/CMakeFiles/protobuf_rpc_sudoku_server.dir/rule
@@ -6610,7 +6610,7 @@ all: examples/protobuf/rpc/CMakeFiles/protobuf_rpc_sudoku_client.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/rpc/CMakeFiles/protobuf_rpc_sudoku_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpc/CMakeFiles/protobuf_rpc_sudoku_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/rpc/CMakeFiles/protobuf_rpc_sudoku_client.dir/rule
@@ -6637,7 +6637,7 @@ clean: examples/protobuf/rpc/CMakeFiles/protobuf_rpc_sudoku_client.dir/clean
 examples/protobuf/rpc/CMakeFiles/sudoku_proto.dir/all:
 	$(MAKE) -f examples/protobuf/rpc/CMakeFiles/sudoku_proto.dir/build.make examples/protobuf/rpc/CMakeFiles/sudoku_proto.dir/depend
 	$(MAKE) -f examples/protobuf/rpc/CMakeFiles/sudoku_proto.dir/build.make examples/protobuf/rpc/CMakeFiles/sudoku_proto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=79 "Built target sudoku_proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target sudoku_proto"
 .PHONY : examples/protobuf/rpc/CMakeFiles/sudoku_proto.dir/all
 
 # Include target in all.
@@ -6647,7 +6647,7 @@ all: examples/protobuf/rpc/CMakeFiles/sudoku_proto.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/rpc/CMakeFiles/sudoku_proto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpc/CMakeFiles/sudoku_proto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/rpc/CMakeFiles/sudoku_proto.dir/rule
@@ -6708,7 +6708,7 @@ all: examples/protobuf/rpcbalancer/CMakeFiles/protobuf_rpc_balancer.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/rpcbalancer/CMakeFiles/protobuf_rpc_balancer.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbalancer/CMakeFiles/protobuf_rpc_balancer.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/rpcbalancer/CMakeFiles/protobuf_rpc_balancer.dir/rule
@@ -6749,7 +6749,7 @@ all: examples/protobuf/rpcbalancer/CMakeFiles/protobuf_rpc_balancer_raw.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/rpcbalancer/CMakeFiles/protobuf_rpc_balancer_raw.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbalancer/CMakeFiles/protobuf_rpc_balancer_raw.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/rpcbalancer/CMakeFiles/protobuf_rpc_balancer_raw.dir/rule
@@ -6798,7 +6798,7 @@ examples/protobuf/rpcbench/preinstall:
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/all:
 	$(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/depend
 	$(MAKE) -f examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build.make examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=14 "Built target echo_proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target echo_proto"
 .PHONY : examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/all
 
 # Include target in all.
@@ -6808,7 +6808,7 @@ all: examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/rpcbench/CMakeFiles/echo_proto.dir/rule
@@ -6850,7 +6850,7 @@ all: examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_client.dir/rule
@@ -6892,7 +6892,7 @@ all: examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 13
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 11
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/rpcbench/CMakeFiles/protobuf_rpc_echo_server.dir/rule
@@ -6957,7 +6957,7 @@ all: examples/protobuf/resolver/CMakeFiles/protobuf_rpc_resolver_server.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/resolver/CMakeFiles/protobuf_rpc_resolver_server.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/resolver/CMakeFiles/protobuf_rpc_resolver_server.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/resolver/CMakeFiles/protobuf_rpc_resolver_server.dir/rule
@@ -6999,7 +6999,7 @@ all: examples/protobuf/resolver/CMakeFiles/protobuf_rpc_resolver_client.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/resolver/CMakeFiles/protobuf_rpc_resolver_client.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 12
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/resolver/CMakeFiles/protobuf_rpc_resolver_client.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/resolver/CMakeFiles/protobuf_rpc_resolver_client.dir/rule
@@ -7026,7 +7026,7 @@ clean: examples/protobuf/resolver/CMakeFiles/protobuf_rpc_resolver_client.dir/cl
 examples/protobuf/resolver/CMakeFiles/resolver_proto.dir/all:
 	$(MAKE) -f examples/protobuf/resolver/CMakeFiles/resolver_proto.dir/build.make examples/protobuf/resolver/CMakeFiles/resolver_proto.dir/depend
 	$(MAKE) -f examples/protobuf/resolver/CMakeFiles/resolver_proto.dir/build.make examples/protobuf/resolver/CMakeFiles/resolver_proto.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=66 "Built target resolver_proto"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target resolver_proto"
 .PHONY : examples/protobuf/resolver/CMakeFiles/resolver_proto.dir/all
 
 # Include target in all.
@@ -7036,7 +7036,7 @@ all: examples/protobuf/resolver/CMakeFiles/resolver_proto.dir/all
 
 # Build rule for subdir invocation for target.
 examples/protobuf/resolver/CMakeFiles/resolver_proto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 	$(MAKE) -f CMakeFiles/Makefile2 examples/protobuf/resolver/CMakeFiles/resolver_proto.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/protobuf/resolver/CMakeFiles/resolver_proto.dir/rule
@@ -7085,12 +7085,12 @@ examples/procmon/preinstall:
 examples/procmon/CMakeFiles/plot_test.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
 	$(MAKE) -f examples/procmon/CMakeFiles/plot_test.dir/build.make examples/procmon/CMakeFiles/plot_test.dir/depend
 	$(MAKE) -f examples/procmon/CMakeFiles/plot_test.dir/build.make examples/procmon/CMakeFiles/plot_test.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target plot_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=56 "Built target plot_test"
 .PHONY : examples/procmon/CMakeFiles/plot_test.dir/all
 
 # Build rule for subdir invocation for target.
 examples/procmon/CMakeFiles/plot_test.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 5
 	$(MAKE) -f CMakeFiles/Makefile2 examples/procmon/CMakeFiles/plot_test.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/procmon/CMakeFiles/plot_test.dir/rule
@@ -7152,12 +7152,12 @@ examples/procmon/CMakeFiles/dummyload.dir/all: muduo/base/CMakeFiles/muduo_base.
 examples/procmon/CMakeFiles/dummyload.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
 	$(MAKE) -f examples/procmon/CMakeFiles/dummyload.dir/build.make examples/procmon/CMakeFiles/dummyload.dir/depend
 	$(MAKE) -f examples/procmon/CMakeFiles/dummyload.dir/build.make examples/procmon/CMakeFiles/dummyload.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target dummyload"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num=14 "Built target dummyload"
 .PHONY : examples/procmon/CMakeFiles/dummyload.dir/all
 
 # Build rule for subdir invocation for target.
 examples/procmon/CMakeFiles/dummyload.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 10
 	$(MAKE) -f CMakeFiles/Makefile2 examples/procmon/CMakeFiles/dummyload.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
 .PHONY : examples/procmon/CMakeFiles/dummyload.dir/rule
@@ -7182,11 +7182,13 @@ clean: examples/procmon/CMakeFiles/dummyload.dir/clean
 
 # Convenience name for "all" pass in the directory.
 test/all: test/CMakeFiles/CountDownLatch_test1.dir/all
+test/all: test/CMakeFiles/EventLoopThreadTest.dir/all
 
 .PHONY : test/all
 
 # Convenience name for "clean" pass in the directory.
 test/clean: test/CMakeFiles/CountDownLatch_test1.dir/clean
+test/clean: test/CMakeFiles/EventLoopThreadTest.dir/clean
 
 .PHONY : test/clean
 
@@ -7230,6 +7232,44 @@ test/CMakeFiles/CountDownLatch_test1.dir/clean:
 
 # clean rule for target.
 clean: test/CMakeFiles/CountDownLatch_test1.dir/clean
+
+.PHONY : clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/EventLoopThreadTest.dir
+
+# All Build rule for target.
+test/CMakeFiles/EventLoopThreadTest.dir/all: muduo/base/CMakeFiles/muduo_base.dir/all
+test/CMakeFiles/EventLoopThreadTest.dir/all: muduo/net/CMakeFiles/muduo_net.dir/all
+	$(MAKE) -f test/CMakeFiles/EventLoopThreadTest.dir/build.make test/CMakeFiles/EventLoopThreadTest.dir/depend
+	$(MAKE) -f test/CMakeFiles/EventLoopThreadTest.dir/build.make test/CMakeFiles/EventLoopThreadTest.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/zsq/muduo-master/build/CMakeFiles --progress-num= "Built target EventLoopThreadTest"
+.PHONY : test/CMakeFiles/EventLoopThreadTest.dir/all
+
+# Include target in all.
+all: test/CMakeFiles/EventLoopThreadTest.dir/all
+
+.PHONY : all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/EventLoopThreadTest.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 9
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/EventLoopThreadTest.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zsq/muduo-master/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/EventLoopThreadTest.dir/rule
+
+# Convenience name for target.
+EventLoopThreadTest: test/CMakeFiles/EventLoopThreadTest.dir/rule
+
+.PHONY : EventLoopThreadTest
+
+# clean rule for target.
+test/CMakeFiles/EventLoopThreadTest.dir/clean:
+	$(MAKE) -f test/CMakeFiles/EventLoopThreadTest.dir/build.make test/CMakeFiles/EventLoopThreadTest.dir/clean
+.PHONY : test/CMakeFiles/EventLoopThreadTest.dir/clean
+
+# clean rule for target.
+clean: test/CMakeFiles/EventLoopThreadTest.dir/clean
 
 .PHONY : clean
 
