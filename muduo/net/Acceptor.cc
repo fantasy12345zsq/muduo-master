@@ -22,17 +22,22 @@
 using namespace muduo;
 using namespace muduo::net;
 
-Acceptor::Acceptor(EventLoop* loop, const InetAddress& listenAddr, bool reuseport)
-  : loop_(loop),
-    acceptSocket_(sockets::createNonblockingOrDie(listenAddr.family())),
-    acceptChannel_(loop, acceptSocket_.fd()),
-    listenning_(false),
-    idleFd_(::open("/dev/null", O_RDONLY | O_CLOEXEC))
+//构造函数
+//createNonblockingOrDie函数创建socket套接字
+Acceptor::Acceptor(EventLoop *loop, const InetAddress &listenAddr, bool reuseport)
+    : loop_(loop),
+      acceptSocket_(sockets::createNonblockingOrDie(listenAddr.family())),
+      acceptChannel_(loop, acceptSocket_.fd()),
+      listenning_(false),
+      idleFd_(::open("/dev/null", O_RDONLY | O_CLOEXEC))
 {
   assert(idleFd_ >= 0);
+  //设置地址和端口重用
   acceptSocket_.setReuseAddr(true);
   acceptSocket_.setReusePort(reuseport);
+  //实际为bind函数
   acceptSocket_.bindAddress(listenAddr);
+  //设置回调
   acceptChannel_.setReadCallback(
       std::bind(&Acceptor::handleRead, this));
 }
@@ -46,33 +51,43 @@ Acceptor::~Acceptor()
 
 void Acceptor::listen()
 {
+  //保证只在IO线程执行
   loop_->assertInLoopThread();
   listenning_ = true;
+  //listen函数
   acceptSocket_.listen();
+  //注册读事件
   acceptChannel_.enableReading();
 }
 
+//有新连接来时的回调函数
 void Acceptor::handleRead()
 {
+  //同样保证只在IO线程执行
   loop_->assertInLoopThread();
   InetAddress peerAddr;
-  //FIXME loop until no more
+  //FIXME:loop until no more
+  //新连接来时，调用accept函数
   int connfd = acceptSocket_.accept(&peerAddr);
   if (connfd >= 0)
   {
     // string hostport = peerAddr.toIpPort();
     // LOG_TRACE << "Accepts of " << hostport;
+    //调用accept之后的回调函数
     if (newConnectionCallback_)
     {
       newConnectionCallback_(connfd, peerAddr);
     }
     else
     {
+      //如果accept之后没有回调，就关闭套接字
       sockets::close(connfd);
     }
   }
   else
   {
+    //accept出错
+    //FIXME:出错后是在干嘛呢？？？？？？
     LOG_SYSERR << "in Acceptor::handleRead";
     // Read the section named "The special problem of
     // accept()ing when you can't" in libev's doc.
@@ -86,4 +101,3 @@ void Acceptor::handleRead()
     }
   }
 }
-

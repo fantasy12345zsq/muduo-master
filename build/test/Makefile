@@ -66,51 +66,6 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
-
 # Special rule for the target install/strip
 install/strip: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
@@ -132,6 +87,51 @@ install/local: preinstall
 install/local/fast: install/local
 
 .PHONY : install/local/fast
+
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
+# Special rule for the target install
+install: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install
+
+# Special rule for the target install
+install/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
+	/usr/bin/cmake -P cmake_install.cmake
+.PHONY : install/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -166,19 +166,34 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-test/CMakeFiles/CountDownLatch_test1.dir/rule:
-	cd /home/zsq/muduo-master/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/CountDownLatch_test1.dir/rule
-.PHONY : test/CMakeFiles/CountDownLatch_test1.dir/rule
+test/CMakeFiles/AcceptorTestServer.dir/rule:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/AcceptorTestServer.dir/rule
+.PHONY : test/CMakeFiles/AcceptorTestServer.dir/rule
 
 # Convenience name for target.
-CountDownLatch_test1: test/CMakeFiles/CountDownLatch_test1.dir/rule
+AcceptorTestServer: test/CMakeFiles/AcceptorTestServer.dir/rule
 
-.PHONY : CountDownLatch_test1
+.PHONY : AcceptorTestServer
 
 # fast build rule for target.
-CountDownLatch_test1/fast:
-	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/CountDownLatch_test1.dir/build.make test/CMakeFiles/CountDownLatch_test1.dir/build
-.PHONY : CountDownLatch_test1/fast
+AcceptorTestServer/fast:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/AcceptorTestServer.dir/build.make test/CMakeFiles/AcceptorTestServer.dir/build
+.PHONY : AcceptorTestServer/fast
+
+# Convenience name for target.
+test/CMakeFiles/AcceptorTestClient.dir/rule:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/AcceptorTestClient.dir/rule
+.PHONY : test/CMakeFiles/AcceptorTestClient.dir/rule
+
+# Convenience name for target.
+AcceptorTestClient: test/CMakeFiles/AcceptorTestClient.dir/rule
+
+.PHONY : AcceptorTestClient
+
+# fast build rule for target.
+AcceptorTestClient/fast:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/AcceptorTestClient.dir/build.make test/CMakeFiles/AcceptorTestClient.dir/build
+.PHONY : AcceptorTestClient/fast
 
 # Convenience name for target.
 test/CMakeFiles/EventLoopThreadTest.dir/rule:
@@ -194,6 +209,75 @@ EventLoopThreadTest: test/CMakeFiles/EventLoopThreadTest.dir/rule
 EventLoopThreadTest/fast:
 	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/EventLoopThreadTest.dir/build.make test/CMakeFiles/EventLoopThreadTest.dir/build
 .PHONY : EventLoopThreadTest/fast
+
+# Convenience name for target.
+test/CMakeFiles/CountDownLatch_test1.dir/rule:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/CountDownLatch_test1.dir/rule
+.PHONY : test/CMakeFiles/CountDownLatch_test1.dir/rule
+
+# Convenience name for target.
+CountDownLatch_test1: test/CMakeFiles/CountDownLatch_test1.dir/rule
+
+.PHONY : CountDownLatch_test1
+
+# fast build rule for target.
+CountDownLatch_test1/fast:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/CountDownLatch_test1.dir/build.make test/CMakeFiles/CountDownLatch_test1.dir/build
+.PHONY : CountDownLatch_test1/fast
+
+AcceptorTestClient.o: AcceptorTestClient.cc.o
+
+.PHONY : AcceptorTestClient.o
+
+# target to build an object file
+AcceptorTestClient.cc.o:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/AcceptorTestClient.dir/build.make test/CMakeFiles/AcceptorTestClient.dir/AcceptorTestClient.cc.o
+.PHONY : AcceptorTestClient.cc.o
+
+AcceptorTestClient.i: AcceptorTestClient.cc.i
+
+.PHONY : AcceptorTestClient.i
+
+# target to preprocess a source file
+AcceptorTestClient.cc.i:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/AcceptorTestClient.dir/build.make test/CMakeFiles/AcceptorTestClient.dir/AcceptorTestClient.cc.i
+.PHONY : AcceptorTestClient.cc.i
+
+AcceptorTestClient.s: AcceptorTestClient.cc.s
+
+.PHONY : AcceptorTestClient.s
+
+# target to generate assembly for a file
+AcceptorTestClient.cc.s:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/AcceptorTestClient.dir/build.make test/CMakeFiles/AcceptorTestClient.dir/AcceptorTestClient.cc.s
+.PHONY : AcceptorTestClient.cc.s
+
+AcceptorTestServer.o: AcceptorTestServer.cc.o
+
+.PHONY : AcceptorTestServer.o
+
+# target to build an object file
+AcceptorTestServer.cc.o:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/AcceptorTestServer.dir/build.make test/CMakeFiles/AcceptorTestServer.dir/AcceptorTestServer.cc.o
+.PHONY : AcceptorTestServer.cc.o
+
+AcceptorTestServer.i: AcceptorTestServer.cc.i
+
+.PHONY : AcceptorTestServer.i
+
+# target to preprocess a source file
+AcceptorTestServer.cc.i:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/AcceptorTestServer.dir/build.make test/CMakeFiles/AcceptorTestServer.dir/AcceptorTestServer.cc.i
+.PHONY : AcceptorTestServer.cc.i
+
+AcceptorTestServer.s: AcceptorTestServer.cc.s
+
+.PHONY : AcceptorTestServer.s
+
+# target to generate assembly for a file
+AcceptorTestServer.cc.s:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/AcceptorTestServer.dir/build.make test/CMakeFiles/AcceptorTestServer.dir/AcceptorTestServer.cc.s
+.PHONY : AcceptorTestServer.cc.s
 
 CountDownLatch_test1.o: CountDownLatch_test1.cc.o
 
@@ -255,15 +339,23 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... AcceptorTestServer"
 	@echo "... list_install_components"
-	@echo "... install"
-	@echo "... rebuild_cache"
-	@echo "... edit_cache"
-	@echo "... test"
-	@echo "... CountDownLatch_test1"
-	@echo "... EventLoopThreadTest"
 	@echo "... install/strip"
 	@echo "... install/local"
+	@echo "... AcceptorTestClient"
+	@echo "... EventLoopThreadTest"
+	@echo "... CountDownLatch_test1"
+	@echo "... test"
+	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... install"
+	@echo "... AcceptorTestClient.o"
+	@echo "... AcceptorTestClient.i"
+	@echo "... AcceptorTestClient.s"
+	@echo "... AcceptorTestServer.o"
+	@echo "... AcceptorTestServer.i"
+	@echo "... AcceptorTestServer.s"
 	@echo "... CountDownLatch_test1.o"
 	@echo "... CountDownLatch_test1.i"
 	@echo "... CountDownLatch_test1.s"

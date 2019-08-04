@@ -2207,17 +2207,30 @@ dummyload/fast:
 .PHONY : dummyload/fast
 
 #=============================================================================
-# Target rules for targets named CountDownLatch_test1
+# Target rules for targets named AcceptorTestServer
 
 # Build rule for target.
-CountDownLatch_test1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 CountDownLatch_test1
-.PHONY : CountDownLatch_test1
+AcceptorTestServer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AcceptorTestServer
+.PHONY : AcceptorTestServer
 
 # fast build rule for target.
-CountDownLatch_test1/fast:
-	$(MAKE) -f test/CMakeFiles/CountDownLatch_test1.dir/build.make test/CMakeFiles/CountDownLatch_test1.dir/build
-.PHONY : CountDownLatch_test1/fast
+AcceptorTestServer/fast:
+	$(MAKE) -f test/CMakeFiles/AcceptorTestServer.dir/build.make test/CMakeFiles/AcceptorTestServer.dir/build
+.PHONY : AcceptorTestServer/fast
+
+#=============================================================================
+# Target rules for targets named AcceptorTestClient
+
+# Build rule for target.
+AcceptorTestClient: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 AcceptorTestClient
+.PHONY : AcceptorTestClient
+
+# fast build rule for target.
+AcceptorTestClient/fast:
+	$(MAKE) -f test/CMakeFiles/AcceptorTestClient.dir/build.make test/CMakeFiles/AcceptorTestClient.dir/build
+.PHONY : AcceptorTestClient/fast
 
 #=============================================================================
 # Target rules for targets named EventLoopThreadTest
@@ -2231,6 +2244,19 @@ EventLoopThreadTest: cmake_check_build_system
 EventLoopThreadTest/fast:
 	$(MAKE) -f test/CMakeFiles/EventLoopThreadTest.dir/build.make test/CMakeFiles/EventLoopThreadTest.dir/build
 .PHONY : EventLoopThreadTest/fast
+
+#=============================================================================
+# Target rules for targets named CountDownLatch_test1
+
+# Build rule for target.
+CountDownLatch_test1: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 CountDownLatch_test1
+.PHONY : CountDownLatch_test1
+
+# fast build rule for target.
+CountDownLatch_test1/fast:
+	$(MAKE) -f test/CMakeFiles/CountDownLatch_test1.dir/build.make test/CMakeFiles/CountDownLatch_test1.dir/build
+.PHONY : CountDownLatch_test1/fast
 
 # Help Target
 help:
@@ -2402,8 +2428,10 @@ help:
 	@echo "... plot_test"
 	@echo "... procmon"
 	@echo "... dummyload"
-	@echo "... CountDownLatch_test1"
+	@echo "... AcceptorTestServer"
+	@echo "... AcceptorTestClient"
 	@echo "... EventLoopThreadTest"
+	@echo "... CountDownLatch_test1"
 .PHONY : help
 
 

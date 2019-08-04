@@ -3,3 +3,9 @@ target_link_libraries(CountDownLatch_test1 muduo_net pthread)
 
 add_executable(EventLoopThreadTest EventLoopThreadTest.cc)
 target_link_libraries(EventLoopThreadTest muduo_net pthread)
+
+add_executable(AcceptorTestServer AcceptorTestServer.cc)
+target_link_libraries(AcceptorTestServer muduo_net pthread)
+
+add_executable(AcceptorTestClient AcceptorTestClient.cc)
+target_link_libraries(AcceptorTestClient muduo_net pthread)
