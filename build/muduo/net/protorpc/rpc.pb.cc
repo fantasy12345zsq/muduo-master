@@ -7,7 +7,6 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -19,141 +18,107 @@
 
 namespace muduo {
 namespace net {
-class RpcMessageDefaultTypeInternal {
-public:
- ::google::protobuf::internal::ExplicitlyConstructed<RpcMessage>
-     _instance;
-} _RpcMessage_default_instance_;
-
-namespace protobuf_rpc_2eproto {
-
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[1];
-const ::google::protobuf::EnumDescriptor* file_level_enum_descriptors[2];
+const ::google::protobuf::Descriptor* RpcMessage_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  RpcMessage_reflection_ = NULL;
+const ::google::protobuf::EnumDescriptor* MessageType_descriptor_ = NULL;
+const ::google::protobuf::EnumDescriptor* ErrorCode_descriptor_ = NULL;
 
 }  // namespace
 
-PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
-    const TableStruct::entries[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
-};
 
-PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
-    const TableStruct::aux[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  ::google::protobuf::internal::AuxillaryParseTableField(),
-};
-PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
-    TableStruct::schema[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { NULL, NULL, 0, -1, -1, -1, -1, NULL, false },
-};
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, type_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, service_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, method_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, request_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, response_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, error_),
-  6,
-  4,
-  0,
-  1,
-  2,
-  3,
-  5,
-};
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 12, sizeof(RpcMessage)},
-};
-
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&_RpcMessage_default_instance_),
-};
+void protobuf_AssignDesc_rpc_2eproto() {
+  protobuf_AddDesc_rpc_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "rpc.proto");
+  GOOGLE_CHECK(file != NULL);
+  RpcMessage_descriptor_ = file->message_type(0);
+  static const int RpcMessage_offsets_[7] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, type_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, service_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, method_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, request_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, response_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, error_),
+  };
+  RpcMessage_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      RpcMessage_descriptor_,
+      RpcMessage::default_instance_,
+      RpcMessage_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RpcMessage, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(RpcMessage));
+  MessageType_descriptor_ = file->enum_type(0);
+  ErrorCode_descriptor_ = file->enum_type(1);
+}
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "rpc.proto", schemas, file_default_instances, TableStruct::offsets, factory,
-      file_level_metadata, file_level_enum_descriptors, NULL);
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
+inline void protobuf_AssignDescriptorsOnce() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_rpc_2eproto);
 }
 
-void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 1);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    RpcMessage_descriptor_, &RpcMessage::default_instance());
 }
 
 }  // namespace
-void TableStruct::InitDefaultsImpl() {
+
+void protobuf_ShutdownFile_rpc_2eproto() {
+  delete RpcMessage::default_instance_;
+  delete RpcMessage_reflection_;
+}
+
+void protobuf_AddDesc_rpc_2eproto() {
+  static bool already_here = false;
+  if (already_here) return;
+  already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _RpcMessage_default_instance_._instance.DefaultConstruct();
-  ::google::protobuf::internal::OnShutdownDestroyMessage(
-      &_RpcMessage_default_instance_);}
-
-void InitDefaults() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
-}
-namespace {
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\trpc.proto\022\tmuduo.net\"\247\001\n\nRpcMessage\022$\n"
-      "\004type\030\001 \002(\0162\026.muduo.net.MessageType\022\n\n\002i"
-      "d\030\002 \002(\006\022\017\n\007service\030\003 \001(\t\022\016\n\006method\030\004 \001(\t"
-      "\022\017\n\007request\030\005 \001(\014\022\020\n\010response\030\006 \001(\014\022#\n\005e"
-      "rror\030\007 \001(\0162\024.muduo.net.ErrorCode*3\n\013Mess"
-      "ageType\022\013\n\007REQUEST\020\001\022\014\n\010RESPONSE\020\002\022\t\n\005ER"
-      "ROR\020\003*\201\001\n\tErrorCode\022\014\n\010NO_ERROR\020\000\022\017\n\013WRO"
-      "NG_PROTO\020\001\022\016\n\nNO_SERVICE\020\002\022\r\n\tNO_METHOD\020"
-      "\003\022\023\n\017INVALID_REQUEST\020\004\022\024\n\020INVALID_RESPON"
-      "SE\020\005\022\013\n\007TIMEOUT\020\006B\'\n\033com.chenshuo.muduo."
-      "protorpcB\010RpcProto"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 418);
+    "\n\trpc.proto\022\tmuduo.net\"\247\001\n\nRpcMessage\022$\n"
+    "\004type\030\001 \002(\0162\026.muduo.net.MessageType\022\n\n\002i"
+    "d\030\002 \002(\006\022\017\n\007service\030\003 \001(\t\022\016\n\006method\030\004 \001(\t"
+    "\022\017\n\007request\030\005 \001(\014\022\020\n\010response\030\006 \001(\014\022#\n\005e"
+    "rror\030\007 \001(\0162\024.muduo.net.ErrorCode*3\n\013Mess"
+    "ageType\022\013\n\007REQUEST\020\001\022\014\n\010RESPONSE\020\002\022\t\n\005ER"
+    "ROR\020\003*\201\001\n\tErrorCode\022\014\n\010NO_ERROR\020\000\022\017\n\013WRO"
+    "NG_PROTO\020\001\022\016\n\nNO_SERVICE\020\002\022\r\n\tNO_METHOD\020"
+    "\003\022\023\n\017INVALID_REQUEST\020\004\022\024\n\020INVALID_RESPON"
+    "SE\020\005\022\013\n\007TIMEOUT\020\006B\'\n\033com.chenshuo.muduo."
+    "protorpcB\010RpcProto", 418);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "rpc.proto", &protobuf_RegisterTypes);
+  RpcMessage::default_instance_ = new RpcMessage();
+  RpcMessage::default_instance_->InitAsDefaultInstance();
+  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_rpc_2eproto);
 }
-} // anonymous namespace
 
-void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
+// Force AddDescriptors() to be called at static initialization time.
+struct StaticDescriptorInitializer_rpc_2eproto {
+  StaticDescriptorInitializer_rpc_2eproto() {
+    protobuf_AddDesc_rpc_2eproto();
   }
-} static_descriptor_initializer;
-
-}  // namespace protobuf_rpc_2eproto
-
+} static_descriptor_initializer_rpc_2eproto_;
 const ::google::protobuf::EnumDescriptor* MessageType_descriptor() {
-  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_rpc_2eproto::file_level_enum_descriptors[0];
+  protobuf_AssignDescriptorsOnce();
+  return MessageType_descriptor_;
 }
 bool MessageType_IsValid(int value) {
-  switch (value) {
+  switch(value) {
     case 1:
     case 2:
     case 3:
@@ -164,11 +129,11 @@ bool MessageType_IsValid(int value) {
 }
 
 const ::google::protobuf::EnumDescriptor* ErrorCode_descriptor() {
-  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_rpc_2eproto::file_level_enum_descriptors[1];
+  protobuf_AssignDescriptorsOnce();
+  return ErrorCode_descriptor_;
 }
 bool ErrorCode_IsValid(int value) {
-  switch (value) {
+  switch(value) {
     case 0:
     case 1:
     case 2:
@@ -185,7 +150,7 @@ bool ErrorCode_IsValid(int value) {
 
 // ===================================================================
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int RpcMessage::kTypeFieldNumber;
 const int RpcMessage::kIdFieldNumber;
 const int RpcMessage::kServiceFieldNumber;
@@ -193,54 +158,35 @@ const int RpcMessage::kMethodFieldNumber;
 const int RpcMessage::kRequestFieldNumber;
 const int RpcMessage::kResponseFieldNumber;
 const int RpcMessage::kErrorFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 RpcMessage::RpcMessage()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_rpc_2eproto::InitDefaults();
-  }
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:muduo.net.RpcMessage)
 }
+
+void RpcMessage::InitAsDefaultInstance() {
+}
+
 RpcMessage::RpcMessage(const RpcMessage& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  service_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_service()) {
-    service_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_);
-  }
-  method_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_method()) {
-    method_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.method_);
-  }
-  request_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_request()) {
-    request_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.request_);
-  }
-  response_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_response()) {
-    response_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.response_);
-  }
-  ::memcpy(&id_, &from.id_,
-    static_cast<size_t>(reinterpret_cast<char*>(&type_) -
-    reinterpret_cast<char*>(&id_)) + sizeof(type_));
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:muduo.net.RpcMessage)
 }
 
 void RpcMessage::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  service_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  method_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  request_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  response_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&id_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&error_) -
-      reinterpret_cast<char*>(&id_)) + sizeof(error_));
   type_ = 1;
+  id_ = GOOGLE_ULONGLONG(0);
+  service_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  method_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  request_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  response_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  error_ = 0;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 RpcMessage::~RpcMessage() {
@@ -249,10 +195,20 @@ RpcMessage::~RpcMessage() {
 }
 
 void RpcMessage::SharedDtor() {
-  service_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  method_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  request_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  response_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (service_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete service_;
+  }
+  if (method_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete method_;
+  }
+  if (request_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete request_;
+  }
+  if (response_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete response_;
+  }
+  if (this != default_instance_) {
+  }
 }
 
 void RpcMessage::SetCachedSize(int size) const {
@@ -261,72 +217,64 @@ void RpcMessage::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* RpcMessage::descriptor() {
-  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  protobuf_AssignDescriptorsOnce();
+  return RpcMessage_descriptor_;
 }
 
 const RpcMessage& RpcMessage::default_instance() {
-  protobuf_rpc_2eproto::InitDefaults();
-  return *internal_default_instance();
+  if (default_instance_ == NULL) protobuf_AddDesc_rpc_2eproto();
+  return *default_instance_;
 }
 
-RpcMessage* RpcMessage::New(::google::protobuf::Arena* arena) const {
-  RpcMessage* n = new RpcMessage;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+RpcMessage* RpcMessage::default_instance_ = NULL;
+
+RpcMessage* RpcMessage::New() const {
+  return new RpcMessage;
 }
 
 void RpcMessage::Clear() {
-// @@protoc_insertion_point(message_clear_start:muduo.net.RpcMessage)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 15u) {
-    if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(!service_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-      (*service_.UnsafeRawStringPointer())->clear();
-    }
-    if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(!method_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-      (*method_.UnsafeRawStringPointer())->clear();
-    }
-    if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(!request_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-      (*request_.UnsafeRawStringPointer())->clear();
-    }
-    if (cached_has_bits & 0x00000008u) {
-      GOOGLE_DCHECK(!response_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-      (*response_.UnsafeRawStringPointer())->clear();
-    }
-  }
-  if (cached_has_bits & 112u) {
-    ::memset(&id_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&error_) -
-        reinterpret_cast<char*>(&id_)) + sizeof(error_));
+  if (_has_bits_[0 / 32] & 127) {
     type_ = 1;
+    id_ = GOOGLE_ULONGLONG(0);
+    if (has_service()) {
+      if (service_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        service_->clear();
+      }
+    }
+    if (has_method()) {
+      if (method_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        method_->clear();
+      }
+    }
+    if (has_request()) {
+      if (request_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        request_->clear();
+      }
+    }
+    if (has_response()) {
+      if (response_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        response_->clear();
+      }
+    }
+    error_ = 0;
   }
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
 }
 
 bool RpcMessage::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:muduo.net.RpcMessage)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required .muduo.net.MessageType type = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
+        if (tag == 8) {
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -334,89 +282,94 @@ bool RpcMessage::MergePartialFromCodedStream(
           if (::muduo::net::MessageType_IsValid(value)) {
             set_type(static_cast< ::muduo::net::MessageType >(value));
           } else {
-            mutable_unknown_fields()->AddVarint(
-                1, static_cast< ::google::protobuf::uint64>(value));
+            mutable_unknown_fields()->AddVarint(1, value);
           }
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(17)) goto parse_id;
         break;
       }
 
       // required fixed64 id = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(17u /* 17 & 0xFF */)) {
-          set_has_id();
+        if (tag == 17) {
+         parse_id:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::uint64, ::google::protobuf::internal::WireFormatLite::TYPE_FIXED64>(
                  input, &id_)));
+          set_has_id();
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_service;
         break;
       }
 
       // optional string service = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (tag == 26) {
+         parse_service:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_service()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->service().data(), static_cast<int>(this->service().length()),
+            this->service().data(), this->service().length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "muduo.net.RpcMessage.service");
+            "service");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_method;
         break;
       }
 
       // optional string method = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (tag == 34) {
+         parse_method:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_method()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->method().data(), static_cast<int>(this->method().length()),
+            this->method().data(), this->method().length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "muduo.net.RpcMessage.method");
+            "method");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_request;
         break;
       }
 
       // optional bytes request = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (tag == 42) {
+         parse_request:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_request()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(50)) goto parse_response;
         break;
       }
 
       // optional bytes response = 6;
       case 6: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(50u /* 50 & 0xFF */)) {
+        if (tag == 50) {
+         parse_response:
           DO_(::google::protobuf::internal::WireFormatLite::ReadBytes(
                 input, this->mutable_response()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(56)) goto parse_error;
         break;
       }
 
       // optional .muduo.net.ErrorCode error = 7;
       case 7: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(56u /* 56 & 0xFF */)) {
+        if (tag == 56) {
+         parse_error:
           int value;
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    int, ::google::protobuf::internal::WireFormatLite::TYPE_ENUM>(
@@ -424,22 +377,24 @@ bool RpcMessage::MergePartialFromCodedStream(
           if (::muduo::net::ErrorCode_IsValid(value)) {
             set_error(static_cast< ::muduo::net::ErrorCode >(value));
           } else {
-            mutable_unknown_fields()->AddVarint(
-                7, static_cast< ::google::protobuf::uint64>(value));
+            mutable_unknown_fields()->AddVarint(7, value);
           }
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
           goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
+              input, tag, mutable_unknown_fields()));
         break;
       }
     }
@@ -456,173 +411,141 @@ failure:
 void RpcMessage::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:muduo.net.RpcMessage)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // required .muduo.net.MessageType type = 1;
-  if (cached_has_bits & 0x00000040u) {
+  if (has_type()) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       1, this->type(), output);
   }
 
   // required fixed64 id = 2;
-  if (cached_has_bits & 0x00000010u) {
+  if (has_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteFixed64(2, this->id(), output);
   }
 
   // optional string service = 3;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_service()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->service().data(), static_cast<int>(this->service().length()),
+      this->service().data(), this->service().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.net.RpcMessage.service");
+      "service");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->service(), output);
   }
 
   // optional string method = 4;
-  if (cached_has_bits & 0x00000002u) {
+  if (has_method()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->method().data(), static_cast<int>(this->method().length()),
+      this->method().data(), this->method().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.net.RpcMessage.method");
+      "method");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       4, this->method(), output);
   }
 
   // optional bytes request = 5;
-  if (cached_has_bits & 0x00000004u) {
+  if (has_request()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       5, this->request(), output);
   }
 
   // optional bytes response = 6;
-  if (cached_has_bits & 0x00000008u) {
+  if (has_response()) {
     ::google::protobuf::internal::WireFormatLite::WriteBytesMaybeAliased(
       6, this->response(), output);
   }
 
   // optional .muduo.net.ErrorCode error = 7;
-  if (cached_has_bits & 0x00000020u) {
+  if (has_error()) {
     ::google::protobuf::internal::WireFormatLite::WriteEnum(
       7, this->error(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
+        unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:muduo.net.RpcMessage)
 }
 
-::google::protobuf::uint8* RpcMessage::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::google::protobuf::uint8* RpcMessage::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:muduo.net.RpcMessage)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // required .muduo.net.MessageType type = 1;
-  if (cached_has_bits & 0x00000040u) {
+  if (has_type()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       1, this->type(), target);
   }
 
   // required fixed64 id = 2;
-  if (cached_has_bits & 0x00000010u) {
+  if (has_id()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteFixed64ToArray(2, this->id(), target);
   }
 
   // optional string service = 3;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_service()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->service().data(), static_cast<int>(this->service().length()),
+      this->service().data(), this->service().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.net.RpcMessage.service");
+      "service");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         3, this->service(), target);
   }
 
   // optional string method = 4;
-  if (cached_has_bits & 0x00000002u) {
+  if (has_method()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->method().data(), static_cast<int>(this->method().length()),
+      this->method().data(), this->method().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.net.RpcMessage.method");
+      "method");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         4, this->method(), target);
   }
 
   // optional bytes request = 5;
-  if (cached_has_bits & 0x00000004u) {
+  if (has_request()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         5, this->request(), target);
   }
 
   // optional bytes response = 6;
-  if (cached_has_bits & 0x00000008u) {
+  if (has_response()) {
     target =
       ::google::protobuf::internal::WireFormatLite::WriteBytesToArray(
         6, this->response(), target);
   }
 
   // optional .muduo.net.ErrorCode error = 7;
-  if (cached_has_bits & 0x00000020u) {
+  if (has_error()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteEnumToArray(
       7, this->error(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+        unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:muduo.net.RpcMessage)
   return target;
 }
 
-size_t RpcMessage::RequiredFieldsByteSizeFallback() const {
-// @@protoc_insertion_point(required_fields_byte_size_fallback_start:muduo.net.RpcMessage)
-  size_t total_size = 0;
+int RpcMessage::ByteSize() const {
+  int total_size = 0;
 
-  if (has_id()) {
-    // required fixed64 id = 2;
-    total_size += 1 + 8;
-  }
-
-  if (has_type()) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // required .muduo.net.MessageType type = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
-  }
+    if (has_type()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
+    }
 
-  return total_size;
-}
-size_t RpcMessage::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:muduo.net.RpcMessage)
-  size_t total_size = 0;
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
-  if (((_has_bits_[0] & 0x00000050) ^ 0x00000050) == 0) {  // All required fields are present.
     // required fixed64 id = 2;
-    total_size += 1 + 8;
+    if (has_id()) {
+      total_size += 1 + 8;
+    }
 
-    // required .muduo.net.MessageType type = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->type());
-
-  } else {
-    total_size += RequiredFieldsByteSizeFallback();
-  }
-  if (_has_bits_[0 / 32] & 15u) {
     // optional string service = 3;
     if (has_service()) {
       total_size += 1 +
@@ -651,445 +574,105 @@ size_t RpcMessage::ByteSizeLong() const {
           this->response());
     }
 
-  }
-  // optional .muduo.net.ErrorCode error = 7;
-  if (has_error()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::EnumSize(this->error());
-  }
+    // optional .muduo.net.ErrorCode error = 7;
+    if (has_error()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::EnumSize(this->error());
+    }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  }
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
+  _cached_size_ = total_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void RpcMessage::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:muduo.net.RpcMessage)
-  GOOGLE_DCHECK_NE(&from, this);
+  GOOGLE_CHECK_NE(&from, this);
   const RpcMessage* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const RpcMessage>(
-          &from);
+    ::google::protobuf::internal::dynamic_cast_if_available<const RpcMessage*>(
+      &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:muduo.net.RpcMessage)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:muduo.net.RpcMessage)
     MergeFrom(*source);
   }
 }
 
 void RpcMessage::MergeFrom(const RpcMessage& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:muduo.net.RpcMessage)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 127u) {
-    if (cached_has_bits & 0x00000001u) {
-      set_has_service();
-      service_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.service_);
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_type()) {
+      set_type(from.type());
     }
-    if (cached_has_bits & 0x00000002u) {
-      set_has_method();
-      method_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.method_);
+    if (from.has_id()) {
+      set_id(from.id());
     }
-    if (cached_has_bits & 0x00000004u) {
-      set_has_request();
-      request_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.request_);
+    if (from.has_service()) {
+      set_service(from.service());
     }
-    if (cached_has_bits & 0x00000008u) {
-      set_has_response();
-      response_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.response_);
+    if (from.has_method()) {
+      set_method(from.method());
     }
-    if (cached_has_bits & 0x00000010u) {
-      id_ = from.id_;
+    if (from.has_request()) {
+      set_request(from.request());
     }
-    if (cached_has_bits & 0x00000020u) {
-      error_ = from.error_;
+    if (from.has_response()) {
+      set_response(from.response());
     }
-    if (cached_has_bits & 0x00000040u) {
-      type_ = from.type_;
+    if (from.has_error()) {
+      set_error(from.error());
     }
-    _has_bits_[0] |= cached_has_bits;
   }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void RpcMessage::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:muduo.net.RpcMessage)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void RpcMessage::CopyFrom(const RpcMessage& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:muduo.net.RpcMessage)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool RpcMessage::IsInitialized() const {
-  if ((_has_bits_[0] & 0x00000050) != 0x00000050) return false;
+  if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+
   return true;
 }
 
 void RpcMessage::Swap(RpcMessage* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void RpcMessage::InternalSwap(RpcMessage* other) {
-  using std::swap;
-  service_.Swap(&other->service_);
-  method_.Swap(&other->method_);
-  request_.Swap(&other->request_);
-  response_.Swap(&other->response_);
-  swap(id_, other->id_);
-  swap(error_, other->error_);
-  swap(type_, other->type_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(type_, other->type_);
+    std::swap(id_, other->id_);
+    std::swap(service_, other->service_);
+    std::swap(method_, other->method_);
+    std::swap(request_, other->request_);
+    std::swap(response_, other->response_);
+    std::swap(error_, other->error_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata RpcMessage::GetMetadata() const {
-  protobuf_rpc_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_rpc_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = RpcMessage_descriptor_;
+  metadata.reflection = RpcMessage_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// RpcMessage
-
-// required .muduo.net.MessageType type = 1;
-bool RpcMessage::has_type() const {
-  return (_has_bits_[0] & 0x00000040u) != 0;
-}
-void RpcMessage::set_has_type() {
-  _has_bits_[0] |= 0x00000040u;
-}
-void RpcMessage::clear_has_type() {
-  _has_bits_[0] &= ~0x00000040u;
-}
-void RpcMessage::clear_type() {
-  type_ = 1;
-  clear_has_type();
-}
-::muduo::net::MessageType RpcMessage::type() const {
-  // @@protoc_insertion_point(field_get:muduo.net.RpcMessage.type)
-  return static_cast< ::muduo::net::MessageType >(type_);
-}
-void RpcMessage::set_type(::muduo::net::MessageType value) {
-  assert(::muduo::net::MessageType_IsValid(value));
-  set_has_type();
-  type_ = value;
-  // @@protoc_insertion_point(field_set:muduo.net.RpcMessage.type)
-}
-
-// required fixed64 id = 2;
-bool RpcMessage::has_id() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
-}
-void RpcMessage::set_has_id() {
-  _has_bits_[0] |= 0x00000010u;
-}
-void RpcMessage::clear_has_id() {
-  _has_bits_[0] &= ~0x00000010u;
-}
-void RpcMessage::clear_id() {
-  id_ = GOOGLE_ULONGLONG(0);
-  clear_has_id();
-}
-::google::protobuf::uint64 RpcMessage::id() const {
-  // @@protoc_insertion_point(field_get:muduo.net.RpcMessage.id)
-  return id_;
-}
-void RpcMessage::set_id(::google::protobuf::uint64 value) {
-  set_has_id();
-  id_ = value;
-  // @@protoc_insertion_point(field_set:muduo.net.RpcMessage.id)
-}
-
-// optional string service = 3;
-bool RpcMessage::has_service() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void RpcMessage::set_has_service() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void RpcMessage::clear_has_service() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void RpcMessage::clear_service() {
-  service_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_service();
-}
-const ::std::string& RpcMessage::service() const {
-  // @@protoc_insertion_point(field_get:muduo.net.RpcMessage.service)
-  return service_.GetNoArena();
-}
-void RpcMessage::set_service(const ::std::string& value) {
-  set_has_service();
-  service_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:muduo.net.RpcMessage.service)
-}
-#if LANG_CXX11
-void RpcMessage::set_service(::std::string&& value) {
-  set_has_service();
-  service_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:muduo.net.RpcMessage.service)
-}
-#endif
-void RpcMessage::set_service(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_service();
-  service_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:muduo.net.RpcMessage.service)
-}
-void RpcMessage::set_service(const char* value, size_t size) {
-  set_has_service();
-  service_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:muduo.net.RpcMessage.service)
-}
-::std::string* RpcMessage::mutable_service() {
-  set_has_service();
-  // @@protoc_insertion_point(field_mutable:muduo.net.RpcMessage.service)
-  return service_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* RpcMessage::release_service() {
-  // @@protoc_insertion_point(field_release:muduo.net.RpcMessage.service)
-  clear_has_service();
-  return service_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void RpcMessage::set_allocated_service(::std::string* service) {
-  if (service != NULL) {
-    set_has_service();
-  } else {
-    clear_has_service();
-  }
-  service_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), service);
-  // @@protoc_insertion_point(field_set_allocated:muduo.net.RpcMessage.service)
-}
-
-// optional string method = 4;
-bool RpcMessage::has_method() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-void RpcMessage::set_has_method() {
-  _has_bits_[0] |= 0x00000002u;
-}
-void RpcMessage::clear_has_method() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-void RpcMessage::clear_method() {
-  method_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_method();
-}
-const ::std::string& RpcMessage::method() const {
-  // @@protoc_insertion_point(field_get:muduo.net.RpcMessage.method)
-  return method_.GetNoArena();
-}
-void RpcMessage::set_method(const ::std::string& value) {
-  set_has_method();
-  method_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:muduo.net.RpcMessage.method)
-}
-#if LANG_CXX11
-void RpcMessage::set_method(::std::string&& value) {
-  set_has_method();
-  method_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:muduo.net.RpcMessage.method)
-}
-#endif
-void RpcMessage::set_method(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_method();
-  method_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:muduo.net.RpcMessage.method)
-}
-void RpcMessage::set_method(const char* value, size_t size) {
-  set_has_method();
-  method_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:muduo.net.RpcMessage.method)
-}
-::std::string* RpcMessage::mutable_method() {
-  set_has_method();
-  // @@protoc_insertion_point(field_mutable:muduo.net.RpcMessage.method)
-  return method_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* RpcMessage::release_method() {
-  // @@protoc_insertion_point(field_release:muduo.net.RpcMessage.method)
-  clear_has_method();
-  return method_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void RpcMessage::set_allocated_method(::std::string* method) {
-  if (method != NULL) {
-    set_has_method();
-  } else {
-    clear_has_method();
-  }
-  method_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), method);
-  // @@protoc_insertion_point(field_set_allocated:muduo.net.RpcMessage.method)
-}
-
-// optional bytes request = 5;
-bool RpcMessage::has_request() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-void RpcMessage::set_has_request() {
-  _has_bits_[0] |= 0x00000004u;
-}
-void RpcMessage::clear_has_request() {
-  _has_bits_[0] &= ~0x00000004u;
-}
-void RpcMessage::clear_request() {
-  request_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_request();
-}
-const ::std::string& RpcMessage::request() const {
-  // @@protoc_insertion_point(field_get:muduo.net.RpcMessage.request)
-  return request_.GetNoArena();
-}
-void RpcMessage::set_request(const ::std::string& value) {
-  set_has_request();
-  request_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:muduo.net.RpcMessage.request)
-}
-#if LANG_CXX11
-void RpcMessage::set_request(::std::string&& value) {
-  set_has_request();
-  request_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:muduo.net.RpcMessage.request)
-}
-#endif
-void RpcMessage::set_request(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_request();
-  request_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:muduo.net.RpcMessage.request)
-}
-void RpcMessage::set_request(const void* value, size_t size) {
-  set_has_request();
-  request_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:muduo.net.RpcMessage.request)
-}
-::std::string* RpcMessage::mutable_request() {
-  set_has_request();
-  // @@protoc_insertion_point(field_mutable:muduo.net.RpcMessage.request)
-  return request_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* RpcMessage::release_request() {
-  // @@protoc_insertion_point(field_release:muduo.net.RpcMessage.request)
-  clear_has_request();
-  return request_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void RpcMessage::set_allocated_request(::std::string* request) {
-  if (request != NULL) {
-    set_has_request();
-  } else {
-    clear_has_request();
-  }
-  request_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), request);
-  // @@protoc_insertion_point(field_set_allocated:muduo.net.RpcMessage.request)
-}
-
-// optional bytes response = 6;
-bool RpcMessage::has_response() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-void RpcMessage::set_has_response() {
-  _has_bits_[0] |= 0x00000008u;
-}
-void RpcMessage::clear_has_response() {
-  _has_bits_[0] &= ~0x00000008u;
-}
-void RpcMessage::clear_response() {
-  response_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_response();
-}
-const ::std::string& RpcMessage::response() const {
-  // @@protoc_insertion_point(field_get:muduo.net.RpcMessage.response)
-  return response_.GetNoArena();
-}
-void RpcMessage::set_response(const ::std::string& value) {
-  set_has_response();
-  response_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:muduo.net.RpcMessage.response)
-}
-#if LANG_CXX11
-void RpcMessage::set_response(::std::string&& value) {
-  set_has_response();
-  response_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:muduo.net.RpcMessage.response)
-}
-#endif
-void RpcMessage::set_response(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_response();
-  response_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:muduo.net.RpcMessage.response)
-}
-void RpcMessage::set_response(const void* value, size_t size) {
-  set_has_response();
-  response_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:muduo.net.RpcMessage.response)
-}
-::std::string* RpcMessage::mutable_response() {
-  set_has_response();
-  // @@protoc_insertion_point(field_mutable:muduo.net.RpcMessage.response)
-  return response_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* RpcMessage::release_response() {
-  // @@protoc_insertion_point(field_release:muduo.net.RpcMessage.response)
-  clear_has_response();
-  return response_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void RpcMessage::set_allocated_response(::std::string* response) {
-  if (response != NULL) {
-    set_has_response();
-  } else {
-    clear_has_response();
-  }
-  response_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), response);
-  // @@protoc_insertion_point(field_set_allocated:muduo.net.RpcMessage.response)
-}
-
-// optional .muduo.net.ErrorCode error = 7;
-bool RpcMessage::has_error() const {
-  return (_has_bits_[0] & 0x00000020u) != 0;
-}
-void RpcMessage::set_has_error() {
-  _has_bits_[0] |= 0x00000020u;
-}
-void RpcMessage::clear_has_error() {
-  _has_bits_[0] &= ~0x00000020u;
-}
-void RpcMessage::clear_error() {
-  error_ = 0;
-  clear_has_error();
-}
-::muduo::net::ErrorCode RpcMessage::error() const {
-  // @@protoc_insertion_point(field_get:muduo.net.RpcMessage.error)
-  return static_cast< ::muduo::net::ErrorCode >(error_);
-}
-void RpcMessage::set_error(::muduo::net::ErrorCode value) {
-  assert(::muduo::net::ErrorCode_IsValid(value));
-  set_has_error();
-  error_ = value;
-  // @@protoc_insertion_point(field_set:muduo.net.RpcMessage.error)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

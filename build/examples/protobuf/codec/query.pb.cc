@@ -7,7 +7,6 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -18,197 +17,170 @@
 // @@protoc_insertion_point(includes)
 
 namespace muduo {
-class QueryDefaultTypeInternal {
-public:
- ::google::protobuf::internal::ExplicitlyConstructed<Query>
-     _instance;
-} _Query_default_instance_;
-class AnswerDefaultTypeInternal {
-public:
- ::google::protobuf::internal::ExplicitlyConstructed<Answer>
-     _instance;
-} _Answer_default_instance_;
-class EmptyDefaultTypeInternal {
-public:
- ::google::protobuf::internal::ExplicitlyConstructed<Empty>
-     _instance;
-} _Empty_default_instance_;
-
-namespace protobuf_query_2eproto {
-
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[3];
+const ::google::protobuf::Descriptor* Query_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Query_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Answer_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Answer_reflection_ = NULL;
+const ::google::protobuf::Descriptor* Empty_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  Empty_reflection_ = NULL;
 
 }  // namespace
 
-PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
-    const TableStruct::entries[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
-};
 
-PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
-    const TableStruct::aux[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  ::google::protobuf::internal::AuxillaryParseTableField(),
-};
-PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
-    TableStruct::schema[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { NULL, NULL, 0, -1, -1, -1, -1, NULL, false },
-  { NULL, NULL, 0, -1, -1, -1, -1, NULL, false },
-  { NULL, NULL, 0, -1, -1, -1, -1, NULL, false },
-};
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, questioner_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, question_),
-  1,
-  0,
-  ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, questioner_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, answerer_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, solution_),
-  2,
-  0,
-  1,
-  ~0u,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Empty, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Empty, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Empty, id_),
-  0,
-};
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 8, sizeof(Query)},
-  { 11, 20, sizeof(Answer)},
-  { 24, 30, sizeof(Empty)},
-};
-
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&_Query_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&_Answer_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&_Empty_default_instance_),
-};
+void protobuf_AssignDesc_query_2eproto() {
+  protobuf_AddDesc_query_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "query.proto");
+  GOOGLE_CHECK(file != NULL);
+  Query_descriptor_ = file->message_type(0);
+  static const int Query_offsets_[3] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, questioner_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, question_),
+  };
+  Query_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      Query_descriptor_,
+      Query::default_instance_,
+      Query_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Query, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(Query));
+  Answer_descriptor_ = file->message_type(1);
+  static const int Answer_offsets_[4] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, questioner_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, answerer_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, solution_),
+  };
+  Answer_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      Answer_descriptor_,
+      Answer::default_instance_,
+      Answer_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Answer, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(Answer));
+  Empty_descriptor_ = file->message_type(2);
+  static const int Empty_offsets_[1] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Empty, id_),
+  };
+  Empty_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      Empty_descriptor_,
+      Empty::default_instance_,
+      Empty_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Empty, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(Empty, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(Empty));
+}
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "query.proto", schemas, file_default_instances, TableStruct::offsets, factory,
-      file_level_metadata, NULL, NULL);
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
+inline void protobuf_AssignDescriptorsOnce() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_query_2eproto);
 }
 
-void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 3);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    Query_descriptor_, &Query::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    Answer_descriptor_, &Answer::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    Empty_descriptor_, &Empty::default_instance());
 }
 
 }  // namespace
-void TableStruct::InitDefaultsImpl() {
+
+void protobuf_ShutdownFile_query_2eproto() {
+  delete Query::default_instance_;
+  delete Query_reflection_;
+  delete Answer::default_instance_;
+  delete Answer_reflection_;
+  delete Empty::default_instance_;
+  delete Empty_reflection_;
+}
+
+void protobuf_AddDesc_query_2eproto() {
+  static bool already_here = false;
+  if (already_here) return;
+  already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _Query_default_instance_._instance.DefaultConstruct();
-  ::google::protobuf::internal::OnShutdownDestroyMessage(
-      &_Query_default_instance_);_Answer_default_instance_._instance.DefaultConstruct();
-  ::google::protobuf::internal::OnShutdownDestroyMessage(
-      &_Answer_default_instance_);_Empty_default_instance_._instance.DefaultConstruct();
-  ::google::protobuf::internal::OnShutdownDestroyMessage(
-      &_Empty_default_instance_);}
-
-void InitDefaults() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
-}
-namespace {
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\013query.proto\022\005muduo\"9\n\005Query\022\n\n\002id\030\001 \002("
-      "\003\022\022\n\nquestioner\030\002 \002(\t\022\020\n\010question\030\003 \003(\t\""
-      "L\n\006Answer\022\n\n\002id\030\001 \002(\003\022\022\n\nquestioner\030\002 \002("
-      "\t\022\020\n\010answerer\030\003 \002(\t\022\020\n\010solution\030\004 \003(\t\"\023\n"
-      "\005Empty\022\n\n\002id\030\001 \001(\005B \n\021muduo.codec.testsB"
-      "\013QueryProtos"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 212);
+    "\n\013query.proto\022\005muduo\"9\n\005Query\022\n\n\002id\030\001 \002("
+    "\003\022\022\n\nquestioner\030\002 \002(\t\022\020\n\010question\030\003 \003(\t\""
+    "L\n\006Answer\022\n\n\002id\030\001 \002(\003\022\022\n\nquestioner\030\002 \002("
+    "\t\022\020\n\010answerer\030\003 \002(\t\022\020\n\010solution\030\004 \003(\t\"\023\n"
+    "\005Empty\022\n\n\002id\030\001 \001(\005B \n\021muduo.codec.testsB"
+    "\013QueryProtos", 212);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "query.proto", &protobuf_RegisterTypes);
+  Query::default_instance_ = new Query();
+  Answer::default_instance_ = new Answer();
+  Empty::default_instance_ = new Empty();
+  Query::default_instance_->InitAsDefaultInstance();
+  Answer::default_instance_->InitAsDefaultInstance();
+  Empty::default_instance_->InitAsDefaultInstance();
+  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_query_2eproto);
 }
-} // anonymous namespace
 
-void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
+// Force AddDescriptors() to be called at static initialization time.
+struct StaticDescriptorInitializer_query_2eproto {
+  StaticDescriptorInitializer_query_2eproto() {
+    protobuf_AddDesc_query_2eproto();
   }
-} static_descriptor_initializer;
-
-}  // namespace protobuf_query_2eproto
-
+} static_descriptor_initializer_query_2eproto_;
 
 // ===================================================================
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int Query::kIdFieldNumber;
 const int Query::kQuestionerFieldNumber;
 const int Query::kQuestionFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 Query::Query()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_query_2eproto::InitDefaults();
-  }
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:muduo.Query)
 }
+
+void Query::InitAsDefaultInstance() {
+}
+
 Query::Query(const Query& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_),
-      _cached_size_(0),
-      question_(from.question_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  questioner_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_questioner()) {
-    questioner_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.questioner_);
-  }
-  id_ = from.id_;
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:muduo.Query)
 }
 
 void Query::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  questioner_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   id_ = GOOGLE_LONGLONG(0);
+  questioner_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 Query::~Query() {
@@ -217,7 +189,11 @@ Query::~Query() {
 }
 
 void Query::SharedDtor() {
-  questioner_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (questioner_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete questioner_;
+  }
+  if (this != default_instance_) {
+  }
 }
 
 void Query::SetCachedSize(int size) const {
@@ -226,103 +202,104 @@ void Query::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Query::descriptor() {
-  protobuf_query_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_query_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  protobuf_AssignDescriptorsOnce();
+  return Query_descriptor_;
 }
 
 const Query& Query::default_instance() {
-  protobuf_query_2eproto::InitDefaults();
-  return *internal_default_instance();
+  if (default_instance_ == NULL) protobuf_AddDesc_query_2eproto();
+  return *default_instance_;
 }
 
-Query* Query::New(::google::protobuf::Arena* arena) const {
-  Query* n = new Query;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+Query* Query::default_instance_ = NULL;
+
+Query* Query::New() const {
+  return new Query;
 }
 
 void Query::Clear() {
-// @@protoc_insertion_point(message_clear_start:muduo.Query)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  question_.Clear();
-  if (has_questioner()) {
-    GOOGLE_DCHECK(!questioner_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-    (*questioner_.UnsafeRawStringPointer())->clear();
+  if (_has_bits_[0 / 32] & 3) {
+    id_ = GOOGLE_LONGLONG(0);
+    if (has_questioner()) {
+      if (questioner_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        questioner_->clear();
+      }
+    }
   }
-  id_ = GOOGLE_LONGLONG(0);
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  question_.Clear();
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
 }
 
 bool Query::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:muduo.Query)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required int64 id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_id();
+        if (tag == 8) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &id_)));
+          set_has_id();
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_questioner;
         break;
       }
 
       // required string questioner = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (tag == 18) {
+         parse_questioner:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_questioner()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->questioner().data(), static_cast<int>(this->questioner().length()),
+            this->questioner().data(), this->questioner().length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "muduo.Query.questioner");
+            "questioner");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_question;
         break;
       }
 
       // repeated string question = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (tag == 26) {
+         parse_question:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_question()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->question(this->question_size() - 1).data(),
-            static_cast<int>(this->question(this->question_size() - 1).length()),
+            this->question(this->question_size() - 1).length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "muduo.Query.question");
+            "question");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_question;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
           goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
+              input, tag, mutable_unknown_fields()));
         break;
       }
     }
@@ -339,187 +316,145 @@ failure:
 void Query::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:muduo.Query)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // required int64 id = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (has_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->id(), output);
   }
 
   // required string questioner = 2;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_questioner()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->questioner().data(), static_cast<int>(this->questioner().length()),
+      this->questioner().data(), this->questioner().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.Query.questioner");
+      "questioner");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->questioner(), output);
   }
 
   // repeated string question = 3;
-  for (int i = 0, n = this->question_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->question(i).data(), static_cast<int>(this->question(i).length()),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.Query.question");
+  for (int i = 0; i < this->question_size(); i++) {
+  ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    this->question(i).data(), this->question(i).length(),
+    ::google::protobuf::internal::WireFormat::SERIALIZE,
+    "question");
     ::google::protobuf::internal::WireFormatLite::WriteString(
       3, this->question(i), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
+        unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:muduo.Query)
 }
 
-::google::protobuf::uint8* Query::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::google::protobuf::uint8* Query::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:muduo.Query)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // required int64 id = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (has_id()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->id(), target);
   }
 
   // required string questioner = 2;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_questioner()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->questioner().data(), static_cast<int>(this->questioner().length()),
+      this->questioner().data(), this->questioner().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.Query.questioner");
+      "questioner");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->questioner(), target);
   }
 
   // repeated string question = 3;
-  for (int i = 0, n = this->question_size(); i < n; i++) {
+  for (int i = 0; i < this->question_size(); i++) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->question(i).data(), static_cast<int>(this->question(i).length()),
+      this->question(i).data(), this->question(i).length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.Query.question");
+      "question");
     target = ::google::protobuf::internal::WireFormatLite::
       WriteStringToArray(3, this->question(i), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+        unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:muduo.Query)
   return target;
 }
 
-size_t Query::RequiredFieldsByteSizeFallback() const {
-// @@protoc_insertion_point(required_fields_byte_size_fallback_start:muduo.Query)
-  size_t total_size = 0;
+int Query::ByteSize() const {
+  int total_size = 0;
 
-  if (has_questioner()) {
-    // required string questioner = 2;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->questioner());
-  }
-
-  if (has_id()) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // required int64 id = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->id());
-  }
+    if (has_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->id());
+    }
 
-  return total_size;
-}
-size_t Query::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:muduo.Query)
-  size_t total_size = 0;
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
-  if (((_has_bits_[0] & 0x00000003) ^ 0x00000003) == 0) {  // All required fields are present.
     // required string questioner = 2;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->questioner());
+    if (has_questioner()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->questioner());
+    }
 
-    // required int64 id = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->id());
-
-  } else {
-    total_size += RequiredFieldsByteSizeFallback();
   }
   // repeated string question = 3;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->question_size());
-  for (int i = 0, n = this->question_size(); i < n; i++) {
+  total_size += 1 * this->question_size();
+  for (int i = 0; i < this->question_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->question(i));
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
+  _cached_size_ = total_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Query::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:muduo.Query)
-  GOOGLE_DCHECK_NE(&from, this);
+  GOOGLE_CHECK_NE(&from, this);
   const Query* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Query>(
-          &from);
+    ::google::protobuf::internal::dynamic_cast_if_available<const Query*>(
+      &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:muduo.Query)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:muduo.Query)
     MergeFrom(*source);
   }
 }
 
 void Query::MergeFrom(const Query& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:muduo.Query)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
+  GOOGLE_CHECK_NE(&from, this);
   question_.MergeFrom(from.question_);
-  cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 3u) {
-    if (cached_has_bits & 0x00000001u) {
-      set_has_questioner();
-      questioner_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.questioner_);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_id()) {
+      set_id(from.id());
     }
-    if (cached_has_bits & 0x00000002u) {
-      id_ = from.id_;
+    if (from.has_questioner()) {
+      set_questioner(from.questioner());
     }
-    _has_bits_[0] |= cached_has_bits;
   }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Query::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:muduo.Query)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Query::CopyFrom(const Query& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:muduo.Query)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -527,230 +462,62 @@ void Query::CopyFrom(const Query& from) {
 
 bool Query::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000003) != 0x00000003) return false;
+
   return true;
 }
 
 void Query::Swap(Query* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void Query::InternalSwap(Query* other) {
-  using std::swap;
-  question_.InternalSwap(&other->question_);
-  questioner_.Swap(&other->questioner_);
-  swap(id_, other->id_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(id_, other->id_);
+    std::swap(questioner_, other->questioner_);
+    question_.Swap(&other->question_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata Query::GetMetadata() const {
-  protobuf_query_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_query_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Query_descriptor_;
+  metadata.reflection = Query_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Query
-
-// required int64 id = 1;
-bool Query::has_id() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-void Query::set_has_id() {
-  _has_bits_[0] |= 0x00000002u;
-}
-void Query::clear_has_id() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-void Query::clear_id() {
-  id_ = GOOGLE_LONGLONG(0);
-  clear_has_id();
-}
-::google::protobuf::int64 Query::id() const {
-  // @@protoc_insertion_point(field_get:muduo.Query.id)
-  return id_;
-}
-void Query::set_id(::google::protobuf::int64 value) {
-  set_has_id();
-  id_ = value;
-  // @@protoc_insertion_point(field_set:muduo.Query.id)
-}
-
-// required string questioner = 2;
-bool Query::has_questioner() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void Query::set_has_questioner() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void Query::clear_has_questioner() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void Query::clear_questioner() {
-  questioner_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_questioner();
-}
-const ::std::string& Query::questioner() const {
-  // @@protoc_insertion_point(field_get:muduo.Query.questioner)
-  return questioner_.GetNoArena();
-}
-void Query::set_questioner(const ::std::string& value) {
-  set_has_questioner();
-  questioner_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:muduo.Query.questioner)
-}
-#if LANG_CXX11
-void Query::set_questioner(::std::string&& value) {
-  set_has_questioner();
-  questioner_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:muduo.Query.questioner)
-}
-#endif
-void Query::set_questioner(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_questioner();
-  questioner_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:muduo.Query.questioner)
-}
-void Query::set_questioner(const char* value, size_t size) {
-  set_has_questioner();
-  questioner_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:muduo.Query.questioner)
-}
-::std::string* Query::mutable_questioner() {
-  set_has_questioner();
-  // @@protoc_insertion_point(field_mutable:muduo.Query.questioner)
-  return questioner_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Query::release_questioner() {
-  // @@protoc_insertion_point(field_release:muduo.Query.questioner)
-  clear_has_questioner();
-  return questioner_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Query::set_allocated_questioner(::std::string* questioner) {
-  if (questioner != NULL) {
-    set_has_questioner();
-  } else {
-    clear_has_questioner();
-  }
-  questioner_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), questioner);
-  // @@protoc_insertion_point(field_set_allocated:muduo.Query.questioner)
-}
-
-// repeated string question = 3;
-int Query::question_size() const {
-  return question_.size();
-}
-void Query::clear_question() {
-  question_.Clear();
-}
-const ::std::string& Query::question(int index) const {
-  // @@protoc_insertion_point(field_get:muduo.Query.question)
-  return question_.Get(index);
-}
-::std::string* Query::mutable_question(int index) {
-  // @@protoc_insertion_point(field_mutable:muduo.Query.question)
-  return question_.Mutable(index);
-}
-void Query::set_question(int index, const ::std::string& value) {
-  // @@protoc_insertion_point(field_set:muduo.Query.question)
-  question_.Mutable(index)->assign(value);
-}
-#if LANG_CXX11
-void Query::set_question(int index, ::std::string&& value) {
-  // @@protoc_insertion_point(field_set:muduo.Query.question)
-  question_.Mutable(index)->assign(std::move(value));
-}
-#endif
-void Query::set_question(int index, const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  question_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:muduo.Query.question)
-}
-void Query::set_question(int index, const char* value, size_t size) {
-  question_.Mutable(index)->assign(
-    reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:muduo.Query.question)
-}
-::std::string* Query::add_question() {
-  // @@protoc_insertion_point(field_add_mutable:muduo.Query.question)
-  return question_.Add();
-}
-void Query::add_question(const ::std::string& value) {
-  question_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:muduo.Query.question)
-}
-#if LANG_CXX11
-void Query::add_question(::std::string&& value) {
-  question_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:muduo.Query.question)
-}
-#endif
-void Query::add_question(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  question_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:muduo.Query.question)
-}
-void Query::add_question(const char* value, size_t size) {
-  question_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:muduo.Query.question)
-}
-const ::google::protobuf::RepeatedPtrField< ::std::string>&
-Query::question() const {
-  // @@protoc_insertion_point(field_list:muduo.Query.question)
-  return question_;
-}
-::google::protobuf::RepeatedPtrField< ::std::string>*
-Query::mutable_question() {
-  // @@protoc_insertion_point(field_mutable_list:muduo.Query.question)
-  return &question_;
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int Answer::kIdFieldNumber;
 const int Answer::kQuestionerFieldNumber;
 const int Answer::kAnswererFieldNumber;
 const int Answer::kSolutionFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 Answer::Answer()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_query_2eproto::InitDefaults();
-  }
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:muduo.Answer)
 }
+
+void Answer::InitAsDefaultInstance() {
+}
+
 Answer::Answer(const Answer& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_),
-      _cached_size_(0),
-      solution_(from.solution_) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  questioner_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_questioner()) {
-    questioner_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.questioner_);
-  }
-  answerer_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_answerer()) {
-    answerer_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.answerer_);
-  }
-  id_ = from.id_;
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:muduo.Answer)
 }
 
 void Answer::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  questioner_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  answerer_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
   id_ = GOOGLE_LONGLONG(0);
+  questioner_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  answerer_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 Answer::~Answer() {
@@ -759,8 +526,14 @@ Answer::~Answer() {
 }
 
 void Answer::SharedDtor() {
-  questioner_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  answerer_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (questioner_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete questioner_;
+  }
+  if (answerer_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete answerer_;
+  }
+  if (this != default_instance_) {
+  }
 }
 
 void Answer::SetCachedSize(int size) const {
@@ -769,126 +542,126 @@ void Answer::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Answer::descriptor() {
-  protobuf_query_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_query_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  protobuf_AssignDescriptorsOnce();
+  return Answer_descriptor_;
 }
 
 const Answer& Answer::default_instance() {
-  protobuf_query_2eproto::InitDefaults();
-  return *internal_default_instance();
+  if (default_instance_ == NULL) protobuf_AddDesc_query_2eproto();
+  return *default_instance_;
 }
 
-Answer* Answer::New(::google::protobuf::Arena* arena) const {
-  Answer* n = new Answer;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+Answer* Answer::default_instance_ = NULL;
+
+Answer* Answer::New() const {
+  return new Answer;
 }
 
 void Answer::Clear() {
-// @@protoc_insertion_point(message_clear_start:muduo.Answer)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  solution_.Clear();
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
-    if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(!questioner_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-      (*questioner_.UnsafeRawStringPointer())->clear();
+  if (_has_bits_[0 / 32] & 7) {
+    id_ = GOOGLE_LONGLONG(0);
+    if (has_questioner()) {
+      if (questioner_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        questioner_->clear();
+      }
     }
-    if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(!answerer_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-      (*answerer_.UnsafeRawStringPointer())->clear();
+    if (has_answerer()) {
+      if (answerer_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        answerer_->clear();
+      }
     }
   }
-  id_ = GOOGLE_LONGLONG(0);
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  solution_.Clear();
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
 }
 
 bool Answer::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:muduo.Answer)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required int64 id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_id();
+        if (tag == 8) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &id_)));
+          set_has_id();
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_questioner;
         break;
       }
 
       // required string questioner = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (tag == 18) {
+         parse_questioner:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_questioner()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->questioner().data(), static_cast<int>(this->questioner().length()),
+            this->questioner().data(), this->questioner().length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "muduo.Answer.questioner");
+            "questioner");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(26)) goto parse_answerer;
         break;
       }
 
       // required string answerer = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(26u /* 26 & 0xFF */)) {
+        if (tag == 26) {
+         parse_answerer:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_answerer()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->answerer().data(), static_cast<int>(this->answerer().length()),
+            this->answerer().data(), this->answerer().length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "muduo.Answer.answerer");
+            "answerer");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_solution;
         break;
       }
 
       // repeated string solution = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(34u /* 34 & 0xFF */)) {
+        if (tag == 34) {
+         parse_solution:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->add_solution()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
             this->solution(this->solution_size() - 1).data(),
-            static_cast<int>(this->solution(this->solution_size() - 1).length()),
+            this->solution(this->solution_size() - 1).length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "muduo.Answer.solution");
+            "solution");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(34)) goto parse_solution;
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
           goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
+              input, tag, mutable_unknown_fields()));
         break;
       }
     }
@@ -905,224 +678,176 @@ failure:
 void Answer::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:muduo.Answer)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // required int64 id = 1;
-  if (cached_has_bits & 0x00000004u) {
+  if (has_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(1, this->id(), output);
   }
 
   // required string questioner = 2;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_questioner()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->questioner().data(), static_cast<int>(this->questioner().length()),
+      this->questioner().data(), this->questioner().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.Answer.questioner");
+      "questioner");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->questioner(), output);
   }
 
   // required string answerer = 3;
-  if (cached_has_bits & 0x00000002u) {
+  if (has_answerer()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->answerer().data(), static_cast<int>(this->answerer().length()),
+      this->answerer().data(), this->answerer().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.Answer.answerer");
+      "answerer");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       3, this->answerer(), output);
   }
 
   // repeated string solution = 4;
-  for (int i = 0, n = this->solution_size(); i < n; i++) {
-    ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->solution(i).data(), static_cast<int>(this->solution(i).length()),
-      ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.Answer.solution");
+  for (int i = 0; i < this->solution_size(); i++) {
+  ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
+    this->solution(i).data(), this->solution(i).length(),
+    ::google::protobuf::internal::WireFormat::SERIALIZE,
+    "solution");
     ::google::protobuf::internal::WireFormatLite::WriteString(
       4, this->solution(i), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
+        unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:muduo.Answer)
 }
 
-::google::protobuf::uint8* Answer::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::google::protobuf::uint8* Answer::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:muduo.Answer)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // required int64 id = 1;
-  if (cached_has_bits & 0x00000004u) {
+  if (has_id()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(1, this->id(), target);
   }
 
   // required string questioner = 2;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_questioner()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->questioner().data(), static_cast<int>(this->questioner().length()),
+      this->questioner().data(), this->questioner().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.Answer.questioner");
+      "questioner");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->questioner(), target);
   }
 
   // required string answerer = 3;
-  if (cached_has_bits & 0x00000002u) {
+  if (has_answerer()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->answerer().data(), static_cast<int>(this->answerer().length()),
+      this->answerer().data(), this->answerer().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.Answer.answerer");
+      "answerer");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         3, this->answerer(), target);
   }
 
   // repeated string solution = 4;
-  for (int i = 0, n = this->solution_size(); i < n; i++) {
+  for (int i = 0; i < this->solution_size(); i++) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->solution(i).data(), static_cast<int>(this->solution(i).length()),
+      this->solution(i).data(), this->solution(i).length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "muduo.Answer.solution");
+      "solution");
     target = ::google::protobuf::internal::WireFormatLite::
       WriteStringToArray(4, this->solution(i), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+        unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:muduo.Answer)
   return target;
 }
 
-size_t Answer::RequiredFieldsByteSizeFallback() const {
-// @@protoc_insertion_point(required_fields_byte_size_fallback_start:muduo.Answer)
-  size_t total_size = 0;
+int Answer::ByteSize() const {
+  int total_size = 0;
 
-  if (has_questioner()) {
-    // required string questioner = 2;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->questioner());
-  }
-
-  if (has_answerer()) {
-    // required string answerer = 3;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->answerer());
-  }
-
-  if (has_id()) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // required int64 id = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->id());
-  }
+    if (has_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->id());
+    }
 
-  return total_size;
-}
-size_t Answer::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:muduo.Answer)
-  size_t total_size = 0;
-
-  if (_internal_metadata_.have_unknown_fields()) {
-    total_size +=
-      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
-  }
-  if (((_has_bits_[0] & 0x00000007) ^ 0x00000007) == 0) {  // All required fields are present.
     // required string questioner = 2;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->questioner());
+    if (has_questioner()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->questioner());
+    }
 
     // required string answerer = 3;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->answerer());
+    if (has_answerer()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->answerer());
+    }
 
-    // required int64 id = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->id());
-
-  } else {
-    total_size += RequiredFieldsByteSizeFallback();
   }
   // repeated string solution = 4;
-  total_size += 1 *
-      ::google::protobuf::internal::FromIntSize(this->solution_size());
-  for (int i = 0, n = this->solution_size(); i < n; i++) {
+  total_size += 1 * this->solution_size();
+  for (int i = 0; i < this->solution_size(); i++) {
     total_size += ::google::protobuf::internal::WireFormatLite::StringSize(
       this->solution(i));
   }
 
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
+  if (!unknown_fields().empty()) {
+    total_size +=
+      ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
+        unknown_fields());
+  }
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
+  _cached_size_ = total_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Answer::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:muduo.Answer)
-  GOOGLE_DCHECK_NE(&from, this);
+  GOOGLE_CHECK_NE(&from, this);
   const Answer* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Answer>(
-          &from);
+    ::google::protobuf::internal::dynamic_cast_if_available<const Answer*>(
+      &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:muduo.Answer)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:muduo.Answer)
     MergeFrom(*source);
   }
 }
 
 void Answer::MergeFrom(const Answer& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:muduo.Answer)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
+  GOOGLE_CHECK_NE(&from, this);
   solution_.MergeFrom(from.solution_);
-  cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 7u) {
-    if (cached_has_bits & 0x00000001u) {
-      set_has_questioner();
-      questioner_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.questioner_);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_id()) {
+      set_id(from.id());
     }
-    if (cached_has_bits & 0x00000002u) {
-      set_has_answerer();
-      answerer_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.answerer_);
+    if (from.has_questioner()) {
+      set_questioner(from.questioner());
     }
-    if (cached_has_bits & 0x00000004u) {
-      id_ = from.id_;
+    if (from.has_answerer()) {
+      set_answerer(from.answerer());
     }
-    _has_bits_[0] |= cached_has_bits;
   }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Answer::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:muduo.Answer)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Answer::CopyFrom(const Answer& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:muduo.Answer)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -1130,280 +855,57 @@ void Answer::CopyFrom(const Answer& from) {
 
 bool Answer::IsInitialized() const {
   if ((_has_bits_[0] & 0x00000007) != 0x00000007) return false;
+
   return true;
 }
 
 void Answer::Swap(Answer* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void Answer::InternalSwap(Answer* other) {
-  using std::swap;
-  solution_.InternalSwap(&other->solution_);
-  questioner_.Swap(&other->questioner_);
-  answerer_.Swap(&other->answerer_);
-  swap(id_, other->id_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(id_, other->id_);
+    std::swap(questioner_, other->questioner_);
+    std::swap(answerer_, other->answerer_);
+    solution_.Swap(&other->solution_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata Answer::GetMetadata() const {
-  protobuf_query_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_query_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Answer_descriptor_;
+  metadata.reflection = Answer_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Answer
-
-// required int64 id = 1;
-bool Answer::has_id() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-void Answer::set_has_id() {
-  _has_bits_[0] |= 0x00000004u;
-}
-void Answer::clear_has_id() {
-  _has_bits_[0] &= ~0x00000004u;
-}
-void Answer::clear_id() {
-  id_ = GOOGLE_LONGLONG(0);
-  clear_has_id();
-}
-::google::protobuf::int64 Answer::id() const {
-  // @@protoc_insertion_point(field_get:muduo.Answer.id)
-  return id_;
-}
-void Answer::set_id(::google::protobuf::int64 value) {
-  set_has_id();
-  id_ = value;
-  // @@protoc_insertion_point(field_set:muduo.Answer.id)
-}
-
-// required string questioner = 2;
-bool Answer::has_questioner() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void Answer::set_has_questioner() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void Answer::clear_has_questioner() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void Answer::clear_questioner() {
-  questioner_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_questioner();
-}
-const ::std::string& Answer::questioner() const {
-  // @@protoc_insertion_point(field_get:muduo.Answer.questioner)
-  return questioner_.GetNoArena();
-}
-void Answer::set_questioner(const ::std::string& value) {
-  set_has_questioner();
-  questioner_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:muduo.Answer.questioner)
-}
-#if LANG_CXX11
-void Answer::set_questioner(::std::string&& value) {
-  set_has_questioner();
-  questioner_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:muduo.Answer.questioner)
-}
-#endif
-void Answer::set_questioner(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_questioner();
-  questioner_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:muduo.Answer.questioner)
-}
-void Answer::set_questioner(const char* value, size_t size) {
-  set_has_questioner();
-  questioner_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:muduo.Answer.questioner)
-}
-::std::string* Answer::mutable_questioner() {
-  set_has_questioner();
-  // @@protoc_insertion_point(field_mutable:muduo.Answer.questioner)
-  return questioner_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Answer::release_questioner() {
-  // @@protoc_insertion_point(field_release:muduo.Answer.questioner)
-  clear_has_questioner();
-  return questioner_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Answer::set_allocated_questioner(::std::string* questioner) {
-  if (questioner != NULL) {
-    set_has_questioner();
-  } else {
-    clear_has_questioner();
-  }
-  questioner_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), questioner);
-  // @@protoc_insertion_point(field_set_allocated:muduo.Answer.questioner)
-}
-
-// required string answerer = 3;
-bool Answer::has_answerer() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-void Answer::set_has_answerer() {
-  _has_bits_[0] |= 0x00000002u;
-}
-void Answer::clear_has_answerer() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-void Answer::clear_answerer() {
-  answerer_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_answerer();
-}
-const ::std::string& Answer::answerer() const {
-  // @@protoc_insertion_point(field_get:muduo.Answer.answerer)
-  return answerer_.GetNoArena();
-}
-void Answer::set_answerer(const ::std::string& value) {
-  set_has_answerer();
-  answerer_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:muduo.Answer.answerer)
-}
-#if LANG_CXX11
-void Answer::set_answerer(::std::string&& value) {
-  set_has_answerer();
-  answerer_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:muduo.Answer.answerer)
-}
-#endif
-void Answer::set_answerer(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_answerer();
-  answerer_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:muduo.Answer.answerer)
-}
-void Answer::set_answerer(const char* value, size_t size) {
-  set_has_answerer();
-  answerer_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:muduo.Answer.answerer)
-}
-::std::string* Answer::mutable_answerer() {
-  set_has_answerer();
-  // @@protoc_insertion_point(field_mutable:muduo.Answer.answerer)
-  return answerer_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* Answer::release_answerer() {
-  // @@protoc_insertion_point(field_release:muduo.Answer.answerer)
-  clear_has_answerer();
-  return answerer_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void Answer::set_allocated_answerer(::std::string* answerer) {
-  if (answerer != NULL) {
-    set_has_answerer();
-  } else {
-    clear_has_answerer();
-  }
-  answerer_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), answerer);
-  // @@protoc_insertion_point(field_set_allocated:muduo.Answer.answerer)
-}
-
-// repeated string solution = 4;
-int Answer::solution_size() const {
-  return solution_.size();
-}
-void Answer::clear_solution() {
-  solution_.Clear();
-}
-const ::std::string& Answer::solution(int index) const {
-  // @@protoc_insertion_point(field_get:muduo.Answer.solution)
-  return solution_.Get(index);
-}
-::std::string* Answer::mutable_solution(int index) {
-  // @@protoc_insertion_point(field_mutable:muduo.Answer.solution)
-  return solution_.Mutable(index);
-}
-void Answer::set_solution(int index, const ::std::string& value) {
-  // @@protoc_insertion_point(field_set:muduo.Answer.solution)
-  solution_.Mutable(index)->assign(value);
-}
-#if LANG_CXX11
-void Answer::set_solution(int index, ::std::string&& value) {
-  // @@protoc_insertion_point(field_set:muduo.Answer.solution)
-  solution_.Mutable(index)->assign(std::move(value));
-}
-#endif
-void Answer::set_solution(int index, const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  solution_.Mutable(index)->assign(value);
-  // @@protoc_insertion_point(field_set_char:muduo.Answer.solution)
-}
-void Answer::set_solution(int index, const char* value, size_t size) {
-  solution_.Mutable(index)->assign(
-    reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_set_pointer:muduo.Answer.solution)
-}
-::std::string* Answer::add_solution() {
-  // @@protoc_insertion_point(field_add_mutable:muduo.Answer.solution)
-  return solution_.Add();
-}
-void Answer::add_solution(const ::std::string& value) {
-  solution_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add:muduo.Answer.solution)
-}
-#if LANG_CXX11
-void Answer::add_solution(::std::string&& value) {
-  solution_.Add(std::move(value));
-  // @@protoc_insertion_point(field_add:muduo.Answer.solution)
-}
-#endif
-void Answer::add_solution(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  solution_.Add()->assign(value);
-  // @@protoc_insertion_point(field_add_char:muduo.Answer.solution)
-}
-void Answer::add_solution(const char* value, size_t size) {
-  solution_.Add()->assign(reinterpret_cast<const char*>(value), size);
-  // @@protoc_insertion_point(field_add_pointer:muduo.Answer.solution)
-}
-const ::google::protobuf::RepeatedPtrField< ::std::string>&
-Answer::solution() const {
-  // @@protoc_insertion_point(field_list:muduo.Answer.solution)
-  return solution_;
-}
-::google::protobuf::RepeatedPtrField< ::std::string>*
-Answer::mutable_solution() {
-  // @@protoc_insertion_point(field_mutable_list:muduo.Answer.solution)
-  return &solution_;
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // ===================================================================
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int Empty::kIdFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 Empty::Empty()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_query_2eproto::InitDefaults();
-  }
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:muduo.Empty)
 }
+
+void Empty::InitAsDefaultInstance() {
+}
+
 Empty::Empty(const Empty& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  id_ = from.id_;
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:muduo.Empty)
 }
 
 void Empty::SharedCtor() {
   _cached_size_ = 0;
   id_ = 0;
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 Empty::~Empty() {
@@ -1412,6 +914,8 @@ Empty::~Empty() {
 }
 
 void Empty::SharedDtor() {
+  if (this != default_instance_) {
+  }
 }
 
 void Empty::SetCachedSize(int size) const {
@@ -1420,65 +924,60 @@ void Empty::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* Empty::descriptor() {
-  protobuf_query_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_query_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  protobuf_AssignDescriptorsOnce();
+  return Empty_descriptor_;
 }
 
 const Empty& Empty::default_instance() {
-  protobuf_query_2eproto::InitDefaults();
-  return *internal_default_instance();
+  if (default_instance_ == NULL) protobuf_AddDesc_query_2eproto();
+  return *default_instance_;
 }
 
-Empty* Empty::New(::google::protobuf::Arena* arena) const {
-  Empty* n = new Empty;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+Empty* Empty::default_instance_ = NULL;
+
+Empty* Empty::New() const {
+  return new Empty;
 }
 
 void Empty::Clear() {
-// @@protoc_insertion_point(message_clear_start:muduo.Empty)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
   id_ = 0;
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
 }
 
 bool Empty::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:muduo.Empty)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional int32 id = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(8u /* 8 & 0xFF */)) {
-          set_has_id();
+        if (tag == 8) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &id_)));
+          set_has_id();
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
           goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
+              input, tag, mutable_unknown_fields()));
         break;
       }
     }
@@ -1495,156 +994,113 @@ failure:
 void Empty::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:muduo.Empty)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // optional int32 id = 1;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->id(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
+        unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:muduo.Empty)
 }
 
-::google::protobuf::uint8* Empty::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::google::protobuf::uint8* Empty::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:muduo.Empty)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // optional int32 id = 1;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_id()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->id(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+        unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:muduo.Empty)
   return target;
 }
 
-size_t Empty::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:muduo.Empty)
-  size_t total_size = 0;
+int Empty::ByteSize() const {
+  int total_size = 0;
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional int32 id = 1;
+    if (has_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->id());
+    }
+
+  }
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
+        unknown_fields());
   }
-  // optional int32 id = 1;
-  if (has_id()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->id());
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
+  _cached_size_ = total_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void Empty::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:muduo.Empty)
-  GOOGLE_DCHECK_NE(&from, this);
+  GOOGLE_CHECK_NE(&from, this);
   const Empty* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const Empty>(
-          &from);
+    ::google::protobuf::internal::dynamic_cast_if_available<const Empty*>(
+      &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:muduo.Empty)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:muduo.Empty)
     MergeFrom(*source);
   }
 }
 
 void Empty::MergeFrom(const Empty& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:muduo.Empty)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  if (from.has_id()) {
-    set_id(from.id());
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_id()) {
+      set_id(from.id());
+    }
   }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void Empty::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:muduo.Empty)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void Empty::CopyFrom(const Empty& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:muduo.Empty)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool Empty::IsInitialized() const {
+
   return true;
 }
 
 void Empty::Swap(Empty* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void Empty::InternalSwap(Empty* other) {
-  using std::swap;
-  swap(id_, other->id_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(id_, other->id_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata Empty::GetMetadata() const {
-  protobuf_query_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_query_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = Empty_descriptor_;
+  metadata.reflection = Empty_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// Empty
-
-// optional int32 id = 1;
-bool Empty::has_id() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void Empty::set_has_id() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void Empty::clear_has_id() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void Empty::clear_id() {
-  id_ = 0;
-  clear_has_id();
-}
-::google::protobuf::int32 Empty::id() const {
-  // @@protoc_insertion_point(field_get:muduo.Empty.id)
-  return id_;
-}
-void Empty::set_id(::google::protobuf::int32 value) {
-  set_has_id();
-  id_ = value;
-  // @@protoc_insertion_point(field_set:muduo.Empty.id)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

@@ -7,7 +7,6 @@
 #include <algorithm>
 
 #include <google/protobuf/stubs/common.h>
-#include <google/protobuf/stubs/port.h>
 #include <google/protobuf/stubs/once.h>
 #include <google/protobuf/io/coded_stream.h>
 #include <google/protobuf/wire_format_lite_inl.h>
@@ -18,204 +17,155 @@
 // @@protoc_insertion_point(includes)
 
 namespace logging {
-class LogRecord_HeartbeatDefaultTypeInternal {
-public:
- ::google::protobuf::internal::ExplicitlyConstructed<LogRecord_Heartbeat>
-     _instance;
-} _LogRecord_Heartbeat_default_instance_;
-class LogRecordDefaultTypeInternal {
-public:
- ::google::protobuf::internal::ExplicitlyConstructed<LogRecord>
-     _instance;
-} _LogRecord_default_instance_;
-
-namespace protobuf_logrecord_2eproto {
-
 
 namespace {
 
-::google::protobuf::Metadata file_level_metadata[2];
+const ::google::protobuf::Descriptor* LogRecord_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  LogRecord_reflection_ = NULL;
+const ::google::protobuf::Descriptor* LogRecord_Heartbeat_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  LogRecord_Heartbeat_reflection_ = NULL;
 
 }  // namespace
 
-PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTableField
-    const TableStruct::entries[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  {0, 0, 0, ::google::protobuf::internal::kInvalidMask, 0, 0},
-};
 
-PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::AuxillaryParseTableField
-    const TableStruct::aux[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  ::google::protobuf::internal::AuxillaryParseTableField(),
-};
-PROTOBUF_CONSTEXPR_VAR ::google::protobuf::internal::ParseTable const
-    TableStruct::schema[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { NULL, NULL, 0, -1, -1, -1, -1, NULL, false },
-  { NULL, NULL, 0, -1, -1, -1, -1, NULL, false },
-};
-
-const ::google::protobuf::uint32 TableStruct::offsets[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, hostname_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, process_name_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, process_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, process_start_time_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, username_),
-  0,
-  1,
-  4,
-  3,
-  2,
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, _has_bits_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, _internal_metadata_),
-  ~0u,  // no _extensions_
-  ~0u,  // no _oneof_case_
-  ~0u,  // no _weak_field_map_
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, heartbeat_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, level_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, thread_id_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, timestamp_),
-  GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, message_),
-  1,
-  2,
-  3,
-  4,
-  0,
-};
-static const ::google::protobuf::internal::MigrationSchema schemas[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, 10, sizeof(LogRecord_Heartbeat)},
-  { 15, 25, sizeof(LogRecord)},
-};
-
-static ::google::protobuf::Message const * const file_default_instances[] = {
-  reinterpret_cast<const ::google::protobuf::Message*>(&_LogRecord_Heartbeat_default_instance_),
-  reinterpret_cast<const ::google::protobuf::Message*>(&_LogRecord_default_instance_),
-};
+void protobuf_AssignDesc_logrecord_2eproto() {
+  protobuf_AddDesc_logrecord_2eproto();
+  const ::google::protobuf::FileDescriptor* file =
+    ::google::protobuf::DescriptorPool::generated_pool()->FindFileByName(
+      "logrecord.proto");
+  GOOGLE_CHECK(file != NULL);
+  LogRecord_descriptor_ = file->message_type(0);
+  static const int LogRecord_offsets_[5] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, heartbeat_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, level_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, thread_id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, timestamp_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, message_),
+  };
+  LogRecord_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      LogRecord_descriptor_,
+      LogRecord::default_instance_,
+      LogRecord_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(LogRecord));
+  LogRecord_Heartbeat_descriptor_ = LogRecord_descriptor_->nested_type(0);
+  static const int LogRecord_Heartbeat_offsets_[5] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, hostname_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, process_name_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, process_id_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, process_start_time_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, username_),
+  };
+  LogRecord_Heartbeat_reflection_ =
+    new ::google::protobuf::internal::GeneratedMessageReflection(
+      LogRecord_Heartbeat_descriptor_,
+      LogRecord_Heartbeat::default_instance_,
+      LogRecord_Heartbeat_offsets_,
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, _has_bits_[0]),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(LogRecord_Heartbeat, _unknown_fields_),
+      -1,
+      ::google::protobuf::DescriptorPool::generated_pool(),
+      ::google::protobuf::MessageFactory::generated_factory(),
+      sizeof(LogRecord_Heartbeat));
+}
 
 namespace {
 
-void protobuf_AssignDescriptors() {
-  AddDescriptors();
-  ::google::protobuf::MessageFactory* factory = NULL;
-  AssignDescriptors(
-      "logrecord.proto", schemas, file_default_instances, TableStruct::offsets, factory,
-      file_level_metadata, NULL, NULL);
+GOOGLE_PROTOBUF_DECLARE_ONCE(protobuf_AssignDescriptors_once_);
+inline void protobuf_AssignDescriptorsOnce() {
+  ::google::protobuf::GoogleOnceInit(&protobuf_AssignDescriptors_once_,
+                 &protobuf_AssignDesc_logrecord_2eproto);
 }
 
-void protobuf_AssignDescriptorsOnce() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &protobuf_AssignDescriptors);
-}
-
-void protobuf_RegisterTypes(const ::std::string&) GOOGLE_ATTRIBUTE_COLD;
 void protobuf_RegisterTypes(const ::std::string&) {
   protobuf_AssignDescriptorsOnce();
-  ::google::protobuf::internal::RegisterAllTypes(file_level_metadata, 2);
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    LogRecord_descriptor_, &LogRecord::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+    LogRecord_Heartbeat_descriptor_, &LogRecord_Heartbeat::default_instance());
 }
 
 }  // namespace
-void TableStruct::InitDefaultsImpl() {
+
+void protobuf_ShutdownFile_logrecord_2eproto() {
+  delete LogRecord::default_instance_;
+  delete LogRecord_reflection_;
+  delete LogRecord_Heartbeat::default_instance_;
+  delete LogRecord_Heartbeat_reflection_;
+}
+
+void protobuf_AddDesc_logrecord_2eproto() {
+  static bool already_here = false;
+  if (already_here) return;
+  already_here = true;
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
-  ::google::protobuf::internal::InitProtobufDefaults();
-  _LogRecord_Heartbeat_default_instance_._instance.DefaultConstruct();
-  ::google::protobuf::internal::OnShutdownDestroyMessage(
-      &_LogRecord_Heartbeat_default_instance_);_LogRecord_default_instance_._instance.DefaultConstruct();
-  ::google::protobuf::internal::OnShutdownDestroyMessage(
-      &_LogRecord_default_instance_);_LogRecord_default_instance_._instance.get_mutable()->heartbeat_ = const_cast< ::logging::LogRecord_Heartbeat*>(
-      ::logging::LogRecord_Heartbeat::internal_default_instance());
-}
-
-void InitDefaults() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &TableStruct::InitDefaultsImpl);
-}
-namespace {
-void AddDescriptorsImpl() {
-  InitDefaults();
-  static const char descriptor[] GOOGLE_ATTRIBUTE_SECTION_VARIABLE(protodesc_cold) = {
-      "\n\017logrecord.proto\022\007logging\"\371\001\n\tLogRecord"
-      "\022/\n\theartbeat\030\001 \001(\0132\034.logging.LogRecord."
-      "Heartbeat\022\r\n\005level\030\002 \002(\005\022\021\n\tthread_id\030\003 "
-      "\002(\005\022\021\n\ttimestamp\030\004 \002(\003\022\017\n\007message\030\005 \002(\t\032"
-      "u\n\tHeartbeat\022\020\n\010hostname\030\001 \002(\t\022\024\n\014proces"
-      "s_name\030\002 \002(\t\022\022\n\nprocess_id\030\003 \002(\005\022\032\n\022proc"
-      "ess_start_time\030\004 \002(\003\022\020\n\010username\030\005 \002(\t"
-  };
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-      descriptor, 278);
+    "\n\017logrecord.proto\022\007logging\"\371\001\n\tLogRecord"
+    "\022/\n\theartbeat\030\001 \001(\0132\034.logging.LogRecord."
+    "Heartbeat\022\r\n\005level\030\002 \002(\005\022\021\n\tthread_id\030\003 "
+    "\002(\005\022\021\n\ttimestamp\030\004 \002(\003\022\017\n\007message\030\005 \002(\t\032"
+    "u\n\tHeartbeat\022\020\n\010hostname\030\001 \002(\t\022\024\n\014proces"
+    "s_name\030\002 \002(\t\022\022\n\nprocess_id\030\003 \002(\005\022\032\n\022proc"
+    "ess_start_time\030\004 \002(\003\022\020\n\010username\030\005 \002(\t", 278);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "logrecord.proto", &protobuf_RegisterTypes);
+  LogRecord::default_instance_ = new LogRecord();
+  LogRecord_Heartbeat::default_instance_ = new LogRecord_Heartbeat();
+  LogRecord::default_instance_->InitAsDefaultInstance();
+  LogRecord_Heartbeat::default_instance_->InitAsDefaultInstance();
+  ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_logrecord_2eproto);
 }
-} // anonymous namespace
 
-void AddDescriptors() {
-  static GOOGLE_PROTOBUF_DECLARE_ONCE(once);
-  ::google::protobuf::GoogleOnceInit(&once, &AddDescriptorsImpl);
-}
-// Force AddDescriptors() to be called at dynamic initialization time.
-struct StaticDescriptorInitializer {
-  StaticDescriptorInitializer() {
-    AddDescriptors();
+// Force AddDescriptors() to be called at static initialization time.
+struct StaticDescriptorInitializer_logrecord_2eproto {
+  StaticDescriptorInitializer_logrecord_2eproto() {
+    protobuf_AddDesc_logrecord_2eproto();
   }
-} static_descriptor_initializer;
-
-}  // namespace protobuf_logrecord_2eproto
-
+} static_descriptor_initializer_logrecord_2eproto_;
 
 // ===================================================================
 
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int LogRecord_Heartbeat::kHostnameFieldNumber;
 const int LogRecord_Heartbeat::kProcessNameFieldNumber;
 const int LogRecord_Heartbeat::kProcessIdFieldNumber;
 const int LogRecord_Heartbeat::kProcessStartTimeFieldNumber;
 const int LogRecord_Heartbeat::kUsernameFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 LogRecord_Heartbeat::LogRecord_Heartbeat()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_logrecord_2eproto::InitDefaults();
-  }
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:logging.LogRecord.Heartbeat)
 }
+
+void LogRecord_Heartbeat::InitAsDefaultInstance() {
+}
+
 LogRecord_Heartbeat::LogRecord_Heartbeat(const LogRecord_Heartbeat& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  hostname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_hostname()) {
-    hostname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hostname_);
-  }
-  process_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_process_name()) {
-    process_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.process_name_);
-  }
-  username_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_username()) {
-    username_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.username_);
-  }
-  ::memcpy(&process_start_time_, &from.process_start_time_,
-    static_cast<size_t>(reinterpret_cast<char*>(&process_id_) -
-    reinterpret_cast<char*>(&process_start_time_)) + sizeof(process_id_));
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:logging.LogRecord.Heartbeat)
 }
 
 void LogRecord_Heartbeat::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  hostname_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  process_name_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  username_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&process_start_time_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&process_id_) -
-      reinterpret_cast<char*>(&process_start_time_)) + sizeof(process_id_));
+  hostname_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  process_name_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  process_id_ = 0;
+  process_start_time_ = GOOGLE_LONGLONG(0);
+  username_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 LogRecord_Heartbeat::~LogRecord_Heartbeat() {
@@ -224,9 +174,17 @@ LogRecord_Heartbeat::~LogRecord_Heartbeat() {
 }
 
 void LogRecord_Heartbeat::SharedDtor() {
-  hostname_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  process_name_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  username_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  if (hostname_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete hostname_;
+  }
+  if (process_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete process_name_;
+  }
+  if (username_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete username_;
+  }
+  if (this != default_instance_) {
+  }
 }
 
 void LogRecord_Heartbeat::SetCachedSize(int size) const {
@@ -235,146 +193,144 @@ void LogRecord_Heartbeat::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* LogRecord_Heartbeat::descriptor() {
-  protobuf_logrecord_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_logrecord_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  protobuf_AssignDescriptorsOnce();
+  return LogRecord_Heartbeat_descriptor_;
 }
 
 const LogRecord_Heartbeat& LogRecord_Heartbeat::default_instance() {
-  protobuf_logrecord_2eproto::InitDefaults();
-  return *internal_default_instance();
+  if (default_instance_ == NULL) protobuf_AddDesc_logrecord_2eproto();
+  return *default_instance_;
 }
 
-LogRecord_Heartbeat* LogRecord_Heartbeat::New(::google::protobuf::Arena* arena) const {
-  LogRecord_Heartbeat* n = new LogRecord_Heartbeat;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+LogRecord_Heartbeat* LogRecord_Heartbeat::default_instance_ = NULL;
+
+LogRecord_Heartbeat* LogRecord_Heartbeat::New() const {
+  return new LogRecord_Heartbeat;
 }
 
 void LogRecord_Heartbeat::Clear() {
-// @@protoc_insertion_point(message_clear_start:logging.LogRecord.Heartbeat)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 7u) {
-    if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(!hostname_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-      (*hostname_.UnsafeRawStringPointer())->clear();
+  if (_has_bits_[0 / 32] & 31) {
+    if (has_hostname()) {
+      if (hostname_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        hostname_->clear();
+      }
     }
-    if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(!process_name_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-      (*process_name_.UnsafeRawStringPointer())->clear();
+    if (has_process_name()) {
+      if (process_name_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        process_name_->clear();
+      }
     }
-    if (cached_has_bits & 0x00000004u) {
-      GOOGLE_DCHECK(!username_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-      (*username_.UnsafeRawStringPointer())->clear();
+    process_id_ = 0;
+    process_start_time_ = GOOGLE_LONGLONG(0);
+    if (has_username()) {
+      if (username_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        username_->clear();
+      }
     }
   }
-  if (cached_has_bits & 24u) {
-    ::memset(&process_start_time_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&process_id_) -
-        reinterpret_cast<char*>(&process_start_time_)) + sizeof(process_id_));
-  }
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
 }
 
 bool LogRecord_Heartbeat::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:logging.LogRecord.Heartbeat)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // required string hostname = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_hostname()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->hostname().data(), static_cast<int>(this->hostname().length()),
+            this->hostname().data(), this->hostname().length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "logging.LogRecord.Heartbeat.hostname");
+            "hostname");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(18)) goto parse_process_name;
         break;
       }
 
       // required string process_name = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(18u /* 18 & 0xFF */)) {
+        if (tag == 18) {
+         parse_process_name:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_process_name()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->process_name().data(), static_cast<int>(this->process_name().length()),
+            this->process_name().data(), this->process_name().length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "logging.LogRecord.Heartbeat.process_name");
+            "process_name");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_process_id;
         break;
       }
 
       // required int32 process_id = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_process_id();
+        if (tag == 24) {
+         parse_process_id:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &process_id_)));
+          set_has_process_id();
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_process_start_time;
         break;
       }
 
       // required int64 process_start_time = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_process_start_time();
+        if (tag == 32) {
+         parse_process_start_time:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &process_start_time_)));
+          set_has_process_start_time();
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_username;
         break;
       }
 
       // required string username = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (tag == 42) {
+         parse_username:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_username()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->username().data(), static_cast<int>(this->username().length()),
+            this->username().data(), this->username().length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "logging.LogRecord.Heartbeat.username");
+            "username");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
           goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
+              input, tag, mutable_unknown_fields()));
         break;
       }
     }
@@ -391,257 +347,199 @@ failure:
 void LogRecord_Heartbeat::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:logging.LogRecord.Heartbeat)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // required string hostname = 1;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_hostname()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->hostname().data(), static_cast<int>(this->hostname().length()),
+      this->hostname().data(), this->hostname().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "logging.LogRecord.Heartbeat.hostname");
+      "hostname");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       1, this->hostname(), output);
   }
 
   // required string process_name = 2;
-  if (cached_has_bits & 0x00000002u) {
+  if (has_process_name()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->process_name().data(), static_cast<int>(this->process_name().length()),
+      this->process_name().data(), this->process_name().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "logging.LogRecord.Heartbeat.process_name");
+      "process_name");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       2, this->process_name(), output);
   }
 
   // required int32 process_id = 3;
-  if (cached_has_bits & 0x00000010u) {
+  if (has_process_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->process_id(), output);
   }
 
   // required int64 process_start_time = 4;
-  if (cached_has_bits & 0x00000008u) {
+  if (has_process_start_time()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(4, this->process_start_time(), output);
   }
 
   // required string username = 5;
-  if (cached_has_bits & 0x00000004u) {
+  if (has_username()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->username().data(), static_cast<int>(this->username().length()),
+      this->username().data(), this->username().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "logging.LogRecord.Heartbeat.username");
+      "username");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       5, this->username(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
+        unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:logging.LogRecord.Heartbeat)
 }
 
-::google::protobuf::uint8* LogRecord_Heartbeat::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::google::protobuf::uint8* LogRecord_Heartbeat::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:logging.LogRecord.Heartbeat)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // required string hostname = 1;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_hostname()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->hostname().data(), static_cast<int>(this->hostname().length()),
+      this->hostname().data(), this->hostname().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "logging.LogRecord.Heartbeat.hostname");
+      "hostname");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         1, this->hostname(), target);
   }
 
   // required string process_name = 2;
-  if (cached_has_bits & 0x00000002u) {
+  if (has_process_name()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->process_name().data(), static_cast<int>(this->process_name().length()),
+      this->process_name().data(), this->process_name().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "logging.LogRecord.Heartbeat.process_name");
+      "process_name");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         2, this->process_name(), target);
   }
 
   // required int32 process_id = 3;
-  if (cached_has_bits & 0x00000010u) {
+  if (has_process_id()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->process_id(), target);
   }
 
   // required int64 process_start_time = 4;
-  if (cached_has_bits & 0x00000008u) {
+  if (has_process_start_time()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(4, this->process_start_time(), target);
   }
 
   // required string username = 5;
-  if (cached_has_bits & 0x00000004u) {
+  if (has_username()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->username().data(), static_cast<int>(this->username().length()),
+      this->username().data(), this->username().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "logging.LogRecord.Heartbeat.username");
+      "username");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         5, this->username(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+        unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:logging.LogRecord.Heartbeat)
   return target;
 }
 
-size_t LogRecord_Heartbeat::RequiredFieldsByteSizeFallback() const {
-// @@protoc_insertion_point(required_fields_byte_size_fallback_start:logging.LogRecord.Heartbeat)
-  size_t total_size = 0;
+int LogRecord_Heartbeat::ByteSize() const {
+  int total_size = 0;
 
-  if (has_hostname()) {
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
     // required string hostname = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->hostname());
-  }
+    if (has_hostname()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->hostname());
+    }
 
-  if (has_process_name()) {
     // required string process_name = 2;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->process_name());
-  }
+    if (has_process_name()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->process_name());
+    }
 
-  if (has_username()) {
-    // required string username = 5;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->username());
-  }
-
-  if (has_process_start_time()) {
-    // required int64 process_start_time = 4;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->process_start_time());
-  }
-
-  if (has_process_id()) {
     // required int32 process_id = 3;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->process_id());
+    if (has_process_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->process_id());
+    }
+
+    // required int64 process_start_time = 4;
+    if (has_process_start_time()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->process_start_time());
+    }
+
+    // required string username = 5;
+    if (has_username()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->username());
+    }
+
   }
-
-  return total_size;
-}
-size_t LogRecord_Heartbeat::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:logging.LogRecord.Heartbeat)
-  size_t total_size = 0;
-
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
+        unknown_fields());
   }
-  if (((_has_bits_[0] & 0x0000001f) ^ 0x0000001f) == 0) {  // All required fields are present.
-    // required string hostname = 1;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->hostname());
-
-    // required string process_name = 2;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->process_name());
-
-    // required string username = 5;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->username());
-
-    // required int64 process_start_time = 4;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->process_start_time());
-
-    // required int32 process_id = 3;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->process_id());
-
-  } else {
-    total_size += RequiredFieldsByteSizeFallback();
-  }
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
+  _cached_size_ = total_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void LogRecord_Heartbeat::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:logging.LogRecord.Heartbeat)
-  GOOGLE_DCHECK_NE(&from, this);
+  GOOGLE_CHECK_NE(&from, this);
   const LogRecord_Heartbeat* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LogRecord_Heartbeat>(
-          &from);
+    ::google::protobuf::internal::dynamic_cast_if_available<const LogRecord_Heartbeat*>(
+      &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:logging.LogRecord.Heartbeat)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:logging.LogRecord.Heartbeat)
     MergeFrom(*source);
   }
 }
 
 void LogRecord_Heartbeat::MergeFrom(const LogRecord_Heartbeat& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:logging.LogRecord.Heartbeat)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
-    if (cached_has_bits & 0x00000001u) {
-      set_has_hostname();
-      hostname_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.hostname_);
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_hostname()) {
+      set_hostname(from.hostname());
     }
-    if (cached_has_bits & 0x00000002u) {
-      set_has_process_name();
-      process_name_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.process_name_);
+    if (from.has_process_name()) {
+      set_process_name(from.process_name());
     }
-    if (cached_has_bits & 0x00000004u) {
-      set_has_username();
-      username_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.username_);
+    if (from.has_process_id()) {
+      set_process_id(from.process_id());
     }
-    if (cached_has_bits & 0x00000008u) {
-      process_start_time_ = from.process_start_time_;
+    if (from.has_process_start_time()) {
+      set_process_start_time(from.process_start_time());
     }
-    if (cached_has_bits & 0x00000010u) {
-      process_id_ = from.process_id_;
+    if (from.has_username()) {
+      set_username(from.username());
     }
-    _has_bits_[0] |= cached_has_bits;
   }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void LogRecord_Heartbeat::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:logging.LogRecord.Heartbeat)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void LogRecord_Heartbeat::CopyFrom(const LogRecord_Heartbeat& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:logging.LogRecord.Heartbeat)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
@@ -649,317 +547,68 @@ void LogRecord_Heartbeat::CopyFrom(const LogRecord_Heartbeat& from) {
 
 bool LogRecord_Heartbeat::IsInitialized() const {
   if ((_has_bits_[0] & 0x0000001f) != 0x0000001f) return false;
+
   return true;
 }
 
 void LogRecord_Heartbeat::Swap(LogRecord_Heartbeat* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void LogRecord_Heartbeat::InternalSwap(LogRecord_Heartbeat* other) {
-  using std::swap;
-  hostname_.Swap(&other->hostname_);
-  process_name_.Swap(&other->process_name_);
-  username_.Swap(&other->username_);
-  swap(process_start_time_, other->process_start_time_);
-  swap(process_id_, other->process_id_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(hostname_, other->hostname_);
+    std::swap(process_name_, other->process_name_);
+    std::swap(process_id_, other->process_id_);
+    std::swap(process_start_time_, other->process_start_time_);
+    std::swap(username_, other->username_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata LogRecord_Heartbeat::GetMetadata() const {
-  protobuf_logrecord_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_logrecord_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = LogRecord_Heartbeat_descriptor_;
+  metadata.reflection = LogRecord_Heartbeat_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// LogRecord_Heartbeat
 
-// required string hostname = 1;
-bool LogRecord_Heartbeat::has_hostname() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void LogRecord_Heartbeat::set_has_hostname() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void LogRecord_Heartbeat::clear_has_hostname() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void LogRecord_Heartbeat::clear_hostname() {
-  hostname_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_hostname();
-}
-const ::std::string& LogRecord_Heartbeat::hostname() const {
-  // @@protoc_insertion_point(field_get:logging.LogRecord.Heartbeat.hostname)
-  return hostname_.GetNoArena();
-}
-void LogRecord_Heartbeat::set_hostname(const ::std::string& value) {
-  set_has_hostname();
-  hostname_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:logging.LogRecord.Heartbeat.hostname)
-}
-#if LANG_CXX11
-void LogRecord_Heartbeat::set_hostname(::std::string&& value) {
-  set_has_hostname();
-  hostname_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:logging.LogRecord.Heartbeat.hostname)
-}
-#endif
-void LogRecord_Heartbeat::set_hostname(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_hostname();
-  hostname_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:logging.LogRecord.Heartbeat.hostname)
-}
-void LogRecord_Heartbeat::set_hostname(const char* value, size_t size) {
-  set_has_hostname();
-  hostname_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:logging.LogRecord.Heartbeat.hostname)
-}
-::std::string* LogRecord_Heartbeat::mutable_hostname() {
-  set_has_hostname();
-  // @@protoc_insertion_point(field_mutable:logging.LogRecord.Heartbeat.hostname)
-  return hostname_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* LogRecord_Heartbeat::release_hostname() {
-  // @@protoc_insertion_point(field_release:logging.LogRecord.Heartbeat.hostname)
-  clear_has_hostname();
-  return hostname_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void LogRecord_Heartbeat::set_allocated_hostname(::std::string* hostname) {
-  if (hostname != NULL) {
-    set_has_hostname();
-  } else {
-    clear_has_hostname();
-  }
-  hostname_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), hostname);
-  // @@protoc_insertion_point(field_set_allocated:logging.LogRecord.Heartbeat.hostname)
-}
+// -------------------------------------------------------------------
 
-// required string process_name = 2;
-bool LogRecord_Heartbeat::has_process_name() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-void LogRecord_Heartbeat::set_has_process_name() {
-  _has_bits_[0] |= 0x00000002u;
-}
-void LogRecord_Heartbeat::clear_has_process_name() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-void LogRecord_Heartbeat::clear_process_name() {
-  process_name_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_process_name();
-}
-const ::std::string& LogRecord_Heartbeat::process_name() const {
-  // @@protoc_insertion_point(field_get:logging.LogRecord.Heartbeat.process_name)
-  return process_name_.GetNoArena();
-}
-void LogRecord_Heartbeat::set_process_name(const ::std::string& value) {
-  set_has_process_name();
-  process_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:logging.LogRecord.Heartbeat.process_name)
-}
-#if LANG_CXX11
-void LogRecord_Heartbeat::set_process_name(::std::string&& value) {
-  set_has_process_name();
-  process_name_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:logging.LogRecord.Heartbeat.process_name)
-}
-#endif
-void LogRecord_Heartbeat::set_process_name(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_process_name();
-  process_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:logging.LogRecord.Heartbeat.process_name)
-}
-void LogRecord_Heartbeat::set_process_name(const char* value, size_t size) {
-  set_has_process_name();
-  process_name_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:logging.LogRecord.Heartbeat.process_name)
-}
-::std::string* LogRecord_Heartbeat::mutable_process_name() {
-  set_has_process_name();
-  // @@protoc_insertion_point(field_mutable:logging.LogRecord.Heartbeat.process_name)
-  return process_name_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* LogRecord_Heartbeat::release_process_name() {
-  // @@protoc_insertion_point(field_release:logging.LogRecord.Heartbeat.process_name)
-  clear_has_process_name();
-  return process_name_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void LogRecord_Heartbeat::set_allocated_process_name(::std::string* process_name) {
-  if (process_name != NULL) {
-    set_has_process_name();
-  } else {
-    clear_has_process_name();
-  }
-  process_name_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), process_name);
-  // @@protoc_insertion_point(field_set_allocated:logging.LogRecord.Heartbeat.process_name)
-}
-
-// required int32 process_id = 3;
-bool LogRecord_Heartbeat::has_process_id() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
-}
-void LogRecord_Heartbeat::set_has_process_id() {
-  _has_bits_[0] |= 0x00000010u;
-}
-void LogRecord_Heartbeat::clear_has_process_id() {
-  _has_bits_[0] &= ~0x00000010u;
-}
-void LogRecord_Heartbeat::clear_process_id() {
-  process_id_ = 0;
-  clear_has_process_id();
-}
-::google::protobuf::int32 LogRecord_Heartbeat::process_id() const {
-  // @@protoc_insertion_point(field_get:logging.LogRecord.Heartbeat.process_id)
-  return process_id_;
-}
-void LogRecord_Heartbeat::set_process_id(::google::protobuf::int32 value) {
-  set_has_process_id();
-  process_id_ = value;
-  // @@protoc_insertion_point(field_set:logging.LogRecord.Heartbeat.process_id)
-}
-
-// required int64 process_start_time = 4;
-bool LogRecord_Heartbeat::has_process_start_time() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-void LogRecord_Heartbeat::set_has_process_start_time() {
-  _has_bits_[0] |= 0x00000008u;
-}
-void LogRecord_Heartbeat::clear_has_process_start_time() {
-  _has_bits_[0] &= ~0x00000008u;
-}
-void LogRecord_Heartbeat::clear_process_start_time() {
-  process_start_time_ = GOOGLE_LONGLONG(0);
-  clear_has_process_start_time();
-}
-::google::protobuf::int64 LogRecord_Heartbeat::process_start_time() const {
-  // @@protoc_insertion_point(field_get:logging.LogRecord.Heartbeat.process_start_time)
-  return process_start_time_;
-}
-void LogRecord_Heartbeat::set_process_start_time(::google::protobuf::int64 value) {
-  set_has_process_start_time();
-  process_start_time_ = value;
-  // @@protoc_insertion_point(field_set:logging.LogRecord.Heartbeat.process_start_time)
-}
-
-// required string username = 5;
-bool LogRecord_Heartbeat::has_username() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-void LogRecord_Heartbeat::set_has_username() {
-  _has_bits_[0] |= 0x00000004u;
-}
-void LogRecord_Heartbeat::clear_has_username() {
-  _has_bits_[0] &= ~0x00000004u;
-}
-void LogRecord_Heartbeat::clear_username() {
-  username_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_username();
-}
-const ::std::string& LogRecord_Heartbeat::username() const {
-  // @@protoc_insertion_point(field_get:logging.LogRecord.Heartbeat.username)
-  return username_.GetNoArena();
-}
-void LogRecord_Heartbeat::set_username(const ::std::string& value) {
-  set_has_username();
-  username_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:logging.LogRecord.Heartbeat.username)
-}
-#if LANG_CXX11
-void LogRecord_Heartbeat::set_username(::std::string&& value) {
-  set_has_username();
-  username_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:logging.LogRecord.Heartbeat.username)
-}
-#endif
-void LogRecord_Heartbeat::set_username(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_username();
-  username_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:logging.LogRecord.Heartbeat.username)
-}
-void LogRecord_Heartbeat::set_username(const char* value, size_t size) {
-  set_has_username();
-  username_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:logging.LogRecord.Heartbeat.username)
-}
-::std::string* LogRecord_Heartbeat::mutable_username() {
-  set_has_username();
-  // @@protoc_insertion_point(field_mutable:logging.LogRecord.Heartbeat.username)
-  return username_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* LogRecord_Heartbeat::release_username() {
-  // @@protoc_insertion_point(field_release:logging.LogRecord.Heartbeat.username)
-  clear_has_username();
-  return username_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void LogRecord_Heartbeat::set_allocated_username(::std::string* username) {
-  if (username != NULL) {
-    set_has_username();
-  } else {
-    clear_has_username();
-  }
-  username_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), username);
-  // @@protoc_insertion_point(field_set_allocated:logging.LogRecord.Heartbeat.username)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
-
-// ===================================================================
-
-#if !defined(_MSC_VER) || _MSC_VER >= 1900
+#ifndef _MSC_VER
 const int LogRecord::kHeartbeatFieldNumber;
 const int LogRecord::kLevelFieldNumber;
 const int LogRecord::kThreadIdFieldNumber;
 const int LogRecord::kTimestampFieldNumber;
 const int LogRecord::kMessageFieldNumber;
-#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+#endif  // !_MSC_VER
 
 LogRecord::LogRecord()
-  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
-  if (GOOGLE_PREDICT_TRUE(this != internal_default_instance())) {
-    protobuf_logrecord_2eproto::InitDefaults();
-  }
+  : ::google::protobuf::Message() {
   SharedCtor();
   // @@protoc_insertion_point(constructor:logging.LogRecord)
 }
+
+void LogRecord::InitAsDefaultInstance() {
+  heartbeat_ = const_cast< ::logging::LogRecord_Heartbeat*>(&::logging::LogRecord_Heartbeat::default_instance());
+}
+
 LogRecord::LogRecord(const LogRecord& from)
-  : ::google::protobuf::Message(),
-      _internal_metadata_(NULL),
-      _has_bits_(from._has_bits_),
-      _cached_size_(0) {
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (from.has_message()) {
-    message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
-  }
-  if (from.has_heartbeat()) {
-    heartbeat_ = new ::logging::LogRecord_Heartbeat(*from.heartbeat_);
-  } else {
-    heartbeat_ = NULL;
-  }
-  ::memcpy(&level_, &from.level_,
-    static_cast<size_t>(reinterpret_cast<char*>(&timestamp_) -
-    reinterpret_cast<char*>(&level_)) + sizeof(timestamp_));
+  : ::google::protobuf::Message() {
+  SharedCtor();
+  MergeFrom(from);
   // @@protoc_insertion_point(copy_constructor:logging.LogRecord)
 }
 
 void LogRecord::SharedCtor() {
+  ::google::protobuf::internal::GetEmptyString();
   _cached_size_ = 0;
-  message_.UnsafeSetDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  ::memset(&heartbeat_, 0, static_cast<size_t>(
-      reinterpret_cast<char*>(&timestamp_) -
-      reinterpret_cast<char*>(&heartbeat_)) + sizeof(timestamp_));
+  heartbeat_ = NULL;
+  level_ = 0;
+  thread_id_ = 0;
+  timestamp_ = GOOGLE_LONGLONG(0);
+  message_ = const_cast< ::std::string*>(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
 }
 
 LogRecord::~LogRecord() {
@@ -968,8 +617,12 @@ LogRecord::~LogRecord() {
 }
 
 void LogRecord::SharedDtor() {
-  message_.DestroyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  if (this != internal_default_instance()) delete heartbeat_;
+  if (message_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+    delete message_;
+  }
+  if (this != default_instance_) {
+    delete heartbeat_;
+  }
 }
 
 void LogRecord::SetCachedSize(int size) const {
@@ -978,136 +631,144 @@ void LogRecord::SetCachedSize(int size) const {
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
 const ::google::protobuf::Descriptor* LogRecord::descriptor() {
-  protobuf_logrecord_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_logrecord_2eproto::file_level_metadata[kIndexInFileMessages].descriptor;
+  protobuf_AssignDescriptorsOnce();
+  return LogRecord_descriptor_;
 }
 
 const LogRecord& LogRecord::default_instance() {
-  protobuf_logrecord_2eproto::InitDefaults();
-  return *internal_default_instance();
+  if (default_instance_ == NULL) protobuf_AddDesc_logrecord_2eproto();
+  return *default_instance_;
 }
 
-LogRecord* LogRecord::New(::google::protobuf::Arena* arena) const {
-  LogRecord* n = new LogRecord;
-  if (arena != NULL) {
-    arena->Own(n);
-  }
-  return n;
+LogRecord* LogRecord::default_instance_ = NULL;
+
+LogRecord* LogRecord::New() const {
+  return new LogRecord;
 }
 
 void LogRecord::Clear() {
-// @@protoc_insertion_point(message_clear_start:logging.LogRecord)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  // Prevent compiler warnings about cached_has_bits being unused
-  (void) cached_has_bits;
+#define OFFSET_OF_FIELD_(f) (reinterpret_cast<char*>(      \
+  &reinterpret_cast<LogRecord*>(16)->f) - \
+   reinterpret_cast<char*>(16))
 
-  cached_has_bits = _has_bits_[0];
-  if (cached_has_bits & 3u) {
-    if (cached_has_bits & 0x00000001u) {
-      GOOGLE_DCHECK(!message_.IsDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited()));
-      (*message_.UnsafeRawStringPointer())->clear();
+#define ZR_(first, last) do {                              \
+    size_t f = OFFSET_OF_FIELD_(first);                    \
+    size_t n = OFFSET_OF_FIELD_(last) - f + sizeof(last);  \
+    ::memset(&first, 0, n);                                \
+  } while (0)
+
+  if (_has_bits_[0 / 32] & 31) {
+    ZR_(level_, timestamp_);
+    if (has_heartbeat()) {
+      if (heartbeat_ != NULL) heartbeat_->::logging::LogRecord_Heartbeat::Clear();
     }
-    if (cached_has_bits & 0x00000002u) {
-      GOOGLE_DCHECK(heartbeat_ != NULL);
-      heartbeat_->::logging::LogRecord_Heartbeat::Clear();
+    if (has_message()) {
+      if (message_ != &::google::protobuf::internal::GetEmptyStringAlreadyInited()) {
+        message_->clear();
+      }
     }
   }
-  if (cached_has_bits & 28u) {
-    ::memset(&level_, 0, static_cast<size_t>(
-        reinterpret_cast<char*>(&timestamp_) -
-        reinterpret_cast<char*>(&level_)) + sizeof(timestamp_));
-  }
-  _has_bits_.Clear();
-  _internal_metadata_.Clear();
+
+#undef OFFSET_OF_FIELD_
+#undef ZR_
+
+  ::memset(_has_bits_, 0, sizeof(_has_bits_));
+  mutable_unknown_fields()->Clear();
 }
 
 bool LogRecord::MergePartialFromCodedStream(
     ::google::protobuf::io::CodedInputStream* input) {
-#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+#define DO_(EXPRESSION) if (!(EXPRESSION)) goto failure
   ::google::protobuf::uint32 tag;
   // @@protoc_insertion_point(parse_start:logging.LogRecord)
   for (;;) {
-    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoffNoLastTag(127u);
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
     tag = p.first;
     if (!p.second) goto handle_unusual;
     switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
       // optional .logging.LogRecord.Heartbeat heartbeat = 1;
       case 1: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(10u /* 10 & 0xFF */)) {
+        if (tag == 10) {
           DO_(::google::protobuf::internal::WireFormatLite::ReadMessageNoVirtual(
                input, mutable_heartbeat()));
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(16)) goto parse_level;
         break;
       }
 
       // required int32 level = 2;
       case 2: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(16u /* 16 & 0xFF */)) {
-          set_has_level();
+        if (tag == 16) {
+         parse_level:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &level_)));
+          set_has_level();
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(24)) goto parse_thread_id;
         break;
       }
 
       // required int32 thread_id = 3;
       case 3: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(24u /* 24 & 0xFF */)) {
-          set_has_thread_id();
+        if (tag == 24) {
+         parse_thread_id:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
                  input, &thread_id_)));
+          set_has_thread_id();
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(32)) goto parse_timestamp;
         break;
       }
 
       // required int64 timestamp = 4;
       case 4: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(32u /* 32 & 0xFF */)) {
-          set_has_timestamp();
+        if (tag == 32) {
+         parse_timestamp:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
                    ::google::protobuf::int64, ::google::protobuf::internal::WireFormatLite::TYPE_INT64>(
                  input, &timestamp_)));
+          set_has_timestamp();
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(42)) goto parse_message;
         break;
       }
 
       // required string message = 5;
       case 5: {
-        if (static_cast< ::google::protobuf::uint8>(tag) ==
-            static_cast< ::google::protobuf::uint8>(42u /* 42 & 0xFF */)) {
+        if (tag == 42) {
+         parse_message:
           DO_(::google::protobuf::internal::WireFormatLite::ReadString(
                 input, this->mutable_message()));
           ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-            this->message().data(), static_cast<int>(this->message().length()),
+            this->message().data(), this->message().length(),
             ::google::protobuf::internal::WireFormat::PARSE,
-            "logging.LogRecord.message");
+            "message");
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectAtEnd()) goto success;
         break;
       }
 
       default: {
       handle_unusual:
-        if (tag == 0) {
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
           goto success;
         }
         DO_(::google::protobuf::internal::WireFormat::SkipField(
-              input, tag, _internal_metadata_.mutable_unknown_fields()));
+              input, tag, mutable_unknown_fields()));
         break;
       }
     }
@@ -1124,450 +785,215 @@ failure:
 void LogRecord::SerializeWithCachedSizes(
     ::google::protobuf::io::CodedOutputStream* output) const {
   // @@protoc_insertion_point(serialize_start:logging.LogRecord)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // optional .logging.LogRecord.Heartbeat heartbeat = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (has_heartbeat()) {
     ::google::protobuf::internal::WireFormatLite::WriteMessageMaybeToArray(
-      1, *this->heartbeat_, output);
+      1, this->heartbeat(), output);
   }
 
   // required int32 level = 2;
-  if (cached_has_bits & 0x00000004u) {
+  if (has_level()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(2, this->level(), output);
   }
 
   // required int32 thread_id = 3;
-  if (cached_has_bits & 0x00000008u) {
+  if (has_thread_id()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt32(3, this->thread_id(), output);
   }
 
   // required int64 timestamp = 4;
-  if (cached_has_bits & 0x00000010u) {
+  if (has_timestamp()) {
     ::google::protobuf::internal::WireFormatLite::WriteInt64(4, this->timestamp(), output);
   }
 
   // required string message = 5;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_message()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->message().data(), static_cast<int>(this->message().length()),
+      this->message().data(), this->message().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "logging.LogRecord.message");
+      "message");
     ::google::protobuf::internal::WireFormatLite::WriteStringMaybeAliased(
       5, this->message(), output);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     ::google::protobuf::internal::WireFormat::SerializeUnknownFields(
-        _internal_metadata_.unknown_fields(), output);
+        unknown_fields(), output);
   }
   // @@protoc_insertion_point(serialize_end:logging.LogRecord)
 }
 
-::google::protobuf::uint8* LogRecord::InternalSerializeWithCachedSizesToArray(
-    bool deterministic, ::google::protobuf::uint8* target) const {
-  (void)deterministic; // Unused
+::google::protobuf::uint8* LogRecord::SerializeWithCachedSizesToArray(
+    ::google::protobuf::uint8* target) const {
   // @@protoc_insertion_point(serialize_to_array_start:logging.LogRecord)
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = _has_bits_[0];
   // optional .logging.LogRecord.Heartbeat heartbeat = 1;
-  if (cached_has_bits & 0x00000002u) {
+  if (has_heartbeat()) {
     target = ::google::protobuf::internal::WireFormatLite::
-      InternalWriteMessageNoVirtualToArray(
-        1, *this->heartbeat_, deterministic, target);
+      WriteMessageNoVirtualToArray(
+        1, this->heartbeat(), target);
   }
 
   // required int32 level = 2;
-  if (cached_has_bits & 0x00000004u) {
+  if (has_level()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(2, this->level(), target);
   }
 
   // required int32 thread_id = 3;
-  if (cached_has_bits & 0x00000008u) {
+  if (has_thread_id()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(3, this->thread_id(), target);
   }
 
   // required int64 timestamp = 4;
-  if (cached_has_bits & 0x00000010u) {
+  if (has_timestamp()) {
     target = ::google::protobuf::internal::WireFormatLite::WriteInt64ToArray(4, this->timestamp(), target);
   }
 
   // required string message = 5;
-  if (cached_has_bits & 0x00000001u) {
+  if (has_message()) {
     ::google::protobuf::internal::WireFormat::VerifyUTF8StringNamedField(
-      this->message().data(), static_cast<int>(this->message().length()),
+      this->message().data(), this->message().length(),
       ::google::protobuf::internal::WireFormat::SERIALIZE,
-      "logging.LogRecord.message");
+      "message");
     target =
       ::google::protobuf::internal::WireFormatLite::WriteStringToArray(
         5, this->message(), target);
   }
 
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     target = ::google::protobuf::internal::WireFormat::SerializeUnknownFieldsToArray(
-        _internal_metadata_.unknown_fields(), target);
+        unknown_fields(), target);
   }
   // @@protoc_insertion_point(serialize_to_array_end:logging.LogRecord)
   return target;
 }
 
-size_t LogRecord::RequiredFieldsByteSizeFallback() const {
-// @@protoc_insertion_point(required_fields_byte_size_fallback_start:logging.LogRecord)
-  size_t total_size = 0;
+int LogRecord::ByteSize() const {
+  int total_size = 0;
 
-  if (has_message()) {
-    // required string message = 5;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->message());
-  }
+  if (_has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    // optional .logging.LogRecord.Heartbeat heartbeat = 1;
+    if (has_heartbeat()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
+          this->heartbeat());
+    }
 
-  if (has_level()) {
     // required int32 level = 2;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->level());
-  }
+    if (has_level()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->level());
+    }
 
-  if (has_thread_id()) {
     // required int32 thread_id = 3;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->thread_id());
-  }
+    if (has_thread_id()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(
+          this->thread_id());
+    }
 
-  if (has_timestamp()) {
     // required int64 timestamp = 4;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->timestamp());
+    if (has_timestamp()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int64Size(
+          this->timestamp());
+    }
+
+    // required string message = 5;
+    if (has_message()) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::StringSize(
+          this->message());
+    }
+
   }
-
-  return total_size;
-}
-size_t LogRecord::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:logging.LogRecord)
-  size_t total_size = 0;
-
-  if (_internal_metadata_.have_unknown_fields()) {
+  if (!unknown_fields().empty()) {
     total_size +=
       ::google::protobuf::internal::WireFormat::ComputeUnknownFieldsSize(
-        _internal_metadata_.unknown_fields());
+        unknown_fields());
   }
-  if (((_has_bits_[0] & 0x0000001d) ^ 0x0000001d) == 0) {  // All required fields are present.
-    // required string message = 5;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::StringSize(
-        this->message());
-
-    // required int32 level = 2;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->level());
-
-    // required int32 thread_id = 3;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int32Size(
-        this->thread_id());
-
-    // required int64 timestamp = 4;
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::Int64Size(
-        this->timestamp());
-
-  } else {
-    total_size += RequiredFieldsByteSizeFallback();
-  }
-  // optional .logging.LogRecord.Heartbeat heartbeat = 1;
-  if (has_heartbeat()) {
-    total_size += 1 +
-      ::google::protobuf::internal::WireFormatLite::MessageSizeNoVirtual(
-        *this->heartbeat_);
-  }
-
-  int cached_size = ::google::protobuf::internal::ToCachedSize(total_size);
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-  _cached_size_ = cached_size;
+  _cached_size_ = total_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
   return total_size;
 }
 
 void LogRecord::MergeFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_merge_from_start:logging.LogRecord)
-  GOOGLE_DCHECK_NE(&from, this);
+  GOOGLE_CHECK_NE(&from, this);
   const LogRecord* source =
-      ::google::protobuf::internal::DynamicCastToGenerated<const LogRecord>(
-          &from);
+    ::google::protobuf::internal::dynamic_cast_if_available<const LogRecord*>(
+      &from);
   if (source == NULL) {
-  // @@protoc_insertion_point(generalized_merge_from_cast_fail:logging.LogRecord)
     ::google::protobuf::internal::ReflectionOps::Merge(from, this);
   } else {
-  // @@protoc_insertion_point(generalized_merge_from_cast_success:logging.LogRecord)
     MergeFrom(*source);
   }
 }
 
 void LogRecord::MergeFrom(const LogRecord& from) {
-// @@protoc_insertion_point(class_specific_merge_from_start:logging.LogRecord)
-  GOOGLE_DCHECK_NE(&from, this);
-  _internal_metadata_.MergeFrom(from._internal_metadata_);
-  ::google::protobuf::uint32 cached_has_bits = 0;
-  (void) cached_has_bits;
-
-  cached_has_bits = from._has_bits_[0];
-  if (cached_has_bits & 31u) {
-    if (cached_has_bits & 0x00000001u) {
-      set_has_message();
-      message_.AssignWithDefault(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), from.message_);
-    }
-    if (cached_has_bits & 0x00000002u) {
+  GOOGLE_CHECK_NE(&from, this);
+  if (from._has_bits_[0 / 32] & (0xffu << (0 % 32))) {
+    if (from.has_heartbeat()) {
       mutable_heartbeat()->::logging::LogRecord_Heartbeat::MergeFrom(from.heartbeat());
     }
-    if (cached_has_bits & 0x00000004u) {
-      level_ = from.level_;
+    if (from.has_level()) {
+      set_level(from.level());
     }
-    if (cached_has_bits & 0x00000008u) {
-      thread_id_ = from.thread_id_;
+    if (from.has_thread_id()) {
+      set_thread_id(from.thread_id());
     }
-    if (cached_has_bits & 0x00000010u) {
-      timestamp_ = from.timestamp_;
+    if (from.has_timestamp()) {
+      set_timestamp(from.timestamp());
     }
-    _has_bits_[0] |= cached_has_bits;
+    if (from.has_message()) {
+      set_message(from.message());
+    }
   }
+  mutable_unknown_fields()->MergeFrom(from.unknown_fields());
 }
 
 void LogRecord::CopyFrom(const ::google::protobuf::Message& from) {
-// @@protoc_insertion_point(generalized_copy_from_start:logging.LogRecord)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 void LogRecord::CopyFrom(const LogRecord& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:logging.LogRecord)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
 bool LogRecord::IsInitialized() const {
-  if ((_has_bits_[0] & 0x0000001d) != 0x0000001d) return false;
+  if ((_has_bits_[0] & 0x0000001e) != 0x0000001e) return false;
+
   if (has_heartbeat()) {
-    if (!this->heartbeat_->IsInitialized()) return false;
+    if (!this->heartbeat().IsInitialized()) return false;
   }
   return true;
 }
 
 void LogRecord::Swap(LogRecord* other) {
-  if (other == this) return;
-  InternalSwap(other);
-}
-void LogRecord::InternalSwap(LogRecord* other) {
-  using std::swap;
-  message_.Swap(&other->message_);
-  swap(heartbeat_, other->heartbeat_);
-  swap(level_, other->level_);
-  swap(thread_id_, other->thread_id_);
-  swap(timestamp_, other->timestamp_);
-  swap(_has_bits_[0], other->_has_bits_[0]);
-  _internal_metadata_.Swap(&other->_internal_metadata_);
-  swap(_cached_size_, other->_cached_size_);
+  if (other != this) {
+    std::swap(heartbeat_, other->heartbeat_);
+    std::swap(level_, other->level_);
+    std::swap(thread_id_, other->thread_id_);
+    std::swap(timestamp_, other->timestamp_);
+    std::swap(message_, other->message_);
+    std::swap(_has_bits_[0], other->_has_bits_[0]);
+    _unknown_fields_.Swap(&other->_unknown_fields_);
+    std::swap(_cached_size_, other->_cached_size_);
+  }
 }
 
 ::google::protobuf::Metadata LogRecord::GetMetadata() const {
-  protobuf_logrecord_2eproto::protobuf_AssignDescriptorsOnce();
-  return protobuf_logrecord_2eproto::file_level_metadata[kIndexInFileMessages];
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = LogRecord_descriptor_;
+  metadata.reflection = LogRecord_reflection_;
+  return metadata;
 }
 
-#if PROTOBUF_INLINE_NOT_IN_HEADERS
-// LogRecord
-
-// optional .logging.LogRecord.Heartbeat heartbeat = 1;
-bool LogRecord::has_heartbeat() const {
-  return (_has_bits_[0] & 0x00000002u) != 0;
-}
-void LogRecord::set_has_heartbeat() {
-  _has_bits_[0] |= 0x00000002u;
-}
-void LogRecord::clear_has_heartbeat() {
-  _has_bits_[0] &= ~0x00000002u;
-}
-void LogRecord::clear_heartbeat() {
-  if (heartbeat_ != NULL) heartbeat_->::logging::LogRecord_Heartbeat::Clear();
-  clear_has_heartbeat();
-}
-const ::logging::LogRecord_Heartbeat& LogRecord::heartbeat() const {
-  const ::logging::LogRecord_Heartbeat* p = heartbeat_;
-  // @@protoc_insertion_point(field_get:logging.LogRecord.heartbeat)
-  return p != NULL ? *p : *reinterpret_cast<const ::logging::LogRecord_Heartbeat*>(
-      &::logging::_LogRecord_Heartbeat_default_instance_);
-}
-::logging::LogRecord_Heartbeat* LogRecord::mutable_heartbeat() {
-  set_has_heartbeat();
-  if (heartbeat_ == NULL) {
-    heartbeat_ = new ::logging::LogRecord_Heartbeat;
-  }
-  // @@protoc_insertion_point(field_mutable:logging.LogRecord.heartbeat)
-  return heartbeat_;
-}
-::logging::LogRecord_Heartbeat* LogRecord::release_heartbeat() {
-  // @@protoc_insertion_point(field_release:logging.LogRecord.heartbeat)
-  clear_has_heartbeat();
-  ::logging::LogRecord_Heartbeat* temp = heartbeat_;
-  heartbeat_ = NULL;
-  return temp;
-}
-void LogRecord::set_allocated_heartbeat(::logging::LogRecord_Heartbeat* heartbeat) {
-  delete heartbeat_;
-  heartbeat_ = heartbeat;
-  if (heartbeat) {
-    set_has_heartbeat();
-  } else {
-    clear_has_heartbeat();
-  }
-  // @@protoc_insertion_point(field_set_allocated:logging.LogRecord.heartbeat)
-}
-
-// required int32 level = 2;
-bool LogRecord::has_level() const {
-  return (_has_bits_[0] & 0x00000004u) != 0;
-}
-void LogRecord::set_has_level() {
-  _has_bits_[0] |= 0x00000004u;
-}
-void LogRecord::clear_has_level() {
-  _has_bits_[0] &= ~0x00000004u;
-}
-void LogRecord::clear_level() {
-  level_ = 0;
-  clear_has_level();
-}
-::google::protobuf::int32 LogRecord::level() const {
-  // @@protoc_insertion_point(field_get:logging.LogRecord.level)
-  return level_;
-}
-void LogRecord::set_level(::google::protobuf::int32 value) {
-  set_has_level();
-  level_ = value;
-  // @@protoc_insertion_point(field_set:logging.LogRecord.level)
-}
-
-// required int32 thread_id = 3;
-bool LogRecord::has_thread_id() const {
-  return (_has_bits_[0] & 0x00000008u) != 0;
-}
-void LogRecord::set_has_thread_id() {
-  _has_bits_[0] |= 0x00000008u;
-}
-void LogRecord::clear_has_thread_id() {
-  _has_bits_[0] &= ~0x00000008u;
-}
-void LogRecord::clear_thread_id() {
-  thread_id_ = 0;
-  clear_has_thread_id();
-}
-::google::protobuf::int32 LogRecord::thread_id() const {
-  // @@protoc_insertion_point(field_get:logging.LogRecord.thread_id)
-  return thread_id_;
-}
-void LogRecord::set_thread_id(::google::protobuf::int32 value) {
-  set_has_thread_id();
-  thread_id_ = value;
-  // @@protoc_insertion_point(field_set:logging.LogRecord.thread_id)
-}
-
-// required int64 timestamp = 4;
-bool LogRecord::has_timestamp() const {
-  return (_has_bits_[0] & 0x00000010u) != 0;
-}
-void LogRecord::set_has_timestamp() {
-  _has_bits_[0] |= 0x00000010u;
-}
-void LogRecord::clear_has_timestamp() {
-  _has_bits_[0] &= ~0x00000010u;
-}
-void LogRecord::clear_timestamp() {
-  timestamp_ = GOOGLE_LONGLONG(0);
-  clear_has_timestamp();
-}
-::google::protobuf::int64 LogRecord::timestamp() const {
-  // @@protoc_insertion_point(field_get:logging.LogRecord.timestamp)
-  return timestamp_;
-}
-void LogRecord::set_timestamp(::google::protobuf::int64 value) {
-  set_has_timestamp();
-  timestamp_ = value;
-  // @@protoc_insertion_point(field_set:logging.LogRecord.timestamp)
-}
-
-// required string message = 5;
-bool LogRecord::has_message() const {
-  return (_has_bits_[0] & 0x00000001u) != 0;
-}
-void LogRecord::set_has_message() {
-  _has_bits_[0] |= 0x00000001u;
-}
-void LogRecord::clear_has_message() {
-  _has_bits_[0] &= ~0x00000001u;
-}
-void LogRecord::clear_message() {
-  message_.ClearToEmptyNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-  clear_has_message();
-}
-const ::std::string& LogRecord::message() const {
-  // @@protoc_insertion_point(field_get:logging.LogRecord.message)
-  return message_.GetNoArena();
-}
-void LogRecord::set_message(const ::std::string& value) {
-  set_has_message();
-  message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), value);
-  // @@protoc_insertion_point(field_set:logging.LogRecord.message)
-}
-#if LANG_CXX11
-void LogRecord::set_message(::std::string&& value) {
-  set_has_message();
-  message_.SetNoArena(
-    &::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::move(value));
-  // @@protoc_insertion_point(field_set_rvalue:logging.LogRecord.message)
-}
-#endif
-void LogRecord::set_message(const char* value) {
-  GOOGLE_DCHECK(value != NULL);
-  set_has_message();
-  message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), ::std::string(value));
-  // @@protoc_insertion_point(field_set_char:logging.LogRecord.message)
-}
-void LogRecord::set_message(const char* value, size_t size) {
-  set_has_message();
-  message_.SetNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(),
-      ::std::string(reinterpret_cast<const char*>(value), size));
-  // @@protoc_insertion_point(field_set_pointer:logging.LogRecord.message)
-}
-::std::string* LogRecord::mutable_message() {
-  set_has_message();
-  // @@protoc_insertion_point(field_mutable:logging.LogRecord.message)
-  return message_.MutableNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-::std::string* LogRecord::release_message() {
-  // @@protoc_insertion_point(field_release:logging.LogRecord.message)
-  clear_has_message();
-  return message_.ReleaseNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited());
-}
-void LogRecord::set_allocated_message(::std::string* message) {
-  if (message != NULL) {
-    set_has_message();
-  } else {
-    clear_has_message();
-  }
-  message_.SetAllocatedNoArena(&::google::protobuf::internal::GetEmptyStringAlreadyInited(), message);
-  // @@protoc_insertion_point(field_set_allocated:logging.LogRecord.message)
-}
-
-#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
 
 // @@protoc_insertion_point(namespace_scope)
 

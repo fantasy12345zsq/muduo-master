@@ -325,6 +325,9 @@ void TcpConnection::connectEstablished()
   loop_->assertInLoopThread();
   assert(state_ == kConnecting);
   setState(kConnected);
+
+  //this指针作为参数
+  //this包装为shared_ptr<TcpConnection> 
   channel_->tie(shared_from_this());
   channel_->enableReading();
 

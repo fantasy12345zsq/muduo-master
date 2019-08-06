@@ -1,4 +1,4 @@
-#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
 
 #IncludeRegexScan: ^.*$
 
@@ -12,8 +12,6 @@ sudoku.pb.h
 algorithm
 -
 google/protobuf/stubs/common.h
--
-google/protobuf/stubs/port.h
 -
 google/protobuf/stubs/once.h
 -
@@ -35,17 +33,7 @@ string
 -
 google/protobuf/stubs/common.h
 -
-google/protobuf/io/coded_stream.h
--
-google/protobuf/arena.h
--
-google/protobuf/arenastring.h
--
-google/protobuf/generated_message_table_driven.h
--
 google/protobuf/generated_message_util.h
--
-google/protobuf/metadata.h
 -
 google/protobuf/message.h
 -

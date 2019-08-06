@@ -67,6 +67,10 @@ void Channel::handleEvent(Timestamp receiveTime)
 {
   //FIXME:这个tied_作用是什么？？？？
   std::shared_ptr<void> guard;
+
+  //tie_为一个weak_ptr，要用一个shared_ptr来初始化它，
+  //不能使用weak_ptr直接访问对象，而必须调用lock。此函数用于检查
+  //weak_ptr指向的对象是否存在，如果存在，lock返回一个指向共享对象的shared_ptr
   if (tied_)
   {
     guard = tie_.lock();

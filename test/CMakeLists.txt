@@ -9,3 +9,9 @@ target_link_libraries(AcceptorTestServer muduo_net pthread)
 
 add_executable(AcceptorTestClient AcceptorTestClient.cc)
 target_link_libraries(AcceptorTestClient muduo_net pthread)
+
+add_executable(TcpConnectionTestServer TcpConnectionTestServer.cc)
+target_link_libraries(TcpConnectionTestServer muduo_net pthread)
+
+add_executable(TcpConnectionTestClient TcpConnectionTestClient.cc)
+target_link_libraries(TcpConnectionTestClient muduo_net pthread)

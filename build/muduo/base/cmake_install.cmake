@@ -32,40 +32,40 @@ if(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
   set(CMAKE_INSTALL_SO_NO_EXE "1")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/zsq/muduo-master/build/lib/libmuduo_base.a")
 endif()
 
-if(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
+if("${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/muduo/base" TYPE FILE FILES
-    "/home/zsq/muduo-master/muduo/base/Mutex.h"
-    "/home/zsq/muduo-master/muduo/base/Date.h"
-    "/home/zsq/muduo-master/muduo/base/StringPiece.h"
-    "/home/zsq/muduo-master/muduo/base/ProcessInfo.h"
-    "/home/zsq/muduo-master/muduo/base/Timestamp.h"
-    "/home/zsq/muduo-master/muduo/base/Singleton.h"
-    "/home/zsq/muduo-master/muduo/base/WeakCallback.h"
-    "/home/zsq/muduo-master/muduo/base/ThreadLocalSingleton.h"
+    "/home/zsq/muduo-master/muduo/base/AsyncLogging.h"
+    "/home/zsq/muduo-master/muduo/base/Atomic.h"
+    "/home/zsq/muduo-master/muduo/base/BlockingQueue.h"
+    "/home/zsq/muduo-master/muduo/base/BoundedBlockingQueue.h"
+    "/home/zsq/muduo-master/muduo/base/Condition.h"
     "/home/zsq/muduo-master/muduo/base/CountDownLatch.h"
-    "/home/zsq/muduo-master/muduo/base/Thread.h"
-    "/home/zsq/muduo-master/muduo/base/copyable.h"
+    "/home/zsq/muduo-master/muduo/base/CurrentThread.h"
+    "/home/zsq/muduo-master/muduo/base/Date.h"
     "/home/zsq/muduo-master/muduo/base/Exception.h"
-    "/home/zsq/muduo-master/muduo/base/ThreadLocal.h"
+    "/home/zsq/muduo-master/muduo/base/FileUtil.h"
     "/home/zsq/muduo-master/muduo/base/GzipFile.h"
+    "/home/zsq/muduo-master/muduo/base/LogFile.h"
     "/home/zsq/muduo-master/muduo/base/LogStream.h"
     "/home/zsq/muduo-master/muduo/base/Logging.h"
+    "/home/zsq/muduo-master/muduo/base/Mutex.h"
+    "/home/zsq/muduo-master/muduo/base/ProcessInfo.h"
+    "/home/zsq/muduo-master/muduo/base/Singleton.h"
+    "/home/zsq/muduo-master/muduo/base/StringPiece.h"
+    "/home/zsq/muduo-master/muduo/base/Thread.h"
+    "/home/zsq/muduo-master/muduo/base/ThreadLocal.h"
+    "/home/zsq/muduo-master/muduo/base/ThreadLocalSingleton.h"
     "/home/zsq/muduo-master/muduo/base/ThreadPool.h"
-    "/home/zsq/muduo-master/muduo/base/Types.h"
-    "/home/zsq/muduo-master/muduo/base/BlockingQueue.h"
-    "/home/zsq/muduo-master/muduo/base/LogFile.h"
-    "/home/zsq/muduo-master/muduo/base/Condition.h"
-    "/home/zsq/muduo-master/muduo/base/BoundedBlockingQueue.h"
     "/home/zsq/muduo-master/muduo/base/TimeZone.h"
-    "/home/zsq/muduo-master/muduo/base/CurrentThread.h"
-    "/home/zsq/muduo-master/muduo/base/FileUtil.h"
+    "/home/zsq/muduo-master/muduo/base/Timestamp.h"
+    "/home/zsq/muduo-master/muduo/base/Types.h"
+    "/home/zsq/muduo-master/muduo/base/WeakCallback.h"
+    "/home/zsq/muduo-master/muduo/base/copyable.h"
     "/home/zsq/muduo-master/muduo/base/noncopyable.h"
-    "/home/zsq/muduo-master/muduo/base/Atomic.h"
-    "/home/zsq/muduo-master/muduo/base/AsyncLogging.h"
     )
 endif()
 
