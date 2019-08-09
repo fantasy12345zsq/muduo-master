@@ -2196,6 +2196,19 @@ TcpConnectionTestServer/fast:
 .PHONY : TcpConnectionTestServer/fast
 
 #=============================================================================
+# Target rules for targets named test_thread
+
+# Build rule for target.
+test_thread: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_thread
+.PHONY : test_thread
+
+# fast build rule for target.
+test_thread/fast:
+	$(MAKE) -f test/CMakeFiles/test_thread.dir/build.make test/CMakeFiles/test_thread.dir/build
+.PHONY : test_thread/fast
+
+#=============================================================================
 # Target rules for targets named TcpConnectionTestClient
 
 # Build rule for target.
@@ -2377,6 +2390,7 @@ help:
 	@echo "... EventLoopThreadTest"
 	@echo "... CountDownLatch_test1"
 	@echo "... TcpConnectionTestServer"
+	@echo "... test_thread"
 	@echo "... TcpConnectionTestClient"
 .PHONY : help
 

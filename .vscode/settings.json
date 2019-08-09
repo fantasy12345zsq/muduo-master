@@ -43,6 +43,14 @@
         "tuple": "cpp",
         "typeindex": "cpp",
         "typeinfo": "cpp",
-        "utility": "cpp"
+        "utility": "cpp",
+        "iostream": "cpp",
+        "csignal": "cpp",
+        "cstdarg": "cpp",
+        "bitset": "cpp",
+        "complex": "cpp",
+        "list": "cpp",
+        "unordered_set": "cpp",
+        "iomanip": "cpp"
     }
 }

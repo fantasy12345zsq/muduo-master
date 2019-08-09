@@ -82,16 +82,19 @@ void TcpServer::start()
 
     assert(!acceptor_->listenning());
     //开启侦听操作
+    //acceptor_为std::unique_ptr<Acceptor>
     loop_->runInLoop(
         std::bind(&Acceptor::listen, get_pointer(acceptor_)));
   }
 }
 
-//当有新的连接accept之后，Acceptor回调的函数
+//当有新的连接回调Acceptor::handleRead()函数accept之后，回调的函数
+//这里的sockfd其实是Acceptor在handleRead()内accept之后的connfd
 void TcpServer::newConnection(int sockfd, const InetAddress &peerAddr)
 {
   loop_->assertInLoopThread();
   //从线程池中得到新的loop
+  //获取新的线程为IO线程
   EventLoop *ioLoop = threadPool_->getNextLoop();
   char buf[64];
   snprintf(buf, sizeof buf, "-%s#%d", ipPort_.c_str(), nextConnId_);
@@ -102,9 +105,11 @@ void TcpServer::newConnection(int sockfd, const InetAddress &peerAddr)
            << "] - new connection [" << connName
            << "] from " << peerAddr.toIpPort();
   InetAddress localAddr(sockets::getLocalAddr(sockfd));
-  // FIXME poll with zero timeout to double confirm the new connection
-  // FIXME use make_shared if necessary
+  // FIXME: poll with zero timeout to double confirm the new connection
+  // FIXME: use make_shared if necessary
   //创建TcpConnection
+  //同时创建connfd对应的channel
+  //设置channel上的读、写、出错、关闭的回调函数
   TcpConnectionPtr conn(new TcpConnection(ioLoop,
                                           connName,
                                           sockfd,
@@ -112,12 +117,13 @@ void TcpServer::newConnection(int sockfd, const InetAddress &peerAddr)
                                           peerAddr));
   connections_[connName] = conn;
   //设置回调
+  //这里的回调就是用户设置的回调
   conn->setConnectionCallback(connectionCallback_);
   conn->setMessageCallback(messageCallback_);
   conn->setWriteCompleteCallback(writeCompleteCallback_);
   conn->setCloseCallback(
       std::bind(&TcpServer::removeConnection, this, _1)); // FIXME: unsafe
-  //
+  //在IO线程内运行TcpConnection::connectEstablished()函数
   ioLoop->runInLoop(std::bind(&TcpConnection::connectEstablished, conn));
 }
 

@@ -200,6 +200,7 @@ void Thread::start()
     //线程如果创建成功，子线程执行startThread---->runInThread
     //在runInThread函数内进行latch_减操作
     latch_.wait();
+    // printf("tid_ = %d\n",tid_);
     assert(tid_ > 0);
   }
 }

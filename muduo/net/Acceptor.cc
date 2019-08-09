@@ -60,7 +60,7 @@ void Acceptor::listen()
   acceptChannel_.enableReading();
 }
 
-//有新连接来时的回调函数
+//有新连接来时的服务器端第一个回调的函数
 void Acceptor::handleRead()
 {
   //同样保证只在IO线程执行
@@ -68,14 +68,17 @@ void Acceptor::handleRead()
   InetAddress peerAddr;
   //FIXME:loop until no more
   //新连接来时，调用accept函数
+
   int connfd = acceptSocket_.accept(&peerAddr);
   if (connfd >= 0)
   {
     // string hostport = peerAddr.toIpPort();
     // LOG_TRACE << "Accepts of " << hostport;
     //调用accept之后的回调函数
+    //如果用户使用TcpServer的话，这里会回调TcpServer::newConnection()函数
     if (newConnectionCallback_)
     {
+      //要把connfd当做参数传到newConnection，因为要在connfd上注册事件
       newConnectionCallback_(connfd, peerAddr);
     }
     else

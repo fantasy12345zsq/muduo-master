@@ -68,6 +68,28 @@ install/fast: preinstall/fast
 	/usr/local/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
+# Special rule for the target install/strip
+install/strip: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip
+
+# Special rule for the target install/strip
+install/strip/fast: preinstall/fast
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
+	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
+.PHONY : install/strip/fast
+
+# Special rule for the target list_install_components
+list_install_components:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
+.PHONY : list_install_components
+
+# Special rule for the target list_install_components
+list_install_components/fast: list_install_components
+
+.PHONY : list_install_components/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -101,28 +123,6 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -241,6 +241,21 @@ TcpConnectionTestServer: test/CMakeFiles/TcpConnectionTestServer.dir/rule
 TcpConnectionTestServer/fast:
 	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/TcpConnectionTestServer.dir/build.make test/CMakeFiles/TcpConnectionTestServer.dir/build
 .PHONY : TcpConnectionTestServer/fast
+
+# Convenience name for target.
+test/CMakeFiles/test_thread.dir/rule:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/test_thread.dir/rule
+.PHONY : test/CMakeFiles/test_thread.dir/rule
+
+# Convenience name for target.
+test_thread: test/CMakeFiles/test_thread.dir/rule
+
+.PHONY : test_thread
+
+# fast build rule for target.
+test_thread/fast:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/test_thread.dir/build.make test/CMakeFiles/test_thread.dir/build
+.PHONY : test_thread/fast
 
 # Convenience name for target.
 test/CMakeFiles/TcpConnectionTestClient.dir/rule:
@@ -419,6 +434,33 @@ TcpConnectionTestServer.cc.s:
 	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/TcpConnectionTestServer.dir/build.make test/CMakeFiles/TcpConnectionTestServer.dir/TcpConnectionTestServer.cc.s
 .PHONY : TcpConnectionTestServer.cc.s
 
+test_thread.o: test_thread.cc.o
+
+.PHONY : test_thread.o
+
+# target to build an object file
+test_thread.cc.o:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/test_thread.dir/build.make test/CMakeFiles/test_thread.dir/test_thread.cc.o
+.PHONY : test_thread.cc.o
+
+test_thread.i: test_thread.cc.i
+
+.PHONY : test_thread.i
+
+# target to preprocess a source file
+test_thread.cc.i:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/test_thread.dir/build.make test/CMakeFiles/test_thread.dir/test_thread.cc.i
+.PHONY : test_thread.cc.i
+
+test_thread.s: test_thread.cc.s
+
+.PHONY : test_thread.s
+
+# target to generate assembly for a file
+test_thread.cc.s:
+	cd /home/zsq/muduo-master/build && $(MAKE) -f test/CMakeFiles/test_thread.dir/build.make test/CMakeFiles/test_thread.dir/test_thread.cc.s
+.PHONY : test_thread.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -426,6 +468,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install"
+	@echo "... install/strip"
+	@echo "... list_install_components"
 	@echo "... AcceptorTestServer"
 	@echo "... install/local"
 	@echo "... AcceptorTestClient"
@@ -433,10 +477,9 @@ help:
 	@echo "... CountDownLatch_test1"
 	@echo "... test"
 	@echo "... TcpConnectionTestServer"
+	@echo "... test_thread"
 	@echo "... rebuild_cache"
 	@echo "... TcpConnectionTestClient"
-	@echo "... install/strip"
-	@echo "... list_install_components"
 	@echo "... edit_cache"
 	@echo "... AcceptorTestClient.o"
 	@echo "... AcceptorTestClient.i"
@@ -456,6 +499,9 @@ help:
 	@echo "... TcpConnectionTestServer.o"
 	@echo "... TcpConnectionTestServer.i"
 	@echo "... TcpConnectionTestServer.s"
+	@echo "... test_thread.o"
+	@echo "... test_thread.i"
+	@echo "... test_thread.s"
 .PHONY : help
 
 

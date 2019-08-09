@@ -472,6 +472,8 @@
 /home/zsq/muduo-master/build/examples/procmon/CMakeFiles/procmon.dir
 /home/zsq/muduo-master/build/examples/procmon/CMakeFiles/dummyload.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/install.dir
+/home/zsq/muduo-master/build/test/CMakeFiles/install/strip.dir
+/home/zsq/muduo-master/build/test/CMakeFiles/list_install_components.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/AcceptorTestServer.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/install/local.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/AcceptorTestClient.dir
@@ -479,8 +481,7 @@
 /home/zsq/muduo-master/build/test/CMakeFiles/CountDownLatch_test1.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/test.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/TcpConnectionTestServer.dir
+/home/zsq/muduo-master/build/test/CMakeFiles/test_thread.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/rebuild_cache.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/TcpConnectionTestClient.dir
-/home/zsq/muduo-master/build/test/CMakeFiles/install/strip.dir
-/home/zsq/muduo-master/build/test/CMakeFiles/list_install_components.dir
 /home/zsq/muduo-master/build/test/CMakeFiles/edit_cache.dir

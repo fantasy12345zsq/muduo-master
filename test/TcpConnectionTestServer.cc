@@ -44,6 +44,8 @@ int main(int argc,char *argv[])
 
     server.setConnectionCallback(onConnection);
     server.setMessageCallback(onMessage);
+
+    printf("server.start()!\n");
     server.start();
 
     loop.loop();

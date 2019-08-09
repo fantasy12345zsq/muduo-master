@@ -15,3 +15,6 @@ target_link_libraries(TcpConnectionTestServer muduo_net pthread)
 
 add_executable(TcpConnectionTestClient TcpConnectionTestClient.cc)
 target_link_libraries(TcpConnectionTestClient muduo_net pthread)
+
+add_executable(test_thread test_thread.cc)
+target_link_libraries(test_thread muduo_net)

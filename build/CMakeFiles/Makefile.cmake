@@ -377,5 +377,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "test/CMakeFiles/EventLoopThreadTest.dir/DependInfo.cmake"
   "test/CMakeFiles/CountDownLatch_test1.dir/DependInfo.cmake"
   "test/CMakeFiles/TcpConnectionTestServer.dir/DependInfo.cmake"
+  "test/CMakeFiles/test_thread.dir/DependInfo.cmake"
   "test/CMakeFiles/TcpConnectionTestClient.dir/DependInfo.cmake"
   )

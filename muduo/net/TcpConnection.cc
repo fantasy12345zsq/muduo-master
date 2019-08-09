@@ -35,6 +35,7 @@ void muduo::net::defaultMessageCallback(const TcpConnectionPtr&,
   buf->retrieveAll();
 }
 
+//这里的channel为accpet之后connfd对应的channel
 TcpConnection::TcpConnection(EventLoop* loop,
                              const string& nameArg,
                              int sockfd,
@@ -50,6 +51,7 @@ TcpConnection::TcpConnection(EventLoop* loop,
     peerAddr_(peerAddr),
     highWaterMark_(64*1024*1024)
 {
+  //设置对应的回调函数
   channel_->setReadCallback(
       std::bind(&TcpConnection::handleRead, this, _1));
   channel_->setWriteCallback(
@@ -114,6 +116,7 @@ void TcpConnection::send(Buffer* buf)
 {
   if (state_ == kConnected)
   {
+    //确保send只在IO线程
     if (loop_->isInLoopThread())
     {
       sendInLoop(buf->peek(), buf->readableBytes());
@@ -351,13 +354,16 @@ void TcpConnection::handleRead(Timestamp receiveTime)
 {
   loop_->assertInLoopThread();
   int savedErrno = 0;
+  //从fd上读到的数据存放在inputBuffer_
   ssize_t n = inputBuffer_.readFd(channel_->fd(), &savedErrno);
   if (n > 0)
   {
+    //n>0说明读到了数据，通知用户，inputBuffer作为参数
     messageCallback_(shared_from_this(), &inputBuffer_, receiveTime);
   }
   else if (n == 0)
   {
+    //读到了0
     handleClose();
   }
   else
